@@ -1,0 +1,21 @@
+---
+layout: page.njk
+title: Register with us
+---
+{% set nation = practice.urgent.nation %}
+{% if practice.registration and practice.registration.catchment %}
+<h2>Our practice area</h2>
+<p>{{ practice.registration.catchment }}</p>
+{% if practice.registration.catchment_map_url %}<p><a href="{{ practice.registration.catchment_map_url }}">See a map of our practice area</a></p>{% endif %}
+{% endif %}
+
+<h2>How to register</h2>
+{% if nation == "england" %}
+<p>You can <a href="https://www.nhs.uk/nhs-services/gps/how-to-register-with-a-gp-surgery/">register with a GP surgery online on the NHS website</a>, or ask at reception for a registration form.</p>
+<p>You do not need proof of address or immigration status, ID or an NHS number to register.</p>
+{% else %}
+<p>Ask at reception for a registration form, or call us on <a href="{{ practice.phone_link }}">{{ practice.phone_display }}</a>.</p>
+{% endif %}
+
+<h2>After you register</h2>
+<p>Once you are registered, you can <a href="{{ practice.nhs_app_link.url }}">set up the {{ practice.nhs_app_link.name }}</a> to order prescriptions and see your health record.</p>

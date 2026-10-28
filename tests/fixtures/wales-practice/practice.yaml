@@ -1,0 +1,34 @@
+# Minimal fictional practice in Wales, used by the automated tests.
+practice:
+  name: Test Valley Surgery
+  ods_code: W99999
+  nation: wales
+site:
+  content_last_reviewed: "2026-10-01"
+contact:
+  phone: "01632 960999"
+  phone_hours: 8am to 6pm, Monday to Friday
+sites:
+  - name: Test Valley Surgery
+    address:
+      - 2 Test Street
+      - Testtown
+    postcode: ZZ9 9ZZ
+opening_hours:
+  monday: [{ opens: "08:00", closes: "18:00" }]
+  tuesday: [{ opens: "08:00", closes: "18:00" }]
+  wednesday: [{ opens: "08:00", closes: "18:00" }]
+  thursday: [{ opens: "08:00", closes: "18:00" }]
+  friday: [{ opens: "08:00", closes: "18:00" }]
+  saturday: closed
+  sunday: closed
+online_services:
+  online_consultation:
+    provider: Klinik
+    url: https://example.com/test-valley
+    embed_html: '<script src="https://widget.klinik.co.uk/embed.js"></script>'
+complaints:
+  contact: The practice manager
+  how: Write to us or ask at reception.
+accessibility:
+  statement_prepared: "2026-10-01"

@@ -1,0 +1,129 @@
+---
+layout: base.njk
+title: Home
+---
+{% from "nhsuk/components/card/macro.njk" import card %}
+{% from "nhsuk/components/notification-banner/macro.njk" import notificationBanner %}
+{% from "nhsuk/components/action-link/macro.njk" import actionLink %}
+{% set p = practice.practice %}
+{% set oc = practice.online_services.online_consultation %}
+
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-two-thirds">
+    <h1>{{ p.name }}</h1>
+    {% if p.description %}<p class="nhsuk-lede-text">{{ p.description }}</p>{% endif %}
+
+    {% for notice in practice.active_notices %}
+      {{ notificationBanner({
+        title: { text: "Important" },
+        heading: notice.title,
+        text: notice.text
+      }) }}
+    {% endfor %}
+
+    {% if practice.upcoming_closures.length %}
+      <h2 class="nhsuk-heading-s">Upcoming closures</h2>
+      <ul>
+        {% for closure in practice.upcoming_closures %}
+          {% if loop.index <= 3 %}
+            <li>
+              {{ closure.date | ukDate }}{% if closure.from %}, {{ closure.from | ukTime }} to {{ closure.to | ukTime }}{% else %}, all day{% endif %}:
+              {{ closure.reason }}
+            </li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+      <p><a href="/opening-times/">See all opening times and closures</a></p>
+    {% endif %}
+  </div>
+</div>
+
+<h2>How can we help?</h2>
+<div class="nhsuk-grid-row nhsuk-card-group">
+  <div class="nhsuk-grid-column-one-third nhsuk-card-group__item">
+    {{ card({
+      heading: oc.label or "Contact us online",
+      href: "/appointments/",
+      clickable: true,
+      headingSize: "s",
+      description: "Ask for an appointment, medical advice or help with an admin request.",
+      variant: "primary"
+    }) }}
+  </div>
+  <div class="nhsuk-grid-column-one-third nhsuk-card-group__item">
+    {{ card({
+      heading: "Order a repeat prescription",
+      href: "/prescriptions/",
+      clickable: true,
+      headingSize: "s",
+      description: "Use the " ~ practice.nhs_app_link.name ~ " or our online form.",
+      variant: "primary"
+    }) }}
+  </div>
+  <div class="nhsuk-grid-column-one-third nhsuk-card-group__item">
+    {{ card({
+      heading: "Test results",
+      href: "/test-results/",
+      clickable: true,
+      headingSize: "s",
+      description: "Find out how to get your results.",
+      variant: "primary"
+    }) }}
+  </div>
+  <div class="nhsuk-grid-column-one-third nhsuk-card-group__item">
+    {{ card({
+      heading: "Opening times",
+      href: "/opening-times/",
+      clickable: true,
+      headingSize: "s",
+      description: "When we are open, and what to do when we are closed.",
+      variant: "primary"
+    }) }}
+  </div>
+  <div class="nhsuk-grid-column-one-third nhsuk-card-group__item">
+    {{ card({
+      heading: "Register with us",
+      href: "/register/",
+      clickable: true,
+      headingSize: "s",
+      description: "Check if you live in our area and how to register.",
+      variant: "primary"
+    }) }}
+  </div>
+  <div class="nhsuk-grid-column-one-third nhsuk-card-group__item">
+    {{ card({
+      heading: "Contact and find us",
+      href: "/contact/",
+      clickable: true,
+      headingSize: "s",
+      description: "Phone numbers, addresses and parking.",
+      variant: "primary"
+    }) }}
+  </div>
+</div>
+
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-two-thirds">
+    {{ card({
+      variant: "urgent",
+      heading: "Ask us for an urgent appointment or get help from 111 if:",
+      descriptionHtml: "<ul><li>you have a health problem that cannot wait until we are next open</li><li>you are not sure where to get help</li></ul><p>When we are closed, go to <a href=\"" ~ practice.urgent.nhs111_url ~ "\">" ~ practice.urgent.nhs111_name ~ " online</a> or call 111.</p>"
+    }) }}
+
+    <h2>Call us</h2>
+    <p class="nhsuk-heading-m"><a href="{{ practice.phone_link }}">{{ practice.phone_display }}</a></p>
+    <p>Phone lines are open {{ practice.contact.phone_hours }}.</p>
+
+    {% if practice.news and practice.news.length %}
+      <h2>Latest news</h2>
+      {% for item in practice.news | sort(true, false, "date") %}
+        {% if loop.index <= 3 %}
+          <h3 class="nhsuk-heading-s nhsuk-u-margin-bottom-1">{{ item.title }}</h3>
+          <p class="nhsuk-body-s nhsuk-u-secondary-text-colour nhsuk-u-margin-bottom-2">{{ item.date | ukDate(false) }}</p>
+          <p>{{ item.text }}</p>
+        {% endif %}
+      {% endfor %}
+      <p><a href="/news/">All news</a></p>
+    {% endif %}
+  </div>
+</div>

@@ -1,0 +1,246 @@
+# Practice details
+#
+# This is the main file to edit. Everything on the website comes from here,
+# plus the Markdown pages in practice/pages/.
+#
+# After editing, run "npm run check". It lists anything missing or wrong in
+# plain English. The site will not build until every problem is fixed.
+#
+# Writing rules:
+# - Put dates in quotes as "YYYY-MM-DD", for example "2026-11-12".
+# - Put times in quotes in 24 hour format, for example "08:00" or "18:30".
+# - Never leave TODO or TBC in this file. The check will stop the build.
+#
+# THIS EXAMPLE IS A FICTIONAL PRACTICE. Every name, address and phone number
+# below is made up. Phone numbers use the 01632 960xxx range, which Ofcom
+# reserves for fiction.
+
+# Shows a "Demo" banner and stops search engines indexing the site.
+# Set to false (or delete this line) for a real practice.
+demo: true
+
+practice:
+  name: Riverbend Medical Practice
+  # Optional second line for long names, and a short descriptor.
+  name_split: ""
+  descriptor: ""
+  # Your ODS code (sometimes called the practice code). One letter, five digits.
+  ods_code: Z00001
+  # england or wales. This changes the urgent care, complaints and
+  # regulator information shown on the site.
+  nation: england
+  description: >-
+    Riverbend Medical Practice is an NHS GP surgery caring for around 9,800
+    patients in Exampleton and the surrounding villages.
+  pcn: Riverbend and Millbrook Primary Care Network
+  icb: NHS Exampleshire Integrated Care Board
+
+site:
+  # The full web address of the site once it is live.
+  url: https://example.github.io/open-practice-website/
+  # If you use your own domain name with GitHub Pages, put it here, for
+  # example www.riverbendmedical.nhs.uk. Leave blank otherwise.
+  custom_domain: ""
+  # Optional: your own logo, saved in practice/images/. Leave blank to use
+  # the standard NHS logo with your practice name.
+  logo: ""
+  # The date someone at the practice last checked the whole site was correct.
+  content_last_reviewed: "2026-10-28"
+
+contact:
+  phone: "01632 960000"
+  phone_hours: 8am to 6:30pm, Monday to Friday
+  # Optional. Leave blank if you do not want patients to email you.
+  email: reception@riverbend.example
+  email_note: >-
+    Do not use email for urgent problems or to ask for medical advice. Use our
+    online form or call us instead.
+
+sites:
+  - name: Riverbend Medical Practice (main surgery)
+    address:
+      - 1 River Lane
+      - Exampleton
+      - Exampleshire
+    postcode: ZZ1 1AA
+    parking: Free car park with 4 disabled bays next to the main entrance.
+    accessibility:
+      - Step-free access from the car park
+      - Accessible toilet on the ground floor
+      - Hearing loop at reception
+      - All consulting rooms are on the ground floor
+  - name: Millbrook branch surgery
+    address:
+      - The Old School House
+      - Mill Road
+      - Millbrook
+    postcode: ZZ1 4BB
+    parking: On-street parking only.
+    accessibility:
+      - Ramp at the side entrance
+      - Hearing loop at reception
+
+opening_hours:
+  monday:
+    - { opens: "08:00", closes: "18:30" }
+  tuesday:
+    - { opens: "08:00", closes: "18:30" }
+  wednesday:
+    - { opens: "07:30", closes: "18:30" }
+  thursday:
+    - { opens: "08:00", closes: "18:30" }
+  friday:
+    - { opens: "08:00", closes: "18:30" }
+  saturday: closed
+  sunday: closed
+  notes:
+    - The Millbrook branch surgery is open 8:30am to 12:30pm, Monday to Friday.
+    - >-
+      Evening and weekend appointments are available through our Primary Care
+      Network. Ask reception or use our online form.
+
+# Days the practice is closed, such as staff training afternoons.
+closures:
+  - date: "2026-11-19"
+    from: "13:00"
+    to: "18:30"
+    reason: Staff training. Call 111 if you need urgent help while we are closed.
+  - date: "2026-12-25"
+    reason: Christmas Day bank holiday.
+  - date: "2026-12-28"
+    reason: Boxing Day bank holiday (substitute day).
+
+# Short messages shown at the top of the home page. They disappear after the
+# expiry date the next time the site is built.
+notices:
+  - title: Flu and COVID-19 vaccinations
+    text: >-
+      Autumn vaccination clinics are running on Saturday mornings in November.
+      Eligible patients will receive a text message invitation.
+    expires: "2026-11-30"
+
+online_services:
+  online_consultation:
+    # The name of the company that provides your online form.
+    provider: Demo provider
+    label: Contact us online
+    # The link your provider gave you. It must start with https://
+    url: https://example.com/riverbend-online-consultation
+    availability: 8am to 6:30pm, Monday to Friday
+    # Optional: the embed code your provider gave you. Only paste code that
+    # came from your provider. Code from unknown websites will stop the build.
+    embed_html: ""
+  nhs_app: true
+  prescriptions:
+    turnaround: >-
+      Please allow 3 working days for repeat prescriptions to be ready. Allow
+      longer if you order before a weekend or bank holiday.
+  test_results: >-
+    You can see most test results in the NHS App. If a doctor needs to talk to
+    you about a result, we will contact you. Otherwise, call after 2pm and
+    reception can tell you whether your result is back.
+
+# Extra websites that embedded code is allowed to load from, if your
+# supplier's code uses a domain the check does not recognise. Only add a
+# domain after confirming with your supplier that it is genuine.
+trusted_embed_domains: []
+
+team:
+  - group: GP partners
+    people:
+      - name: Dr Amara Okafor
+        role: Senior partner
+        details: Special interests in diabetes and women's health.
+      - name: Dr Tom Hughes
+        role: GP partner
+        details: Training lead for GP registrars.
+  - group: Salaried GPs
+    people:
+      - name: Dr Priya Nair
+        role: Salaried GP
+        details: Works Monday, Tuesday and Thursday.
+      - name: Dr Seán Byrne
+        role: Salaried GP
+        details: Special interest in minor surgery.
+  - group: Nursing and clinical team
+    people:
+      - name: Jo Lister
+        role: Advanced nurse practitioner
+      - name: Ben Carter
+        role: Practice nurse
+      - name: Ruth Adeyemi
+        role: Healthcare assistant
+      - name: Karim Haddad
+        role: Clinical pharmacist
+  - group: Practice management
+    people:
+      - name: Linda Shaw
+        role: Practice manager
+
+services:
+  - name: Long-term condition reviews
+    description: Annual reviews for asthma, COPD, diabetes, heart disease and other conditions.
+  - name: Childhood immunisations
+    description: Routine vaccinations for babies and children, run by our practice nurses.
+  - name: Contraception and sexual health
+    description: Contraceptive pills, injections, implants and coils.
+  - name: Cervical screening
+    description: We will invite you when your screening is due.
+  - name: Minor surgery
+    description: Joint injections and removal of some skin lesions.
+  - name: NHS Health Checks
+    description: For adults aged 40 to 74 without certain existing conditions.
+
+registration:
+  catchment: >-
+    We accept new patients who live in Exampleton, Millbrook and the villages
+    of Lower Fold and Ashby Green.
+  catchment_map_url: ""
+
+complaints:
+  contact: Linda Shaw, practice manager
+  how: >-
+    Write to us at the main surgery, email us, or ask at reception to speak to
+    the practice manager.
+
+# Practices in England must publish the mean earnings of their GPs.
+# These figures are fictional.
+gp_earnings:
+  financial_year: 2025/26
+  mean_earnings: 82000
+  full_time_gps: 1
+  part_time_gps: 3
+  locum_gps: 1
+
+# Practices in England must show their CQC rating. Use your CQC location ID
+# (from your page on cqc.org.uk) and, if you have it, the rating widget code.
+cqc:
+  location_id: 1-000000000
+  embed_html: ""
+
+ppg:
+  text: >-
+    Our Patient Participation Group (PPG) is a group of patients who meet every
+    3 months to help us improve our services. New members are always welcome.
+  contact: Ask at reception or email us to join.
+
+accessibility:
+  # The date the accessibility statement was first prepared.
+  statement_prepared: "2026-10-28"
+  # Optional: anything on the site you know is not accessible.
+  known_issues:
+    - >-
+      Our online consultation form is provided by another company. We cannot
+      guarantee how accessible it is.
+
+news:
+  - date: "2026-10-28"
+    title: Our new website
+    text: >-
+      Welcome to our new website. If you spot anything wrong or missing, please
+      let us know.
+  - date: "2026-10-01"
+    title: Changes to how you contact us
+    text: >-
+      You can now use our online form for medical and admin requests between
+      8am and 6:30pm on weekdays.

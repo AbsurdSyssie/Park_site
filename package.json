@@ -1,0 +1,34 @@
+{
+  "name": "open-practice-website",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A free, open source website template for GP practices, built on NHS.UK frontend.",
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "check": "node bin/check.js",
+    "build": "eleventy",
+    "start": "eleventy --serve",
+    "clean": "rm -rf _site",
+    "test": "node --test",
+    "lint": "npm run lint:js && npm run lint:format",
+    "lint:js": "eslint .",
+    "lint:format": "prettier --check .",
+    "lint:html": "html-validate \"_site/**/*.html\"",
+    "format": "prettier --write ."
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.7",
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.13.0",
+    "globals": "^17.13.0",
+    "html-validate": "^11.17.0",
+    "js-yaml": "^5.5.0",
+    "nhsuk-frontend": "^10.7.0",
+    "nunjucks": "npm:@11ty/nunjucks@^3.3.0",
+    "prettier": "^3.9.10"
+  }
+}

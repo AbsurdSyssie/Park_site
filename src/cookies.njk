@@ -1,0 +1,13 @@
+---
+layout: page.njk
+title: Cookies
+---
+{% set oc = practice.online_services.online_consultation %}
+<p>Cookies are small files saved on your phone, tablet or computer when you visit a website.</p>
+<p>This website does not use cookies, and it does not track you or collect information about your visit.</p>
+
+<h2>Services provided by other companies</h2>
+<p>When you use our online form, you leave this website and go to a service run by {{ oc.provider }}. That service may use its own cookies. Check its privacy and cookie information for details.</p>
+{% if oc.embed_html or (practice.cqc and practice.cqc.embed_html) %}
+<p>Some pages on this website include content from other companies, such as our online form{% if practice.cqc and practice.cqc.embed_html %} and our CQC rating{% endif %}. These companies may set their own cookies.</p>
+{% endif %}

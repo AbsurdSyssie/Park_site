@@ -1,0 +1,38 @@
+/*
+  Small additions to NHS.UK frontend. Keep this file short: the point of using
+  NHS.UK frontend is that patients get a familiar, tested, accessible design.
+*/
+
+.app-urgent-help {
+  background-color: #ffeb3b;
+  border-top: 4px solid #212b32;
+  padding: 24px 0;
+}
+
+.app-urgent-help a {
+  color: #212b32;
+}
+
+.app-urgent-help a:focus {
+  color: #212b32;
+}
+
+.app-embed {
+  margin-bottom: 32px;
+}
+
+.app-opening-hours td,
+.app-opening-hours th {
+  vertical-align: top;
+}
+
+.app-team-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.app-team-list li {
+  border-bottom: 1px solid #d8dde0;
+  margin-bottom: 16px;
+  padding-bottom: 16px;
+}

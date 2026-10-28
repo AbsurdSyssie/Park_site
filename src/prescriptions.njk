@@ -1,0 +1,27 @@
+---
+layout: page.njk
+title: Prescriptions
+lede: How to order repeat prescriptions and what to do if you run out of medicine.
+---
+{% set ps = practice.online_services.prescriptions %}
+{% set oc = practice.online_services.online_consultation %}
+
+<h2>Order a repeat prescription</h2>
+<p>You can order repeat prescriptions:</p>
+<ul>
+  {% if practice.online_services.nhs_app %}<li>in the <a href="{{ practice.nhs_app_link.url }}">{{ practice.nhs_app_link.name }}</a></li>{% endif %}
+  <li>using our <a href="{{ oc.url }}">online form</a></li>
+  <li>by asking your pharmacy to order it for you, if they offer this</li>
+</ul>
+<p>We do not take prescription requests over the phone, unless you cannot order any other way.</p>
+
+{% if ps and ps.turnaround %}
+<h2>How long it takes</h2>
+<p>{{ ps.turnaround }}</p>
+{% endif %}
+
+<h2>Choosing a pharmacy</h2>
+<p>Your prescription will be sent electronically to the pharmacy you choose (called your nominated pharmacy). You can change it in the {{ practice.nhs_app_link.name }} or by asking any pharmacy.</p>
+
+<h2>If you run out of medicine</h2>
+<p>If you need medicine urgently and we are closed, a pharmacy may be able to give you an emergency supply. You can also <a href="{{ practice.urgent.nhs111_url }}">get help from {{ practice.urgent.nhs111_name }}</a>.</p>

@@ -1,0 +1,22 @@
+{#-
+  CLINICAL SAFETY CONTROL: urgent and emergency signposting.
+
+  This appears on every page and cannot be turned off from practice.yaml.
+  It is covered by hazard H1 in docs/clinical-safety/hazard-log.md and by
+  automated tests. Do not remove or weaken it.
+-#}
+<section class="app-urgent-help" aria-labelledby="urgent-help-heading" data-safety="urgent-help">
+  <div class="nhsuk-width-container">
+    <h2 class="nhsuk-heading-s" id="urgent-help-heading">If you need help now</h2>
+    <p>
+      If it's a life-threatening emergency, <strong>call <a href="tel:999">999</a></strong>
+      or go to A&amp;E.
+    </p>
+    <p class="nhsuk-u-margin-bottom-0">
+      If you need urgent medical help and we're closed, go to
+      <a href="{{ practice.urgent.nhs111_url }}">{{ practice.urgent.nhs111_name }} online</a>
+      or <strong>call <a href="tel:111">111</a></strong>.
+      <a href="/urgent-help/">More about getting urgent help</a>.
+    </p>
+  </div>
+</section>

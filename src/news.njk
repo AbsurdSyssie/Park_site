@@ -1,0 +1,13 @@
+---
+layout: page.njk
+title: News
+---
+{% if practice.news and practice.news.length %}
+  {% for item in practice.news | sort(true, false, "date") %}
+    <h2 class="nhsuk-heading-m nhsuk-u-margin-bottom-1">{{ item.title }}</h2>
+    <p class="nhsuk-body-s nhsuk-u-margin-bottom-2">{{ item.date | ukDate(false) }}</p>
+    <p>{{ item.text }}</p>
+  {% endfor %}
+{% else %}
+  <p>There is no news at the moment.</p>
+{% endif %}

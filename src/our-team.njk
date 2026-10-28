@@ -1,0 +1,19 @@
+---
+layout: page.njk
+title: Our team
+---
+{% for group in practice.team %}
+<h2>{{ group.group }}</h2>
+<ul class="app-team-list">
+  {% for person in group.people %}
+  <li>
+    <h3 class="nhsuk-heading-s nhsuk-u-margin-bottom-1">{{ person.name }}</h3>
+    <p class="nhsuk-u-margin-bottom-1">{{ person.role }}</p>
+    {% if person.details %}<p class="nhsuk-body-s nhsuk-u-margin-bottom-0">{{ person.details }}</p>{% endif %}
+  </li>
+  {% endfor %}
+</ul>
+{% endfor %}
+
+<h2>Your named accountable GP</h2>
+<p>All patients registered with us have a named GP who is responsible for their overall care. You can still see any doctor or clinician at the practice. If you want to know who your named GP is, ask at reception.</p>

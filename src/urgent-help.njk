@@ -1,0 +1,27 @@
+---
+layout: page.njk
+title: Urgent help
+lede: Where to get help if you need it quickly, including when we are closed.
+---
+{% from "nhsuk/components/card/macro.njk" import card %}
+
+{{ card({
+  variant: "emergency",
+  heading: "Call 999 or go to A&E now if:",
+  descriptionHtml: "<p>someone's life is at risk or they are seriously ill or injured.</p>"
+}) }}
+
+{{ card({
+  variant: "urgent",
+  heading: "Get help from " ~ practice.urgent.nhs111_name ~ " if:",
+  descriptionHtml: "<p>you need medical help urgently and we are closed, or you are not sure what to do.</p><p>Go to <a href=\"" ~ practice.urgent.nhs111_url ~ "\">" ~ practice.urgent.nhs111_name ~ " online</a> or call 111.</p>"
+}) }}
+
+<h2>Mental health crisis</h2>
+<p>If you or someone you know needs urgent mental health support, call 111 and choose the mental health option. In an emergency, call 999.</p>
+
+<h2>Pharmacies</h2>
+<p>Pharmacists can give advice and treatment for many minor illnesses without an appointment. Some pharmacies are open late and at weekends.</p>
+
+<h2>When we are open</h2>
+<p>If you need to speak to us urgently, call <a href="{{ practice.phone_link }}">{{ practice.phone_display }}</a> and tell us it is urgent. Do not use the online form for problems that cannot wait.</p>

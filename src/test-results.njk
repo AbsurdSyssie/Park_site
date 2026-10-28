@@ -1,0 +1,14 @@
+---
+layout: page.njk
+title: Test results
+lede: How to find out the results of blood tests, scans and other tests.
+---
+{% if practice.online_services.test_results %}<p>{{ practice.online_services.test_results }}</p>{% endif %}
+
+{% if practice.online_services.nhs_app %}
+<h2>Using the {{ practice.nhs_app_link.name }}</h2>
+<p>Many test results appear in the <a href="{{ practice.nhs_app_link.url }}">{{ practice.nhs_app_link.name }}</a> once a clinician has checked them. Some results may need a doctor to explain them first.</p>
+{% endif %}
+
+<h2>Results from hospital tests</h2>
+<p>If a hospital did your test, the hospital team will usually give you the result. Contact the department that did the test if you have not heard back.</p>

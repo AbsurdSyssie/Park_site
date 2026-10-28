@@ -1,0 +1,35 @@
+---
+layout: page.njk
+title: Contact and find us
+---
+<h2>Phone</h2>
+<p class="nhsuk-heading-m"><a href="{{ practice.phone_link }}">{{ practice.phone_display }}</a></p>
+<p>Phone lines are open {{ practice.contact.phone_hours }}.</p>
+
+<h2>Online</h2>
+<p>Use our <a href="/appointments/">online form</a> for medical and admin requests.</p>
+
+{% if practice.contact.email %}
+<h2>Email</h2>
+<p><a href="mailto:{{ practice.contact.email }}">{{ practice.contact.email }}</a></p>
+{% if practice.contact.email_note %}<p>{{ practice.contact.email_note }}</p>{% endif %}
+{% endif %}
+
+{% for site in practice.sites %}
+<h2>{{ site.name }}</h2>
+<p>
+  {% for line in site.address %}{{ line }}<br>{% endfor %}
+  {{ site.postcode }}
+</p>
+<p><a href="{{ site | postcodeMapUrl }}">View on a map<span class="nhsuk-u-visually-hidden"> ({{ site.name }})</span></a></p>
+{% if site.parking %}
+<h3>Parking</h3>
+<p>{{ site.parking }}</p>
+{% endif %}
+{% if site.accessibility and site.accessibility.length %}
+<h3>Accessibility</h3>
+<ul>
+  {% for item in site.accessibility %}<li>{{ item }}</li>{% endfor %}
+</ul>
+{% endif %}
+{% endfor %}

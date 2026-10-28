@@ -1,0 +1,113 @@
+{#-
+  Base layout for every page. Practices should not need to edit this file:
+  everything practice-specific comes from practice/practice.yaml.
+
+  The urgent help section near the bottom is a clinical safety control and is
+  deliberately not configurable. Do not remove it.
+-#}
+{% extends "nhsuk/template.njk" %}
+{% from "nhsuk/components/header/macro.njk" import header %}
+{% from "nhsuk/components/footer/macro.njk" import footer %}
+{% from "nhsuk/components/environment-banner/macro.njk" import environmentBanner %}
+{% from "nhsuk/components/breadcrumb/macro.njk" import breadcrumb %}
+
+{% set assetPath = "/assets" %}
+{% set p = practice.practice %}
+
+{% set navItems = [
+  { text: "Appointments", href: "/appointments/" },
+  { text: "Prescriptions", href: "/prescriptions/" },
+  { text: "Opening times", href: "/opening-times/" },
+  { text: "Contact us", href: "/contact/" },
+  { text: "Register", href: "/register/" },
+  { text: "Our team", href: "/our-team/" },
+  { text: "Services", href: "/services/" },
+  { text: "About us", href: "/about/" }
+] %}
+{% set currentNav = [] %}
+{% for item in navItems %}
+  {% set currentNav = (currentNav.push({ text: item.text, href: item.href, current: page.url == item.href }), currentNav) %}
+{% endfor %}
+
+{% block pageTitle %}{% if title and page.url != "/" %}{{ title }} - {% endif %}{{ p.name }}{% endblock %}
+
+{% block head %}
+  <meta name="description" content="{{ description or p.description or p.name }}">
+  {% if practice.demo %}<meta name="robots" content="noindex">{% endif %}
+  <link rel="stylesheet" href="/assets/nhsuk-frontend.min.css">
+  <link rel="stylesheet" href="/assets/practice.css">
+  <script type="module" src="/assets/init.js"></script>
+{% endblock %}
+
+{% block header %}
+  {% if practice.demo %}
+    {{ environmentBanner({
+      tag: "Demo",
+      text: "This is a demonstration website for a fictional GP practice. None of the people, places or phone numbers are real.",
+      colour: "yellow"
+    }) }}
+  {% endif %}
+  {{ header({
+    logo: {
+      href: "/",
+      src: practice.site.logo if practice.site and practice.site.logo else undefined,
+      alt: (p.name ~ " logo") if practice.site and practice.site.logo else "NHS"
+    },
+    organisation: {
+      name: p.name,
+      split: p.name_split,
+      descriptor: p.descriptor
+    },
+    navigation: { items: currentNav }
+  }) }}
+{% endblock %}
+
+{% block beforeContent %}
+  {% if page.url != "/" %}
+    {{ breadcrumb({ items: [{ href: "/", text: "Home" }] }) }}
+  {% endif %}
+{% endblock %}
+
+{% block content %}
+  {{ content | safe }}
+{% endblock %}
+
+{% block footer %}
+  {% include "partials/urgent-help.njk" %}
+  {{ footer({
+    navigation: [
+      {
+        heading: { text: "Getting help" },
+        items: [
+          { href: "/appointments/", text: "Appointments and contact us online" },
+          { href: "/prescriptions/", text: "Prescriptions" },
+          { href: "/test-results/", text: "Test results" },
+          { href: "/urgent-help/", text: "Urgent help" }
+        ]
+      },
+      {
+        heading: { text: "The practice" },
+        items: [
+          { href: "/opening-times/", text: "Opening times" },
+          { href: "/contact/", text: "Contact and find us" },
+          { href: "/register/", text: "Register with us" },
+          { href: "/our-team/", text: "Our team" },
+          { href: "/news/", text: "News" }
+        ]
+      },
+      {
+        heading: { text: "Policies" },
+        items: [
+          { href: "/complaints/", text: "Complaints" },
+          { href: "/privacy-notice/", text: "Privacy notice" },
+          { href: "/accessibility-statement/", text: "Accessibility statement" },
+          { href: "/cookies/", text: "Cookies" }
+        ]
+      }
+    ],
+    meta: {
+      text: "Website content last reviewed " ~ (practice.site.content_last_reviewed | ukDate(false)) ~ ". Practice code " ~ p.ods_code ~ "."
+    },
+    copyright: { text: "© " ~ p.name }
+  }) }}
+{% endblock %}

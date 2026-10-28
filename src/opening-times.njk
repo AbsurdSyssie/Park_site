@@ -1,0 +1,40 @@
+---
+layout: page.njk
+title: Opening times
+---
+<table class="nhsuk-table app-opening-hours">
+  <caption class="nhsuk-table__caption">When the practice is open</caption>
+  <thead class="nhsuk-table__head">
+    <tr class="nhsuk-table__row">
+      <th scope="col" class="nhsuk-table__header">Day</th>
+      <th scope="col" class="nhsuk-table__header">Opening times</th>
+    </tr>
+  </thead>
+  <tbody class="nhsuk-table__body">
+    {% for day in practice.opening_hours_list %}
+      <tr class="nhsuk-table__row">
+        <th scope="row" class="nhsuk-table__header">{{ day.label }}</th>
+        <td class="nhsuk-table__cell">
+          {% if day.closed %}Closed{% else %}{% for slot in day.slots %}{{ slot | timeRange }}{% if not loop.last %}<br>{% endif %}{% endfor %}{% endif %}
+        </td>
+      </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+{% for note in practice.opening_hours.notes %}<p>{{ note }}</p>{% endfor %}
+
+<h2>Phone lines</h2>
+<p>Call <a href="{{ practice.phone_link }}">{{ practice.phone_display }}</a>. Phone lines are open {{ practice.contact.phone_hours }}.</p>
+
+{% if practice.upcoming_closures.length %}
+<h2>Upcoming closures</h2>
+<ul>
+  {% for closure in practice.upcoming_closures %}
+    <li>{{ closure.date | ukDate }}{% if closure.from %}, {{ closure.from | ukTime }} to {{ closure.to | ukTime }}{% else %}, all day{% endif %}: {{ closure.reason }}</li>
+  {% endfor %}
+</ul>
+{% endif %}
+
+<h2>When we are closed</h2>
+<p>If you need urgent medical help when we are closed, go to <a href="{{ practice.urgent.nhs111_url }}">{{ practice.urgent.nhs111_name }} online</a> or call 111. In an emergency, call 999.</p>

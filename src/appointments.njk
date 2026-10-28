@@ -1,0 +1,39 @@
+---
+layout: page.njk
+title: Appointments and contact us online
+lede: You can contact us online, through the app, or by phone.
+---
+{% from "nhsuk/components/action-link/macro.njk" import actionLink %}
+{% from "nhsuk/components/card/macro.njk" import card %}
+{% set oc = practice.online_services.online_consultation %}
+
+{{ card({
+  variant: "emergency",
+  heading: "Call 999 or go to A&E now if:",
+  descriptionHtml: "<p>it's a life-threatening emergency. Do not use our online form or wait for a call back.</p>"
+}) }}
+
+<h2>{{ oc.label or "Contact us online" }}</h2>
+<p>Use our online form to ask for an appointment, get medical advice, or help with things like fit notes and letters.</p>
+{% if oc.availability %}<p>The online form is available {{ oc.availability }}.</p>{% endif %}
+{{ actionLink({ text: oc.label or "Contact us online", href: oc.url }) }}
+
+{% if oc.embed_html %}
+  <div class="app-embed" data-embed="online-consultation">
+    {{ oc.embed_html | safe }}
+  </div>
+{% endif %}
+
+<p class="nhsuk-body-s">The online form is provided by {{ oc.provider }} on our behalf.</p>
+
+{% if practice.online_services.nhs_app %}
+<h2>Use the {{ practice.nhs_app_link.name }}</h2>
+<p>You can use the <a href="{{ practice.nhs_app_link.url }}">{{ practice.nhs_app_link.name }}</a> to book some appointments, order repeat prescriptions and see your health record.</p>
+{% endif %}
+
+<h2>Call us</h2>
+<p>Call <a href="{{ practice.phone_link }}">{{ practice.phone_display }}</a>. Phone lines are open {{ practice.contact.phone_hours }}.</p>
+<p>If you cannot use our online form, our reception team will fill it in for you over the phone.</p>
+
+<h2>Cancelling an appointment</h2>
+<p>If you cannot make your appointment, please tell us as soon as possible so we can offer it to someone else. You can cancel in the {{ practice.nhs_app_link.name }} or by calling us.</p>

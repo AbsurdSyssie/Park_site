@@ -1,0 +1,13 @@
+version: 2
+updates:
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: weekly
+    groups:
+      nhsuk-frontend:
+        patterns: ["nhsuk-frontend"]
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly

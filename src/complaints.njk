@@ -1,0 +1,24 @@
+---
+layout: page.njk
+title: Complaints
+lede: We want to hear from you if you are unhappy with our service.
+---
+{% set nation = practice.urgent.nation %}
+<h2>How to complain</h2>
+<p>{{ practice.complaints.how }}</p>
+<p>Complaints are handled by {{ practice.complaints.contact }}.</p>
+<p>Please complain within 12 months of the event, or of when you first knew about it. We will acknowledge your complaint within 3 working days.</p>
+
+<h2>If you prefer not to complain to us</h2>
+{% if nation == "england" %}
+<p>You can complain to {{ practice.practice.icb or "your local Integrated Care Board (ICB)" }} instead.</p>
+<h2>If you are not happy with the outcome</h2>
+<p>You can ask the <a href="https://www.ombudsman.org.uk/">Parliamentary and Health Service Ombudsman</a> to look into your complaint.</p>
+{% else %}
+<p>NHS Wales handles concerns using a process called <a href="https://www.gov.wales/nhs-wales-complaints-and-concerns-putting-things-right">Putting Things Right</a>. You can raise a concern with your local health board instead of with us.</p>
+<h2>If you are not happy with the outcome</h2>
+<p>You can ask the <a href="https://www.ombudsman.wales/">Public Services Ombudsman for Wales</a> to look into your complaint.</p>
+{% endif %}
+
+<h2>Getting help to complain</h2>
+<p>An independent advocacy service can help you make a complaint for free. Ask us or your local council for details.</p>

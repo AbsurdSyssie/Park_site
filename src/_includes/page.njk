@@ -1,0 +1,11 @@
+---
+layout: base.njk
+---
+{#- Layout for simple content pages, including Markdown pages in practice/pages -#}
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-two-thirds">
+    {% if title %}<h1>{{ title }}</h1>{% endif %}
+    {% if lede %}<p class="nhsuk-lede-text">{{ lede }}</p>{% endif %}
+    {{ content | safe }}
+  </div>
+</div>

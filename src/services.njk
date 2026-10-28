@@ -1,0 +1,22 @@
+---
+layout: page.njk
+title: Services
+lede: As well as appointments for illness, we offer these services.
+---
+{% for service in practice.services %}
+<h2 class="nhsuk-heading-m">{{ service.name }}</h2>
+<p>{{ service.description }}</p>
+{% endfor %}
+
+{% set extraPages = [] %}
+{% for slug in practicePages %}{% if slug != "privacy-notice" %}{% set extraPages = (extraPages.push(slug), extraPages) %}{% endif %}{% endfor %}
+{% if extraPages.length %}
+<h2>More information</h2>
+<ul>
+  {% for slug in extraPages %}
+    {% set linkText = slug %}
+    {% for item in collections.all %}{% if item.url == "/" ~ slug ~ "/" %}{% set linkText = item.data.title %}{% endif %}{% endfor %}
+    <li><a href="/{{ slug }}/">{{ linkText }}</a></li>
+  {% endfor %}
+</ul>
+{% endif %}

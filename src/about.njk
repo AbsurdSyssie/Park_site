@@ -1,0 +1,41 @@
+---
+layout: page.njk
+title: About us
+---
+{% set p = practice.practice %}
+{% if p.description %}<p>{{ p.description }}</p>{% endif %}
+{% if p.pcn %}<p>We are part of {{ p.pcn }}{% if p.icb %}, and our services are commissioned by {{ p.icb }}{% endif %}.</p>{% endif %}
+
+{% if practice.urgent.nation == "england" and practice.cqc %}
+<h2>Our CQC rating</h2>
+<p>The Care Quality Commission (CQC) inspects GP practices in England.</p>
+{% if practice.cqc.embed_html %}
+  <div class="app-embed" data-embed="cqc">{{ practice.cqc.embed_html | safe }}</div>
+{% endif %}
+{% if practice.cqc.location_id %}
+  <p><a href="https://www.cqc.org.uk/location/{{ practice.cqc.location_id }}">See our latest CQC inspection report</a></p>
+{% endif %}
+{% elif practice.urgent.nation == "wales" %}
+<h2>Inspections</h2>
+<p>Healthcare Inspectorate Wales (HIW) inspects GP practices in Wales. You can find reports on the <a href="https://www.hiw.org.uk/">HIW website</a>.</p>
+{% endif %}
+
+{% if practice.ppg %}
+<h2>Patient Participation Group</h2>
+<p>{{ practice.ppg.text }}</p>
+{% if practice.ppg.contact %}<p>{{ practice.ppg.contact }}</p>{% endif %}
+{% endif %}
+
+{% if practice.gp_earnings %}
+{% set e = practice.gp_earnings %}
+<h2>GP earnings</h2>
+<p>All GP practices are required to declare the mean earnings (average pay) for GPs working to deliver NHS services to patients at each practice.</p>
+<p>The average pay for GPs working in {{ p.name }} in the last financial year ({{ e.financial_year }}) was {{ e.mean_earnings | money }} before tax and National Insurance. This is for {{ e.full_time_gps }} full time {{ "GP" if e.full_time_gps == 1 else "GPs" }}, {{ e.part_time_gps }} part time {{ "GP" if e.part_time_gps == 1 else "GPs" }} and {{ e.locum_gps }} locum {{ "GP" if e.locum_gps == 1 else "GPs" }} who worked in the practice for more than 6 months.</p>
+{% endif %}
+
+<h2>Our policies</h2>
+<ul>
+  <li><a href="/complaints/">Complaints</a></li>
+  <li><a href="/privacy-notice/">Privacy notice</a></li>
+  <li><a href="/accessibility-statement/">Accessibility statement</a></li>
+</ul>
