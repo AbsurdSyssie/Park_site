@@ -1,5 +1,7 @@
-// Builds the real site from the demo practice and a Wales test practice, then
-// checks the output. These tests protect the clinical safety controls described
+// Builds the site from the practice's own details in practice/, the frozen
+// demo practice and a Wales test practice, then checks the output. Tests that
+// use "site" must pass for any valid practice, because practices run them on
+// their own copy before publishing. These tests protect the clinical safety controls described
 // in docs/clinical-safety/hazard-log.md.
 
 import { test, before, after } from "node:test";
@@ -32,6 +34,7 @@ function htmlFiles(dir) {
 
 const read = (dir, file) => fs.readFileSync(path.join(dir, file), "utf8");
 
+let site;
 let demo;
 let wales;
 
@@ -39,7 +42,8 @@ before(async () => {
   const warn = console.warn;
   console.warn = () => {};
   try {
-    demo = await build("practice", "demo");
+    site = await build("practice", "site");
+    demo = await build("tests/fixtures/demo-practice", "demo");
     wales = await build("tests/fixtures/wales-practice", "wales");
   } finally {
     console.warn = warn;
@@ -49,7 +53,7 @@ before(async () => {
 after(() => fs.rmSync(tmp, { recursive: true, force: true }));
 
 test("every page shows 999 and 111 urgent help (hazard H1)", () => {
-  for (const dir of [demo, wales]) {
+  for (const dir of [site, demo, wales]) {
     const files = htmlFiles(dir);
     assert.ok(files.length > 10);
     for (const file of files) {
@@ -87,7 +91,7 @@ test("all standard pages are built", () => {
     "privacy-notice/index.html",
     "404.html",
   ]) {
-    assert.ok(fs.existsSync(path.join(demo, page)), `${page} was not built`);
+    assert.ok(fs.existsSync(path.join(site, page)), `${page} was not built`);
   }
 });
 
@@ -99,12 +103,12 @@ test("NHS.UK frontend assets are copied", () => {
     "assets/practice.css",
     "assets/images/favicon.svg",
   ]) {
-    assert.ok(fs.existsSync(path.join(demo, asset)), `${asset} is missing`);
+    assert.ok(fs.existsSync(path.join(site, asset)), `${asset} is missing`);
   }
 });
 
 test("NHS.UK frontend macros render as HTML, not escaped text", () => {
-  const html = read(demo, "index.html");
+  const html = read(site, "index.html");
   assert.match(html, /<header class="nhsuk-header/);
   assert.doesNotMatch(html, /&lt;div class=/);
 });

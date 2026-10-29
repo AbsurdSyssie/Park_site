@@ -3,3 +3,6 @@ node_modules/
 package-lock.json
 # Nunjucks templates are not supported by Prettier.
 *.njk
+# The practice's own details are checked by "npm run check", not by
+# formatting rules, so a practice's site never fails to publish over spacing.
+practice/
