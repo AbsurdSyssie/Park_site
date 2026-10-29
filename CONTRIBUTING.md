@@ -18,7 +18,7 @@ reuse lint
 
 All of these run in CI and must pass. The `s/` scripts wrap the common ones; see [s/README.md](s/README.md).
 
-- New source files carry a two-line SPDX header (`SPDX-FileCopyrightText` and `SPDX-License-Identifier: MIT`). Markdown and data files are covered by `REUSE.toml`.
+- New source files start with the same two-line SPDX copyright and licence header as the existing ones (copy it from `lib/practice.js`). Markdown and data files are covered by `REUSE.toml`.
 - Use conventional commit messages (`feat:`, `fix:`, `docs:`, `test:`, `ci:`, `chore(deps):`).
 - Tests must pass for any valid practice. Put demo-specific assertions against `tests/fixtures/demo-practice/`, not `practice/`, because practices run the tests on their own copy before their site publishes.
 
