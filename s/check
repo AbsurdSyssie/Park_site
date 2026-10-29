@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+# SPDX-FileCopyrightText: 2026 Marcus Baw
+# SPDX-License-Identifier: MIT
+#
+# Checks the practice's details in practice/ and lists any problems in plain
+# English. Set PRACTICE_DIR to check another folder, for example
+# PRACTICE_DIR=tests/fixtures/wales-practice s/check
+#
+# One-off setup: Node.js 24 (see .nvmrc), then `npm ci`.
+
+set -euo pipefail
+cd "$(git rev-parse --show-toplevel)"
+
+if [ ! -d node_modules ]; then
+  echo "Dependencies are not installed. Run: npm ci" >&2
+  exit 1
+fi
+
+exec npm run check -- "$@"

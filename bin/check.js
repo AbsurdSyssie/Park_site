@@ -1,4 +1,8 @@
 #!/usr/bin/env node
+
+// SPDX-FileCopyrightText: 2026 Marcus Baw
+// SPDX-License-Identifier: MIT
+
 // Checks practice/practice.yaml and practice/pages/ for problems, in plain
 // English. Run with: npm run check
 

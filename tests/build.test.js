@@ -1,3 +1,6 @@
+// SPDX-FileCopyrightText: 2026 Marcus Baw
+// SPDX-License-Identifier: MIT
+
 // Builds the site from the practice's own details in practice/, the frozen
 // demo practice and a Wales test practice, then checks the output. Tests that
 // use "site" must pass for any valid practice, because practices run them on

@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+# SPDX-FileCopyrightText: 2026 Marcus Baw
+# SPDX-License-Identifier: MIT
+#
+# Serves the site at http://localhost:8080 with live reload while you edit
+# practice/practice.yaml or the templates. Use --port=8081 if 8080 is taken.
+#
+# One-off setup: Node.js 24 (see .nvmrc), then `npm ci`.
+
+set -euo pipefail
+cd "$(git rev-parse --show-toplevel)"
+
+if [ ! -d node_modules ]; then
+  echo "Dependencies are not installed. Run: npm ci" >&2
+  exit 1
+fi
+
+exec npm start -- "$@"

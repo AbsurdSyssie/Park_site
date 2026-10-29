@@ -1,4 +1,18 @@
+# SPDX-FileCopyrightText: 2026 Marcus Baw
+# SPDX-License-Identifier: MIT
+
 node_modules/
-_site/
+/_site
 *.zip
 .DS_Store
+
+# Disposable agent and browser-automation artefacts
+/.playwright-mcp
+/.playwright
+/playwright-report
+/blob-report
+/test-results
+/.claude/settings.local.json
+
+# Local-only private workspace
+/.private

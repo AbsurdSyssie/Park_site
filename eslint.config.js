@@ -1,3 +1,6 @@
+// SPDX-FileCopyrightText: 2026 Marcus Baw
+// SPDX-License-Identifier: MIT
+
 import js from "@eslint/js";
 import globals from "globals";
 

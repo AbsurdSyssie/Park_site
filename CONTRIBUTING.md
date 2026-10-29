@@ -4,15 +4,23 @@ Thank you for helping. This template is used by GP practices to tell patients ho
 
 ## Before you open a pull request
 
+You need Node.js 24 (see `.nvmrc`) and, for the licensing check, [reuse](https://reuse.software/).
+
 ```sh
 npm ci
 npm run lint
+npm run check
 npm test
 npm run build
 npm run lint:html
+reuse lint
 ```
 
-All of these run in CI and must pass.
+All of these run in CI and must pass. The `s/` scripts wrap the common ones; see [s/README.md](s/README.md).
+
+- New source files carry a two-line SPDX header (`SPDX-FileCopyrightText` and `SPDX-License-Identifier: MIT`). Markdown and data files are covered by `REUSE.toml`.
+- Use conventional commit messages (`feat:`, `fix:`, `docs:`, `test:`, `ci:`, `chore(deps):`).
+- Tests must pass for any valid practice. Put demo-specific assertions against `tests/fixtures/demo-practice/`, not `practice/`, because practices run the tests on their own copy before their site publishes.
 
 - Add tests for new functionality. Validation rules go in `tests/practice.test.js`; anything about the built pages goes in `tests/build.test.js`.
 - Keep practice-specific content in `practice/practice.yaml`, not in the templates.
