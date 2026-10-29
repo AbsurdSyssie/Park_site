@@ -28,3 +28,4 @@ Legend: [x] done, [~] in progress, [ ] not started
 - [ ] **R12 - Issue templates** written for practice staff (problem with my site, request a feature).
 - [ ] **R13 - Tested routes for other cloud assistants** that read `AGENTS.md`, such as OpenAI Codex and GitHub Copilot's coding agent.
 - [ ] **R14 - Social preview image** and a short screen recording of the setup flow for the README.
+- [ ] **R15 - Package the practice skill** as a downloadable zip on each release, for the claude.ai drag-and-drop route.
