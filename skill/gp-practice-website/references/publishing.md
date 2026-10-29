@@ -1,6 +1,6 @@
 # Publishing the website
 
-The built website is a folder of plain files (`_site`). Any static hosting service can publish it. Help the person choose one of these routes.
+The built website is a folder of plain files (`_site`). Any static hosting service can publish it. If you are working in the practice's own GitHub copy, use Route C. Otherwise, help the person choose one of these routes.
 
 Before any route, remind the person:
 
@@ -38,13 +38,7 @@ To update the site later, they create a new deployment in the same project and u
 
 ## Route C: GitHub Pages
 
-Good for: practices with someone comfortable using GitHub, or a PCN or ICB digital team supporting several practices. Updates can be made by editing the practice details file on github.com, and the site rebuilds itself.
-
-1. They need a GitHub account (ideally an organisation for the practice or PCN).
-2. They create a new repository from the template, or upload the project files to a new repository.
-3. In the repository settings, under Pages, they set the source to GitHub Actions.
-4. The "Publish to GitHub Pages" workflow builds and publishes the site whenever the main branch changes. The site appears at `https://<account>.github.io/<repository>/`.
-5. For a custom web address, set `site.custom_domain` in the practice details and add the domain in the repository's Pages settings.
+This is the recommended route for new sites, because updates need no uploads at all: the practice approves a change on GitHub and the site republishes itself. It needs the practice to have its own GitHub copy of the template. Follow `references/github-fork.md`.
 
 ## After publishing
 

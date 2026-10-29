@@ -37,7 +37,7 @@ practice:
 
 site:
   # The full web address of the site once it is live.
-  url: https://example.github.io/open-practice-website/
+  url: https://pacharanero.github.io/open-practice-website/
   # If you use your own domain name with GitHub Pages, put it here, for
   # example www.riverbendmedical.nhs.uk. Leave blank otherwise.
   custom_domain: ""
