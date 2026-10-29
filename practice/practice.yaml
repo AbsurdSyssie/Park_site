@@ -39,7 +39,7 @@ site:
   # The full web address of the site once it is live.
   url: https://pacharanero.github.io/open-gp-practice-website/
   # If you use your own domain name with GitHub Pages, put it here, for
-  # example www.fernmoormedical.nhs.uk. Leave blank otherwise.
+  # example www.your-practice.example. Leave blank otherwise.
   custom_domain: ""
   # Optional: your own logo, saved in practice/images/. Leave blank to use
   # the standard NHS logo with your practice name.
@@ -93,6 +93,8 @@ opening_hours:
     - { opens: "08:00", closes: "18:30" }
   saturday: closed
   sunday: closed
+  # Urgent help and "When we are closed" are added automatically. Use notes
+  # for details such as branch hours or extended access.
   notes:
     - The Millbrook branch surgery is open 8:30am to 12:30pm, Monday to Friday.
     - >-

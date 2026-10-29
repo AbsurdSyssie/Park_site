@@ -30,5 +30,6 @@ The file `practice/practice.yaml` has comments explaining the format. This page 
 
 - **Staff names:** some staff do not want their names online. Ask.
 - **Old website content:** it may be out of date. Treat it as a starting point, not as confirmed.
-- **NHS.UK profile content:** practices often forget to update it. Confirm opening times with the person.
+- **NHS.UK and CQC content:** profiles and older CQC reports can be out of date. Confirm opening times and other details with the person.
+- **Online consultation link:** copy it from the supplier or old site, never construct it from an ODS code or URL pattern. Ask the person to open it and confirm it is correct.
 - **Embed code:** must be pasted exactly as the supplier gave it. If the check says a domain is not trusted, ask the person to confirm with their supplier before adding it.

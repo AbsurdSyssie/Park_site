@@ -32,11 +32,13 @@ A GP website tells patients how to get help. Wrong information can delay care. T
 7. **The practice owns everything.** Any GitHub or hosting account must be in the practice's name, using a shared practice email address (for example a generic nhs.net mailbox), not a personal one and not yours. This is how the practice avoids losing its website again.
 8. **No placeholder text.** Never leave TODO, TBC or made-up example values. The check stops the build if it finds TODO or TBC, but it cannot spot a plausible guess, so do not make one.
 
+For testing or training, use an entirely fictional practice and Ofcom's fictional numbers (01632 960000 to 01632 960999). Never publish a real practice's name with invented details, even briefly.
+
 ## Step 1: Work out how you are working
 
 Run `git remote get-url origin` if you can.
 
-- **You are in the practice's own copy on GitHub** (the remote is `<their account>/<repository>` and not `pacharanero/open-gp-practice-website`). This is the recommended route, usually through Claude Code on the web. Read `references/github-fork.md` now; it changes how you preview and publish.
+- **You are in the practice's own copy on GitHub** (the remote is `<their account>/<repository>` and not `pacharanero/open-gp-practice-website`). This is the recommended route, usually through Claude Code on the web. Read `references/github-fork.md` now and follow its existing-copy checks before gathering details.
 - **You are in the template itself** (`pacharanero/open-gp-practice-website`). You cannot publish from here. Stop and help the person make their own copy first: follow "Making the practice's copy" in `references/github-fork.md`, then ask them to start a new session on their copy.
 - **You are in a chat with no copy of the template** (for example a claude.ai project with this skill). Download the template into your workspace with `git clone https://github.com/pacharanero/open-gp-practice-website`, or, if the person attached a zip of their practice project from an earlier session, use that. If you cannot download it, ask the person to download the zip from the template page and attach it. You will publish using `references/publishing.md`.
 
@@ -57,10 +59,11 @@ Tell the person what you will need, so they can start finding it:
 
 Then gather what you can yourself, and show it to them to confirm:
 
-1. **NHS.UK profile.** Search the web for the practice name and ODS code on nhs.uk (practices have a page at `https://www.nhs.uk/services/gp-surgery/...`). It usually has the address, phone number and opening times. The practice maintains it, but it can be out of date.
-2. **Old website.** Ask for their old web address. If the site is down, try the Internet Archive copy: fetch `https://web.archive.org/web/2026/<old address>`. Use it for the practice description, team, services, registration area and policies.
-3. If you cannot reach either website (cloud workspaces often have limited internet access), ask the person to paste the text they have instead.
-4. **Confirm.** Show the person a short summary of what you found, grouped as: contact details, opening times, team, services. Ask them to correct anything. Opening times and staff change often, so ask about them specifically.
+1. **NHS.UK profile.** Search nhs.uk by ODS code as well as practice name: a profile may use a building name. Check its contact details and opening times page as well as the main profile. The practice maintains it, but it can be out of date.
+2. **Old website.** Ask for their old web address. If the site is down, try the Internet Archive copy: fetch `https://web.archive.org/web/2026/<old address>`. Use it for the practice description, team, services, registration area and policies. If you cannot reach it, ask the person to open that address on their own computer, visit the archived pages and paste their text into the chat.
+3. **CQC (England).** The practice's location page on cqc.org.uk may help identify its location ID and contact details. Older inspection reports can have stale opening hours.
+4. If you cannot reach these sources, ask the person to paste the information they have instead.
+5. **Confirm.** Show the person a short summary of what you found, grouped as: contact details, opening times, team, services. Ask them to correct anything. Opening times and staff change often, so ask about them specifically. Copy the online consultation link from the supplier or old site, never construct it from a pattern or ODS code, and ask the person to open it and confirm it is correct.
 
 See `references/fields.md` for what each item means and where people can find it. **Done when** the person has confirmed every item you plan to use.
 
@@ -74,13 +77,13 @@ See `references/fields.md` for what each item means and where people can find it
 6. **Privacy notice:** put their real privacy notice in `practice/pages/privacy-notice.md`. Ask them to paste or attach it; most practices get it from their Data Protection Officer or ICB. Do not write one from scratch. If they cannot find it today, write a short holding page that says the full privacy notice is available from the practice on request, with the phone number, and tell them to ask their Data Protection Officer for the full version.
 7. Extra pages (for example travel vaccinations) can be added as Markdown files in `practice/pages/`. Only use wording the person gives you or links to nhs.uk.
 
-Only edit files in `practice/`. **Done when** no demo value (Fernmoor, Exampleton, 01632, example.com) remains anywhere in `practice/`.
+Only edit files in `practice/`. **Done when** no original demo values remain in practice data or page content. Ignore explanatory comments; for a fictional test practice, confirmed fictional values including 01632 numbers are appropriate.
 
 ## Step 4: Check
 
 Run `npm run check`. It lists every problem in plain English.
 
-For each problem, either fix it from information you already have, or ask the person. Do not guess to make the check pass. Repeat until there are no problems. Then run `npm test` and `npm run build`. Mention any warnings to the person. **Done when** the check reports no problems and the tests and build pass.
+For each problem, either fix it from information you already have, or ask the person. Do not guess to make the check pass. Repeat until there are no problems. Then run `npm test` and `npm run build`. Mention any warnings to the person. For a real practice, check `demo: false` explicitly: demo mode only produces a warning and prevents search indexing. **Done when** the check reports no problems and the tests and build pass.
 
 ## Step 5: Preview and sign-off
 

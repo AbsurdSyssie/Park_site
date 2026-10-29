@@ -91,7 +91,7 @@ Optional check: in the **Actions** tab, click **Publish to GitHub Pages** on the
 
 1. Go to <https://claude.ai/code> and sign in with your Claude account.
 2. When asked, connect your GitHub account and approve the request.
-3. If asked to install the Claude GitHub App, choose **Only select repositories** and pick your website copy. This lets the assistant suggest changes to your website and nothing else.
+3. Install the Claude GitHub App when prompted. Choose **Only select repositories** and pick your website copy. If it is already installed, check that it has access to your copy. This lets the assistant suggest changes to your website.
 
 ### Step 5: Ask the assistant to build your site
 
@@ -113,9 +113,11 @@ Optional check: in the **Actions** tab, click **Publish to GitHub Pages** on the
 
 If you see a red cross instead, click it, copy the error text, and paste it to the assistant.
 
+If no publishing run appears, enable workflows in **Actions**, then choose **Publish to GitHub Pages > Run workflow** and confirm **Run workflow**.
+
 ### Step 8: Point your web address at it and tell people
 
-- **Your own web address**, such as `www.yoursurgery.nhs.uk`: ask the assistant to help. For addresses ending in nhs.uk, your ICB's IT team usually needs to make a change, and the assistant will write the email for you.
+- **Your own web address**, such as `www.yoursurgery.nhs.uk`: ask the assistant to help. The [plain-English address guide](skill/gp-practice-website/references/domains.md) explains who to ask, the GitHub steps, an email you can send to your IT team and how to check the move worked. For an nhs.uk address, start by asking your ICB's IT team. The free address can be used while you arrange this.
 - **Update your NHS.UK profile** with the new web address, along with your Google Business Profile, social media and phone message.
 - **Tell your ICB and Primary Care Network** that your website is back.
 
@@ -168,7 +170,7 @@ The site is built with [Eleventy](https://www.11ty.dev/) and uses the NHS.UK fro
 
 The `Publish to GitHub Pages` workflow builds and publishes on every push to `main`, both here (the demo) and in each practice's copy.
 
-AI coding agents should start at [agent-instructions.md](agent-instructions.md). To contribute, see [CONTRIBUTING.md](CONTRIBUTING.md). Report security issues privately as described in [SECURITY.md](SECURITY.md).
+Feedback and contributions are welcome: please [open an issue](https://github.com/pacharanero/open-gp-practice-website/issues) or [submit a pull request](https://github.com/pacharanero/open-gp-practice-website/pulls). See [CONTRIBUTING.md](CONTRIBUTING.md) for guidance. AI coding agents should start at [agent-instructions.md](agent-instructions.md). Report security issues privately as described in [SECURITY.md](SECURITY.md).
 
 ## Licence
 
