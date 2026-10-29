@@ -10,7 +10,7 @@ A free, open source website template that lets a GP practice put a safe, NHS-sty
 
 **[See the demo site](https://pacharanero.github.io/open-gp-practice-website/)** for Fernmoor Medical Practice, which is entirely fictional.
 
-**Status: early release, October 2026.** The template works and is tested, but it has not yet been reviewed by a Clinical Safety Officer or tried end to end by a practice. See [SAFETY.md](SAFETY.md) and the [roadmap](ROADMAP.md).
+**Status: early release, October 2026.** The template works and is tested, and its hazard log has had an initial clinical safety review, but it has not yet been tried end to end by a practice. Every practice must satisfy itself that its site is correct and suitable before it goes live. See [SAFETY.md](SAFETY.md) and the [roadmap](ROADMAP.md).
 
 - [Why this exists](#why-this-exists)
 - [What it is, and what it is not](#what-it-is-and-what-it-is-not)

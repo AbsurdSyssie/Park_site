@@ -1,6 +1,6 @@
 # Hazard log (starter)
 
-This is a starter hazard log for the Open GP Practice Website template. It records the hazards the template is designed to control and how. It is not a completed DCB0129 safety case, and the risk ratings below have not yet been reviewed by a Clinical Safety Officer.
+This is a starter hazard log for the Open GP Practice Website template. It records the hazards the template is designed to control and how. It is not a completed DCB0129 safety case. The risk ratings below had an initial review by Marcus Baw in October 2026.
 
 A practice publishing a site made with this template is responsible for the accuracy of its own content. Practices and ICBs carrying out a DCB0160 assessment can use this log as a starting point.
 
@@ -21,6 +21,6 @@ Ratings use the DCB0129 risk matrix: severity (1 minor to 5 catastrophic) and li
 
 ## Open actions
 
-- Review ratings with a Clinical Safety Officer.
+- Re-review ratings when the template changes in a way that affects a hazard or control.
 - Add automated accessibility testing (for example axe) to CI.
 - Consider a Content Security Policy generated from the trusted embed domains.

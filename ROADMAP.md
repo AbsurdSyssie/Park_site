@@ -12,7 +12,7 @@ Legend: [x] done, [~] in progress, [ ] not started
 ## Now: rescue release
 
 - [x] **R1 - Initial template**: Eleventy on NHS.UK frontend, 17 pages, one practice details file, build-time validation, England and Wales, fictional demo, tests, CI, GitHub Pages publishing, practice skill and starter hazard log.
-- [ ] **R2 - Clinical Safety Officer review** of the hazard log ratings, and completion of the medical-device applicability record in [SAFETY.md](SAFETY.md).
+- [~] **R2 - Clinical safety review**: initial review of the hazard log ratings done (October 2026); completion of the medical-device applicability record in [SAFETY.md](SAFETY.md) outstanding.
 - [ ] **R3 - Publish the repository and demo**: make `pacharanero/open-gp-practice-website` public, set Pages source to GitHub Actions, enable private vulnerability reporting, add the repo description and topics, and confirm the demo at <https://pacharanero.github.io/open-gp-practice-website/>.
 - [ ] **R4 - Forward-test the fork route** end to end with someone non-technical: new GitHub account, fork, enable Actions and Pages, Claude Code on the web, first publish. Fix every step that confuses them.
 - [ ] **R5 - Pull request safety in forks**: when a cloud assistant opens a pull request from a practice's fork, GitHub may default the target to the upstream template. Confirm what Claude Code on the web does, and if needed add a check or instruction so practice data is never proposed to the upstream repository.

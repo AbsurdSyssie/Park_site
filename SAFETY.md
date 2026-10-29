@@ -25,7 +25,8 @@ Open GP Practice Website produces an information website for a GP practice: how 
 
 - Starter [hazard log](docs/clinical-safety/hazard-log.md) with hazards H1 to H10 and their controls.
 - Safety controls are enforced by the build (the site will not build with missing or invalid key information) and by automated tests that cite the hazard they protect.
-- **Not yet reviewed by a Clinical Safety Officer.** Ratings are provisional.
+- Initial review of the hazard log and ratings by Marcus Baw, October 2026.
+- **Each practice must satisfy itself, before going live, that its site is correct and suitable for its patients.** The sign-off checklist in the practice skill is the minimum; it does not replace the practice's own judgement or local DCB0160 process.
 - No DCB0129 safety case has been written. Whether DCB0129 applies to a free template that practices deploy themselves has not yet been assessed.
 
 ## Medical-device applicability
@@ -38,7 +39,7 @@ This record has not yet been completed. It must be completed and dated by a name
 - Next review date: not yet recorded.
 - Evidence considered: not yet recorded. Start from the MHRA guidance on [borderline products](https://www.gov.uk/guidance/borderline-products-how-to-tell-if-your-product-is-a-medical-device) and NHS England guidance on [DCB0129 and DCB0160 applicability](https://digital.nhs.uk/services/clinical-safety/applicability-of-dcb-0129-and-dcb-0160/step-by-step-guidance).
 - Conclusion: not yet recorded.
-- Actions and owner: complete this record (Marcus Baw); arrange Clinical Safety Officer review of the hazard log (roadmap R2).
+- Actions and owner: complete this record (Marcus Baw, roadmap R2).
 - Reassessment triggers: any feature that adds symptom content, triage, forms, patient data, or changes the urgent help section.
 
 ## Reporting a safety concern
