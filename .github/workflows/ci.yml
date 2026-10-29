@@ -1,19 +1,33 @@
+# SPDX-FileCopyrightText: 2026 Marcus Baw
+# SPDX-License-Identifier: MIT
+#
+# Checks every push to main and every pull request. The "site" job runs in
+# practices' own copies too; the licensing and workflow security jobs only
+# matter for the template itself, so they run in the upstream repository only.
+#
+# Action SHAs were verified against each action's latest release on
+# 2026-10-29 and carry the matching `# vX.Y.Z` comment per house style.
+
 name: CI
 
 on:
   push:
     branches: [main]
   pull_request:
+  workflow_dispatch:
 
 permissions:
   contents: read
 
 jobs:
-  check:
+  site:
+    name: Lint, check, test and build
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
         with:
           node-version-file: .nvmrc
           cache: npm
@@ -28,3 +42,29 @@ jobs:
         run: npm run build
       - name: Validate HTML
         run: npm run lint:html
+
+  reuse:
+    name: REUSE compliance
+    if: github.repository == 'pacharanero/open-practice-website'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: fsfe/reuse-action@676e2d560c9a403aa252096d99fcab3e1132b0f5 # v6.0.0
+
+  workflow-security:
+    name: GitHub Actions security
+    if: github.repository == 'pacharanero/open-practice-website'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: taiki-e/install-action@86f7a0ffb25f40114606501a311ebcfaf882ea32 # v2.88.0
+        with:
+          tool: zizmor@1.31.1
+          fallback: none
+      - run: zizmor --strict-collection .
+        env:
+          GH_TOKEN: ${{ github.token }}

@@ -42,7 +42,7 @@ When the site builds, `lib/practice.js` checks the practice details. The build s
 
 ## Development
 
-You need Node.js 22 (see `.nvmrc`).
+You need Node.js 24 (see `.nvmrc`).
 
 ```sh
 npm ci

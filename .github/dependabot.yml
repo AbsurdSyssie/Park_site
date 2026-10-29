@@ -1,13 +1,50 @@
+# SPDX-FileCopyrightText: 2026 Marcus Baw
+# SPDX-License-Identifier: MIT
+#
+# Keeps NHS.UK frontend, the build tools and the pinned Action SHAs current.
+# Dependabot is off by default in forks, so practices receive these updates
+# through GitHub's "Sync fork" button instead.
+
 version: 2
+
 updates:
-  - package-ecosystem: npm
-    directory: /
+  - package-ecosystem: "npm"
+    directory: "/"
     schedule:
-      interval: weekly
+      interval: "weekly"
+      day: "monday"
+    cooldown:
+      default-days: 7
+      semver-patch-days: 3
+      semver-minor-days: 7
+      semver-major-days: 14
     groups:
+      # NHS.UK frontend gets its own PR so design changes are reviewed alone.
       nhsuk-frontend:
-        patterns: ["nhsuk-frontend"]
-  - package-ecosystem: github-actions
-    directory: /
+        patterns:
+          - "nhsuk-frontend"
+      routine-minor-and-patch:
+        applies-to: version-updates
+        patterns:
+          - "*"
+        exclude-patterns:
+          - "nhsuk-frontend"
+        update-types:
+          - "minor"
+          - "patch"
+
+  - package-ecosystem: "github-actions"
+    directory: "/"
     schedule:
-      interval: weekly
+      interval: "weekly"
+      day: "monday"
+    cooldown:
+      default-days: 7
+    groups:
+      github-actions-minor-and-patch:
+        applies-to: version-updates
+        patterns:
+          - "*"
+        update-types:
+          - "minor"
+          - "patch"

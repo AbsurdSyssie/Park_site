@@ -1,5 +1,16 @@
-# Publishes the site to GitHub Pages whenever main changes.
-# In the repository settings, set Pages > Source to "GitHub Actions".
+# SPDX-FileCopyrightText: 2026 Marcus Baw
+# SPDX-License-Identifier: MIT
+#
+# Publishes the site to GitHub Pages whenever main changes. In the upstream
+# repository this publishes the fictional demo practice; in a practice's own
+# copy it publishes the practice's website.
+#
+# One-off setup in each repository: Settings > Pages > Source must be set to
+# "GitHub Actions". In a fork, Actions must also be switched on from the
+# Actions tab first.
+#
+# Action SHAs were verified against each action's latest release on
+# 2026-10-29 and carry the matching `# vX.Y.Z` comment per house style.
 
 name: Publish to GitHub Pages
 
@@ -10,8 +21,6 @@ on:
 
 permissions:
   contents: read
-  pages: write
-  id-token: write
 
 concurrency:
   group: pages
@@ -19,32 +28,43 @@ concurrency:
 
 jobs:
   build:
+    name: Check and build
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      # No npm cache here: this job produces what gets published.
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
         with:
           node-version-file: .nvmrc
-          cache: npm
+          package-manager-cache: false
       - run: npm ci
-      - run: npm test
+      - name: Check practice details
+        run: npm run check
+      - name: Tests
+        run: npm test
       - id: pages
-        uses: actions/configure-pages@v5
+        uses: actions/configure-pages@45bfe0192ca1faeb007ade9deae92b16b8254a0d # v6.0.0
       - name: Build
         # base_path is empty when a custom domain is used, or "/<repo>" otherwise.
         run: npm run build
         env:
           PATH_PREFIX: ${{ steps.pages.outputs.base_path }}/
-      - uses: actions/upload-pages-artifact@v3
+      - uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5.0.0
         with:
           path: _site
 
   deploy:
+    name: Publish
     needs: build
     runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@368f82528645a54fb793d4d04e342629a3f51346 # v5.0.1
