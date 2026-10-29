@@ -4,7 +4,7 @@ This is the recommended route. The practice has its own GitHub account and its o
 
 ## Making the practice's copy
 
-The step-by-step clicks are in the template README, under "Set up your practice's website", steps 1 to 4: https://github.com/pacharanero/open-practice-website#set-up-your-practices-website
+The step-by-step clicks are in the template README, under "Set up your practice's website", steps 1 to 4: https://github.com/pacharanero/open-gp-practice-website#set-up-your-practices-website
 
 Walk the person through them one at a time and ask what they see after each. Check especially that:
 
@@ -17,7 +17,7 @@ Walk the person through them one at a time and ask what they see after each. Che
 
 1. Commit your changes with a short plain-English message, for example "Add Riverbend opening times and contact details". Only `practice/` files should have changed; if anything else has, undo it.
 2. Push your branch to the practice's copy.
-3. Open a pull request (a proposed change) **into the practice's own copy**. The target must be `<their account>/<their repository>`, branch `main`. Never open a pull request, issue or comment on `pacharanero/open-practice-website` that contains practice details. If your tools default to the template, change the target, or ask the person to check that the page they see says their own account name on both sides.
+3. Open a pull request (a proposed change) **into the practice's own copy**. The target must be `<their account>/<their repository>`, branch `main`. Never open a pull request, issue or comment on `pacharanero/open-gp-practice-website` that contains practice details. If your tools default to the template, change the target, or ask the person to check that the page they see says their own account name on both sides.
 4. Ask the person to open the pull request, read your summary, and click **Merge pull request**, then **Confirm merge**. Merging is the moment the site is published, so only ask after sign-off (Step 5 of the skill).
 5. Publishing takes two or three minutes. Ask the person to open the **Actions** tab of their copy and tell you whether "Publish to GitHub Pages" has a green tick.
    - Green tick: the site is live at `https://<account>.github.io/<repository>/`. Ask them to open it on their phone.
@@ -34,7 +34,7 @@ Their site works at the github.io address straight away. For their own address (
 
 ## Taking template updates
 
-When the template improves (for example a new version of the NHS design), the practice's copy shows "This branch is X commits behind pacharanero/open-practice-website:main".
+When the template improves (for example a new version of the NHS design), the practice's copy shows "This branch is X commits behind pacharanero/open-gp-practice-website:main".
 
 1. Ask them to click **Sync fork**, then **Update branch**. This publishes the update automatically.
 2. If GitHub says there are conflicts, ask them not to discard anything. Tell them to report it on the template's issues page, without including any practice details beyond the practice name.

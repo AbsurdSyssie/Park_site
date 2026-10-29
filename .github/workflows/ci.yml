@@ -45,7 +45,7 @@ jobs:
 
   reuse:
     name: REUSE compliance
-    if: github.repository == 'pacharanero/open-practice-website'
+    if: github.repository == 'pacharanero/open-gp-practice-website'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
@@ -55,7 +55,7 @@ jobs:
 
   workflow-security:
     name: GitHub Actions security
-    if: github.repository == 'pacharanero/open-practice-website'
+    if: github.repository == 'pacharanero/open-gp-practice-website'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1

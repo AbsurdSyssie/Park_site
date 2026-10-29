@@ -2,7 +2,7 @@
 
 ## What the template does
 
-Open Practice Website produces an information website for a GP practice: how to contact the practice, opening times, how to book or request care online, prescriptions, test results, registration, the team, services, and the policies practices are expected to publish. Every page tells patients to call 999 in an emergency and 111 for urgent help when the practice is closed.
+Open GP Practice Website produces an information website for a GP practice: how to contact the practice, opening times, how to book or request care online, prescriptions, test results, registration, the team, services, and the policies practices are expected to publish. Every page tells patients to call 999 in an emergency and 111 for urgent help when the practice is closed.
 
 ## What it does not do
 

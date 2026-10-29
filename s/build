@@ -3,7 +3,7 @@
 # SPDX-License-Identifier: MIT
 #
 # Builds the website into _site/. Set PATH_PREFIX when publishing in a sub
-# folder, for example PATH_PREFIX=/open-practice-website/ s/build
+# folder, for example PATH_PREFIX=/open-gp-practice-website/ s/build
 #
 # One-off setup: Node.js 24 (see .nvmrc), then `npm ci`.
 

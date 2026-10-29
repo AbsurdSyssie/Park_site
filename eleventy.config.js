@@ -67,7 +67,7 @@ export default function (eleventyConfig) {
   eleventyConfig.addWatchTarget(practiceDir);
 
   // Lets the same build work at a domain root or in a sub folder, such as
-  // https://pacharanero.github.io/open-practice-website/
+  // https://pacharanero.github.io/open-gp-practice-website/
   eleventyConfig.addPlugin(HtmlBasePlugin);
 
   return {

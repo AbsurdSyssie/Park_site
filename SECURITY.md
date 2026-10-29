@@ -4,7 +4,7 @@
 
 Do not report suspected vulnerabilities through public issues.
 
-Report them privately through [GitHub's private vulnerability reporting](https://github.com/pacharanero/open-practice-website/security/advisories/new) for this repository.
+Report them privately through [GitHub's private vulnerability reporting](https://github.com/pacharanero/open-gp-practice-website/security/advisories/new) for this repository.
 
 Include a description of the issue and its impact, the affected commit, safe reproduction steps, and any suggested fix. Do not include credentials or any patient-identifiable information.
 

@@ -1,6 +1,6 @@
 # Hazard log (starter)
 
-This is a starter hazard log for the Open Practice Website template. It records the hazards the template is designed to control and how. It is not a completed DCB0129 safety case, and the risk ratings below have not yet been reviewed by a Clinical Safety Officer.
+This is a starter hazard log for the Open GP Practice Website template. It records the hazards the template is designed to control and how. It is not a completed DCB0129 safety case, and the risk ratings below have not yet been reviewed by a Clinical Safety Officer.
 
 A practice publishing a site made with this template is responsible for the accuracy of its own content. Practices and ICBs carrying out a DCB0160 assessment can use this log as a starting point.
 

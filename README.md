@@ -1,14 +1,14 @@
-# Open Practice Website
+# Open GP Practice Website
 
 A free, open source website template that lets a GP practice put a safe, NHS-style website online in an afternoon, with an AI assistant doing the technical work.
 
-[![CI](https://github.com/pacharanero/open-practice-website/actions/workflows/ci.yml/badge.svg)](https://github.com/pacharanero/open-practice-website/actions/workflows/ci.yml)
+[![CI](https://github.com/pacharanero/open-gp-practice-website/actions/workflows/ci.yml/badge.svg)](https://github.com/pacharanero/open-gp-practice-website/actions/workflows/ci.yml)
 [![Code licence: MIT](https://img.shields.io/badge/code-MIT-blue.svg)](LICENSE)
 [![Content licence: CC BY-SA 4.0](https://img.shields.io/badge/content-CC%20BY--SA%204.0-blue.svg)](LICENSES/CC-BY-SA-4.0.txt)
 
 ![The demo website for the fictional Riverbend Medical Practice, shown on a desktop screen and a phone. It uses the familiar NHS blue header and shows the practice name, a notice about vaccination clinics and upcoming closures.](docs/img/demo-desktop-and-phone.png)
 
-**[See the demo site](https://pacharanero.github.io/open-practice-website/)** for Riverbend Medical Practice, which is entirely fictional.
+**[See the demo site](https://pacharanero.github.io/open-gp-practice-website/)** for Riverbend Medical Practice, which is entirely fictional.
 
 **Status: early release, October 2026.** The template works and is tested, but it has not yet been reviewed by a Clinical Safety Officer or tried end to end by a practice. See [SAFETY.md](SAFETY.md) and the [roadmap](ROADMAP.md).
 
@@ -26,7 +26,7 @@ In October 2026, GP practices in England and Wales began losing their websites a
 
 A GP practice website is mostly simple information that changes a few times a year: how to contact the practice, when it is open, how to request an appointment or a prescription, and the policies practices are expected to publish. That should not depend on a single company staying in business.
 
-Open Practice Website is a rescue package and a long-term alternative:
+Open GP Practice Website is a rescue package and a long-term alternative:
 
 - **Free.** The template is free, and the website is hosted for free on GitHub Pages.
 - **Owned by the practice.** Each practice has its own copy, in its own account. If this project stopped tomorrow, every practice's website would keep working.
@@ -73,7 +73,7 @@ GitHub is a free service where your website's files will be kept and published.
 
 ### Step 2: Make your own copy of this template
 
-1. While signed in, go to <https://github.com/pacharanero/open-practice-website>.
+1. While signed in, go to <https://github.com/pacharanero/open-gp-practice-website>.
 2. Click the **Fork** button near the top right. (A "fork" is GitHub's word for your own copy.)
 3. Under **Repository name**, type a name for your website, for example `riverbend-surgery-website`.
 4. Click **Create fork**. After a few seconds you will see your own copy, with your username at the top left.
@@ -96,7 +96,7 @@ Optional check: in the **Actions** tab, click **Publish to GitHub Pages** on the
 ### Step 5: Ask the assistant to build your site
 
 1. Open [this link to start a session with the request already written](https://claude.ai/code?prompt=I%20work%20at%20a%20GP%20practice%20and%20want%20to%20set%20up%20%28or%20update%29%20our%20practice%20website%20from%20this%20template.%20Please%20follow%20skill/gp-practice-website/SKILL.md%20and%20guide%20me%20step%20by%20step%20in%20plain%20English.), or go to <https://claude.ai/code> and type: _I work at a GP practice and want to set up our practice website from this template. Please follow skill/gp-practice-website/SKILL.md and guide me step by step in plain English._
-2. Below the message box, click the repository selector and choose **your copy** (with your username), not `pacharanero/open-practice-website`.
+2. Below the message box, click the repository selector and choose **your copy** (with your username), not `pacharanero/open-gp-practice-website`.
 3. Press Enter. The assistant will ask you questions, a few at a time. Answer them, and correct anything it gets wrong.
 
 ### Step 6: Check and approve your site
@@ -127,7 +127,7 @@ There is a second route: the [practice skill](skill/gp-practice-website/SKILL.md
 
 Start a new session at <https://claude.ai/code> on your copy, and say what you want in plain English, for example _"Change our Christmas opening hours"_ or _"Dr Patel has left and Dr Okafor has joined"_. The assistant will make the change, show you, and prepare it for you to approve and merge as in step 6.
 
-When this template is improved, your copy will say it is behind `pacharanero/open-practice-website`. Click **Sync fork**, then **Update branch**, and your site will republish with the improvements.
+When this template is improved, your copy will say it is behind `pacharanero/open-gp-practice-website`. Click **Sync fork**, then **Update branch**, and your site will republish with the improvements.
 
 ## For ICBs, PCNs and digital teams
 

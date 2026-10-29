@@ -1,15 +1,15 @@
 ---
 name: gp-practice-website
-description: Use when someone from a GP practice (a GP, practice manager or admin team member) wants to create, update or publish their practice website using the free Open Practice Website template, including getting a site back online quickly after their website supplier stopped working. Guides a non-technical person through every step.
+description: Use when someone from a GP practice (a GP, practice manager or admin team member) wants to create, update or publish their practice website using the free Open GP Practice Website template, including getting a site back online quickly after their website supplier stopped working. Guides a non-technical person through every step.
 ---
 
 # GP practice website
 
-You are helping someone at a GP surgery get a simple, safe, accessible website online, using the free Open Practice Website template. They are probably not technical. They may be stressed: often their old website has just disappeared and patients cannot find how to contact them.
+You are helping someone at a GP surgery get a simple, safe, accessible website online, using the free Open GP Practice Website template. They are probably not technical. They may be stressed: often their old website has just disappeared and patients cannot find how to contact them.
 
 You do all of the technical work. The person answers questions, checks what you show them, and clicks through a few screens.
 
-Template source: https://github.com/pacharanero/open-practice-website
+Template source: https://github.com/pacharanero/open-gp-practice-website
 
 ## How to talk to the person
 
@@ -36,9 +36,9 @@ A GP website tells patients how to get help. Wrong information can delay care. T
 
 Run `git remote get-url origin` if you can.
 
-- **You are in the practice's own copy on GitHub** (the remote is `<their account>/<repository>` and not `pacharanero/open-practice-website`). This is the recommended route, usually through Claude Code on the web. Read `references/github-fork.md` now; it changes how you preview and publish.
-- **You are in the template itself** (`pacharanero/open-practice-website`). You cannot publish from here. Stop and help the person make their own copy first: follow "Making the practice's copy" in `references/github-fork.md`, then ask them to start a new session on their copy.
-- **You are in a chat with no copy of the template** (for example a claude.ai project with this skill). Download the template into your workspace with `git clone https://github.com/pacharanero/open-practice-website`, or, if the person attached a zip of their practice project from an earlier session, use that. If you cannot download it, ask the person to download the zip from the template page and attach it. You will publish using `references/publishing.md`.
+- **You are in the practice's own copy on GitHub** (the remote is `<their account>/<repository>` and not `pacharanero/open-gp-practice-website`). This is the recommended route, usually through Claude Code on the web. Read `references/github-fork.md` now; it changes how you preview and publish.
+- **You are in the template itself** (`pacharanero/open-gp-practice-website`). You cannot publish from here. Stop and help the person make their own copy first: follow "Making the practice's copy" in `references/github-fork.md`, then ask them to start a new session on their copy.
+- **You are in a chat with no copy of the template** (for example a claude.ai project with this skill). Download the template into your workspace with `git clone https://github.com/pacharanero/open-gp-practice-website`, or, if the person attached a zip of their practice project from an earlier session, use that. If you cannot download it, ask the person to download the zip from the template page and attach it. You will publish using `references/publishing.md`.
 
 Then run `npm ci` and `npm test`. **Done when** the tests pass. If they fail before you have changed anything, tell the person and suggest they report it on the template's issues page.
 
@@ -127,5 +127,5 @@ When someone comes back to change their site (for example new opening hours or a
 
 ## If something goes wrong
 
-- If the check or build fails in a way you cannot fix from the practice details, do not edit the template to get around it. Tell the person, and suggest they report it on the template's issues page: https://github.com/pacharanero/open-practice-website/issues
+- If the check or build fails in a way you cannot fix from the practice details, do not edit the template to get around it. Tell the person, and suggest they report it on the template's issues page: https://github.com/pacharanero/open-gp-practice-website/issues
 - If the person asks for something the template cannot do safely (such as a contact form, or removing the urgent help section), explain why in one or two sentences and offer the safe alternative.

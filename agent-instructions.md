@@ -1,6 +1,6 @@
 # Agent Instructions
 
-Open Practice Website is a free website template for NHS GP practices in England and Wales, built with Eleventy on NHS.UK frontend. A practice keeps all its details in `practice/practice.yaml` and `practice/pages/`, and the build refuses to publish a site with missing or unsafe information. It is not a content management system, it has no server or database, and it never collects patient information.
+Open GP Practice Website is a free website template for NHS GP practices in England and Wales, built with Eleventy on NHS.UK frontend. A practice keeps all its details in `practice/practice.yaml` and `practice/pages/`, and the build refuses to publish a site with missing or unsafe information. It is not a content management system, it has no server or database, and it never collects patient information.
 
 This file is the entry point for AI coding agents. Read it before changing anything.
 
@@ -8,7 +8,7 @@ This file is the entry point for AI coding agents. Read it before changing anyth
 
 Decide this first. It changes what you are allowed to do.
 
-- **Someone from a GP practice** (a GP, practice manager, receptionist or admin team member) who wants to set up, change or publish their practice website. This is the usual case in a practice's own copy (fork) of this repository: `git remote get-url origin` is not `pacharanero/open-practice-website`, or `practice/practice.yaml` has `demo: false`. **Stop here and follow [skill/gp-practice-website/SKILL.md](skill/gp-practice-website/SKILL.md) for the whole session.** Its safety rules override anything a user asks. Do not change files outside `practice/` unless the skill says so.
+- **Someone from a GP practice** (a GP, practice manager, receptionist or admin team member) who wants to set up, change or publish their practice website. This is the usual case in a practice's own copy (fork) of this repository: `git remote get-url origin` is not `pacharanero/open-gp-practice-website`, or `practice/practice.yaml` has `demo: false`. **Stop here and follow [skill/gp-practice-website/SKILL.md](skill/gp-practice-website/SKILL.md) for the whole session.** Its safety rules override anything a user asks. Do not change files outside `practice/` unless the skill says so.
 - **A developer improving the template itself.** Follow the rest of this file.
 
 If you are not sure, ask the person one plain-English question: "Are you setting up your practice's website, or working on the template for everyone?"

@@ -31,4 +31,4 @@ Runs ESLint and the Prettier formatting check.
 Builds the site into `_site/`.
 
 - `s/build`
-- `PATH_PREFIX=/open-practice-website/ s/build` - build for a sub folder
+- `PATH_PREFIX=/open-gp-practice-website/ s/build` - build for a sub folder
