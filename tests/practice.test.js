@@ -12,7 +12,7 @@ import {
 } from "../lib/practice.js";
 
 const TODAY = new Date("2026-10-28T12:00:00Z");
-// A frozen copy of the Riverbend demo, so these tests keep passing after a
+// A frozen copy of the Fernmoor demo, so these tests keep passing after a
 // practice replaces the details in practice/ with its own.
 const DEMO = "tests/fixtures/demo-practice";
 const demoData = () => structuredClone(readPracticeFile(DEMO));
@@ -55,7 +55,7 @@ test("a phone number that is not a UK number is an error", () => {
 
 test("an ODS code in the wrong format is an error", () => {
   const data = demoData();
-  data.practice.ods_code = "riverbend";
+  data.practice.ods_code = "fernmoor";
   assert.ok(fields(check(data).errors).includes("practice.ods_code"));
 });
 

@@ -1,13 +1,13 @@
 ---
 title: Privacy notice
-description: How Riverbend Medical Practice uses your personal information.
+description: How Fernmoor Medical Practice uses your personal information.
 ---
 
 **This is an example privacy notice for a fictional practice. A real practice must replace it with its own privacy notice, usually provided by its Data Protection Officer or ICB.**
 
 ## Who we are
 
-Riverbend Medical Practice is the data controller for the information we hold about you. This means we decide how your information is used and are responsible for keeping it safe.
+Fernmoor Medical Practice is the data controller for the information we hold about you. This means we decide how your information is used and are responsible for keeping it safe.
 
 ## What information we hold
 

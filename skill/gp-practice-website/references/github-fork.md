@@ -10,12 +10,12 @@ Walk the person through them one at a time and ask what they see after each. Che
 
 - the GitHub account uses a shared practice email address, not a personal one (safety rule 7)
 - they turned on two-factor authentication and saved the recovery codes with the practice's other important passwords
-- they renamed their copy to something like `riverbend-surgery-website`
+- they renamed their copy to something like `fernmoor-surgery-website`
 - they switched on Actions in their copy, and set Settings > Pages > Source to "GitHub Actions"
 
 ## Publishing
 
-1. Commit your changes with a short plain-English message, for example "Add Riverbend opening times and contact details". Only `practice/` files should have changed; if anything else has, undo it.
+1. Commit your changes with a short plain-English message, for example "Add Fernmoor opening times and contact details". Only `practice/` files should have changed; if anything else has, undo it.
 2. Push your branch to the practice's copy.
 3. Open a pull request (a proposed change) **into the practice's own copy**. The target must be `<their account>/<their repository>`, branch `main`. Never open a pull request, issue or comment on `pacharanero/open-gp-practice-website` that contains practice details. If your tools default to the template, change the target, or ask the person to check that the page they see says their own account name on both sides.
 4. Ask the person to open the pull request, read your summary, and click **Merge pull request**, then **Confirm merge**. Merging is the moment the site is published, so only ask after sign-off (Step 5 of the skill).
@@ -25,7 +25,7 @@ Walk the person through them one at a time and ask what they see after each. Che
 
 ## Their own web address
 
-Their site works at the github.io address straight away. For their own address (for example `www.riverbendsurgery.nhs.uk`):
+Their site works at the github.io address straight away. For their own address (for example `www.fernmoorsurgery.nhs.uk`):
 
 1. Set `site.custom_domain` and `site.url` in `practice/practice.yaml`, and publish.
 2. Ask them to go to Settings > Pages > Custom domain in their copy, type the address and click Save. GitHub then shows whether the address is pointing at it yet.

@@ -6,9 +6,9 @@ A free, open source website template that lets a GP practice put a safe, NHS-sty
 [![Code licence: MIT](https://img.shields.io/badge/code-MIT-blue.svg)](LICENSE)
 [![Content licence: CC BY-SA 4.0](https://img.shields.io/badge/content-CC%20BY--SA%204.0-blue.svg)](LICENSES/CC-BY-SA-4.0.txt)
 
-![The demo website for the fictional Riverbend Medical Practice, shown on a desktop screen and a phone. It uses the familiar NHS blue header and shows the practice name, a notice about vaccination clinics and upcoming closures.](docs/img/demo-desktop-and-phone.png)
+![The demo website for the fictional Fernmoor Medical Practice, shown on a desktop screen and a phone. It uses the familiar NHS blue header and shows the practice name, a notice about vaccination clinics and upcoming closures.](docs/img/demo-desktop-and-phone.png)
 
-**[See the demo site](https://pacharanero.github.io/open-gp-practice-website/)** for Riverbend Medical Practice, which is entirely fictional.
+**[See the demo site](https://pacharanero.github.io/open-gp-practice-website/)** for Fernmoor Medical Practice, which is entirely fictional.
 
 **Status: early release, October 2026.** The template works and is tested, but it has not yet been reviewed by a Clinical Safety Officer or tried end to end by a practice. See [SAFETY.md](SAFETY.md) and the [roadmap](ROADMAP.md).
 
@@ -67,7 +67,7 @@ These steps are written for practice staff. You do not need any technical knowle
 GitHub is a free service where your website's files will be kept and published.
 
 1. Go to <https://github.com/signup>.
-2. Sign up with your **shared practice email address**. Choose a username that identifies the practice, for example `riverbend-surgery`. This will appear in your free web address.
+2. Sign up with your **shared practice email address**. Choose a username that identifies the practice, for example `fernmoor-surgery`. This will appear in your free web address.
 3. Confirm your email address when GitHub sends you a code.
 4. GitHub will ask you to turn on two-factor authentication (a second check when you sign in). Do this using an authenticator app, and keep the recovery codes with the practice's other important passwords.
 
@@ -75,7 +75,7 @@ GitHub is a free service where your website's files will be kept and published.
 
 1. While signed in, go to <https://github.com/pacharanero/open-gp-practice-website>.
 2. Click the **Fork** button near the top right. (A "fork" is GitHub's word for your own copy.)
-3. Under **Repository name**, type a name for your website, for example `riverbend-surgery-website`.
+3. Under **Repository name**, type a name for your website, for example `fernmoor-surgery-website`.
 4. Click **Create fork**. After a few seconds you will see your own copy, with your username at the top left.
 
 ### Step 3: Switch on publishing

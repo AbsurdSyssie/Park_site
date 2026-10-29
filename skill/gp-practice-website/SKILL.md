@@ -74,7 +74,7 @@ See `references/fields.md` for what each item means and where people can find it
 6. **Privacy notice:** put their real privacy notice in `practice/pages/privacy-notice.md`. Ask them to paste or attach it; most practices get it from their Data Protection Officer or ICB. Do not write one from scratch. If they cannot find it today, write a short holding page that says the full privacy notice is available from the practice on request, with the phone number, and tell them to ask their Data Protection Officer for the full version.
 7. Extra pages (for example travel vaccinations) can be added as Markdown files in `practice/pages/`. Only use wording the person gives you or links to nhs.uk.
 
-Only edit files in `practice/`. **Done when** no demo value (Riverbend, Exampleton, 01632, example.com) remains anywhere in `practice/`.
+Only edit files in `practice/`. **Done when** no demo value (Fernmoor, Exampleton, 01632, example.com) remains anywhere in `practice/`.
 
 ## Step 4: Check
 

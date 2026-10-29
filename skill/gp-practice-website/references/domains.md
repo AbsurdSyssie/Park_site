@@ -34,7 +34,7 @@ Fill in the parts in square brackets with real details. Do not send it with anyt
 >
 > - Type: [record type, for example CNAME]
 > - Name: [name, for example www]
-> - Value: [value, for example riverbend-medical.netlify.app]
+> - Value: [value, for example fernmoor-medical.netlify.app]
 >
 > The new website is already live at [free address] if you would like to check it first.
 >

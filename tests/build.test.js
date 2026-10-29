@@ -125,7 +125,7 @@ test("the demo site is labelled and hidden from search engines", () => {
 
 test("the online consultation link and phone number are on the appointments page", () => {
   const html = read(demo, "appointments/index.html");
-  assert.match(html, /href="https:\/\/example\.com\/riverbend-online-consultation"/);
+  assert.match(html, /href="https:\/\/example\.com\/fernmoor-online-consultation"/);
   assert.match(html, /href="tel:\+441632960000"/);
 });
 
@@ -159,7 +159,7 @@ test("extra Markdown pages are built and linked from the services page", () => {
 
 test("the accessibility statement names the practice and contact details", () => {
   const html = read(demo, "accessibility-statement/index.html");
-  assert.match(html, /applies to the Riverbend Medical Practice website/);
+  assert.match(html, /applies to the Fernmoor Medical Practice website/);
   assert.match(html, /01632\u00a0960000/);
 });
 

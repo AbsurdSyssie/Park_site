@@ -20,7 +20,7 @@
 demo: true
 
 practice:
-  name: Riverbend Medical Practice
+  name: Fernmoor Medical Practice
   # Optional second line for long names, and a short descriptor.
   name_split: ""
   descriptor: ""
@@ -30,16 +30,16 @@ practice:
   # regulator information shown on the site.
   nation: england
   description: >-
-    Riverbend Medical Practice is an NHS GP surgery caring for around 9,800
+    Fernmoor Medical Practice is an NHS GP surgery caring for around 9,800
     patients in Exampleton and the surrounding villages.
-  pcn: Riverbend and Millbrook Primary Care Network
+  pcn: Fernmoor and Millbrook Primary Care Network
   icb: NHS Exampleshire Integrated Care Board
 
 site:
   # The full web address of the site once it is live.
   url: https://pacharanero.github.io/open-gp-practice-website/
   # If you use your own domain name with GitHub Pages, put it here, for
-  # example www.riverbendmedical.nhs.uk. Leave blank otherwise.
+  # example www.fernmoormedical.nhs.uk. Leave blank otherwise.
   custom_domain: ""
   # Optional: your own logo, saved in practice/images/. Leave blank to use
   # the standard NHS logo with your practice name.
@@ -51,15 +51,15 @@ contact:
   phone: "01632 960000"
   phone_hours: 8am to 6:30pm, Monday to Friday
   # Optional. Leave blank if you do not want patients to email you.
-  email: reception@riverbend.example
+  email: reception@fernmoor.example
   email_note: >-
     Do not use email for urgent problems or to ask for medical advice. Use our
     online form or call us instead.
 
 sites:
-  - name: Riverbend Medical Practice (main surgery)
+  - name: Fernmoor Medical Practice (main surgery)
     address:
-      - 1 River Lane
+      - 1 Moor Lane
       - Exampleton
       - Exampleshire
     postcode: ZZ1 1AA
@@ -125,7 +125,7 @@ online_services:
     provider: Demo provider
     label: Contact us online
     # The link your provider gave you. It must start with https://
-    url: https://example.com/riverbend-online-consultation
+    url: https://example.com/fernmoor-online-consultation
     availability: 8am to 6:30pm, Monday to Friday
     # Optional: the embed code your provider gave you. Only paste code that
     # came from your provider. Code from unknown websites will stop the build.

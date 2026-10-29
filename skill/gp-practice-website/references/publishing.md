@@ -19,7 +19,7 @@ Good for: getting online fast, with no technical setup.
 3. In Netlify, they add a new site and choose the option to deploy manually, by dragging and dropping a folder.
 4. They drag the unzipped folder onto the page.
 5. Netlify gives the site a free address ending in `.netlify.app`. Ask them to send it to you, then check the site loads.
-6. In the site settings they can change the site name, so the address reads well (for example `riverbend-medical.netlify.app`).
+6. In the site settings they can change the site name, so the address reads well (for example `fernmoor-medical.netlify.app`).
 7. Put that address in `site.url` and rebuild, so the next upload has the right address.
 
 To update the site later, they open the site in Netlify, go to its deploys, and drag the new folder onto it.
