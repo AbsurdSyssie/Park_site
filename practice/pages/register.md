@@ -4,7 +4,7 @@ title: Register with us
 
 ## Join The Park Medical Centre
 
-[Register with The Park Medical Centre using the NHS registration service](https://gp-registration.nhs.uk/P84045)
+{{OFFICIAL_REGISTER_ACTION_LINK}}
 
 You can register yourself or someone else online. Paper forms are also available at reception. You do not need proof of address, immigration status, ID or an NHS number to register.
 
