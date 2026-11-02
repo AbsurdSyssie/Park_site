@@ -41,3 +41,11 @@ Cloudflare project `park-site` was created separately and allocated **park-site-
 `park.oddtv.uk` was attached through the supported Pages project-domain API and initially reported `initializing`. The account can read the oddtv.uk zone but listing records for the exact authorised hostname returned **403 Authentication error**. Therefore no DNS records were read/changed and no unrelated hostname, apex, wildcard, mail or other practice deployment was touched. The custom host must not be described as live until its HTTPS body is verified.
 
 Required manual DNS step if the binding remains pending: inspect and privately back up any existing exact-host record, then add/update only **CNAME `park` → `park-site-1u2.pages.dev`** in oddtv.uk. Do not overwrite an unrelated existing record. No automatic Git deployment is configured; publishing is manual direct upload of the validated `_preview` directory.
+
+### Published verification
+
+The first manual Pages upload succeeded at `https://0c3c2e74.park-site-1u2.pages.dev`. The stable live demo is **https://park-site-1u2.pages.dev/**. All 23 deployed HTML pages returned HTTP 200 and matched the tested local HTML byte for byte. Live headers include `X-Robots-Tag: noindex, nofollow` and `Cache-Control: public, max-age=0, must-revalidate, no-transform`; robots.txt returned 200 with the disallow-all policy.
+
+GitHub CI for the initial content commit completed successfully (run 41523880635). The public repository is `https://github.com/AbsurdSyssie/Park_site`; only the `personal` remote was pushed, and its main hash was checked against local HEAD. No GitHub Pages deployment or permission/settings increase was made.
+
+Final custom-host check: **https://park.oddtv.uk/ returned HTTP 525**, not the Park demo body. Pages domain API reports **pending**, HTTP validation pending. It is attached but **not live**. DNS access was denied (403), so the exact CNAME step above is still required. Do not route patients to that hostname or imply the custom address works. The verified Pages address remains usable for this personal demonstration.

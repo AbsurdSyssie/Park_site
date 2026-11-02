@@ -70,7 +70,7 @@ All 57 content URLs below were GET-fetched. Core identity, team, opening, appoin
 
 | Candidate URL | Source label | Inspection / disposition |
 | --- | --- | --- |
-| https://www.parkmedicalcentrewythenshawe.nhs.uk/Sitemap | Site map | Not opened: optional document or sitemap, not reproduced |
+| https://www.parkmedicalcentrewythenshawe.nhs.uk/Sitemap | Site map | GET 200, text and content links inspected: all listed content pages already included above, no additional content candidates. Not reproduced. |
 | https://www.parkmedicalcentrewythenshawe.nhs.uk/Account/Login?returnUrl=%2F | Sign in | Not opened: supplier sign-in/admin, excluded |
 | https://www.parkmedicalcentrewythenshawe.nhs.uk/Account/Login?returnUrl=%2FFooterLinks%2FCookiePolicy | Sign in | Not opened: supplier sign-in/admin, excluded |
 | https://www.parkmedicalcentrewythenshawe.nhs.uk/Account/Login?returnUrl=%2Fappointments--admin-requests | Sign in | Not opened: supplier sign-in/admin, excluded |
