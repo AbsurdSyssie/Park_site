@@ -9,7 +9,7 @@ lede: Request an appointment online, or call reception if you need help.
 
 Use the **Medical Issue** option in Accurx for a new or ongoing health problem. Online medical requests are available from **7:30am to 6:30pm on working days**. A GP triages medical requests and the practice provides a response within one working day.
 
-[Request an appointment with The Park Medical Centre](https://accurx.nhs.uk/patient-initiated/p84045)
+<a class="nhsuk-button nhsuk-button--start" href="https://accurx.nhs.uk/patient-initiated/p84045">Request an appointment <svg class="nhsuk-button__start-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M0 0h24v24H0z" fill="none"/><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg></a>
 
 The response may be an appointment or a referral to a more appropriate service. Appointments may be by phone, face to face, video, text or email, depending on your request.
 
