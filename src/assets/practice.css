@@ -88,21 +88,6 @@
   background: #e8edee;
 }
 
-.appointment-link-comparison {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 32px;
-  margin: 24px 0;
-}
-
-.appointment-link-comparison > div {
-  min-width: 0;
-}
-
-.appointment-link-comparison .nhsuk-body-s {
-  margin-bottom: 8px;
-}
-
 .nhsuk-main-wrapper a {
   overflow-wrap: anywhere;
 }
@@ -114,11 +99,6 @@
 }
 
 @media (max-width: 600px) {
-  .appointment-link-comparison {
-    grid-template-columns: 1fr;
-    gap: 16px;
-  }
-
   .park-hero {
     padding: 24px 16px;
   }
