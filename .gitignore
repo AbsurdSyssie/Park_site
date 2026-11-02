@@ -3,6 +3,8 @@
 
 node_modules/
 /_site
+/_preview
+/.wrangler
 *.zip
 .DS_Store
 

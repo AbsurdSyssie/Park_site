@@ -39,3 +39,71 @@
   margin-bottom: 16px;
   padding-bottom: 16px;
 }
+
+.park-hero {
+  background: #e8f2f0;
+  border-left: 8px solid #007f6d;
+  padding: 32px;
+  margin-bottom: 48px;
+}
+
+.park-hero h1 {
+  margin-bottom: 16px;
+}
+
+.park-eyebrow {
+  color: #00594c;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.park-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  margin-bottom: 48px;
+}
+
+.park-card {
+  display: block;
+  background: white;
+  border: 1px solid #d8dde0;
+  border-bottom: 4px solid #007f6d;
+  padding: 24px;
+  text-decoration: none;
+}
+
+.park-card h3 {
+  color: #005eb8;
+  text-decoration: underline;
+  margin-bottom: 16px;
+}
+
+.park-card p {
+  color: #212b32;
+  margin-bottom: 0;
+}
+
+.park-card:hover {
+  background: #e8edee;
+}
+
+.nhsuk-main-wrapper a {
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 900px) {
+  .park-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .park-hero {
+    padding: 24px 16px;
+  }
+
+  .park-grid {
+    grid-template-columns: 1fr;
+  }
+}

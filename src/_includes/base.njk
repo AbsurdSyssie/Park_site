@@ -33,14 +33,20 @@
 
 {% block head %}
   <meta name="description" content="{{ description or p.description or p.name }}">
-  {% if practice.demo %}<meta name="robots" content="noindex">{% endif %}
+  {% if draftPreview %}<meta name="robots" content="noindex, nofollow">{% elif practice.demo %}<meta name="robots" content="noindex">{% endif %}
   <link rel="stylesheet" href="/assets/nhsuk-frontend.min.css">
   <link rel="stylesheet" href="/assets/practice.css">
   <script type="module" src="/assets/init.js"></script>
 {% endblock %}
 
 {% block header %}
-  {% if practice.demo %}
+  {% if draftPreview %}
+    {{ environmentBanner({
+      tag: "Unofficial demo",
+      text: "Demonstration only, not the official practice website. Not approved by the practice. This site does not collect patient information.",
+      colour: "yellow"
+    }) }}
+  {% elif practice.demo %}
     {{ environmentBanner({
       tag: "Demo",
       text: "This is a demonstration website for a fictional GP practice. None of the people, places or phone numbers are real.",
@@ -92,7 +98,7 @@
           { href: "/contact/", text: "Contact and find us" },
           { href: "/register/", text: "Register with us" },
           { href: "/our-team/", text: "Our team" },
-          { href: "/news/", text: "News" }
+          { href: "/news/", text: "Practice information" if draftPreview else "News" }
         ]
       },
       {
@@ -106,8 +112,8 @@
       }
     ],
     meta: {
-      text: "Website content last reviewed " ~ (practice.site.content_last_reviewed | ukDate(false)) ~ ". Practice code " ~ p.ods_code ~ "."
+      text: ("Practice code " ~ p.ods_code ~ ".") if draftPreview else ("Website content last reviewed " ~ (practice.site.content_last_reviewed | ukDate(false)) ~ ". Practice code " ~ p.ods_code ~ ".")
     },
-    copyright: { text: "© " ~ p.name }
+    copyright: { text: "" if draftPreview else ("© " ~ p.name) }
   }) }}
 {% endblock %}

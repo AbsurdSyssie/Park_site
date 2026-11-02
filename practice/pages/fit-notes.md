@@ -1,14 +1,14 @@
 ---
-title: Fit notes
-description: How to get a fit note (sick note) from the practice.
+title: Sick notes and fit notes
 ---
 
-You do not need a fit note for the first 7 days you are off sick. For those days, you can fill in a self-certification form from your employer or download form SC2 from GOV.UK.
+To request a fit note, choose the **Admin Query** option in the practice's online service.
 
-## If you have been off for more than 7 days
+[Request a fit note](https://florey.accurx.com/p/P84045)
 
-Ask for a fit note using our online form or by calling us. A clinician will review your request. We may need to speak to you before issuing it.
+If you cannot use the service, call reception on [0161&nbsp;998&nbsp;5538](tel:01619985538) for help.
 
-## If you have been in hospital
+For information about self-certification, when you need a fit note and returning to work, see:
 
-The hospital should give you a fit note when you leave. If they did not, contact the ward or department that treated you.
+- [Getting a fit note on the NHS website](https://www.nhs.uk/nhs-services/gps/getting-a-fit-note/)
+- [Taking sick leave on GOV.UK](https://www.gov.uk/taking-sick-leave)
