@@ -75,6 +75,15 @@ export function configureSite(eleventyConfig, { draftPreview = false } = {}) {
 
   // Each Markdown file in practice/pages becomes a page at /<file-name>/
   for (const page of result.pages) {
+    if (page.slug === "appointments") {
+      const renderActionLink = (text) =>
+        env.renderString(
+          `{% from "nhsuk/components/action-link/macro.njk" import actionLink %}{{ actionLink({ text: ${JSON.stringify(text)}, href: "https://accurx.nhs.uk/patient-initiated/p84045" }) }}`,
+        );
+      page.content = page.content
+        .replace("{{OFFICIAL_APPOINTMENT_ACTION_LINK}}", renderActionLink("Request an appointment"))
+        .replace("{{OFFICIAL_ADMIN_ACTION_LINK}}", renderActionLink("Send an admin request"));
+    }
     // Preview content overrides journeys, never the urgent safety partial.
     const replaceable = [
       "index",
