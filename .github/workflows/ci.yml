@@ -36,12 +36,20 @@ jobs:
         run: npm run lint
       - name: Check practice details
         run: npm run check
+        env:
+          PRACTICE_DIR: tests/fixtures/demo-practice
       - name: Tests
         run: npm test
       - name: Build
         run: npm run build
+        env:
+          PRACTICE_DIR: tests/fixtures/demo-practice
       - name: Validate HTML
         run: npm run lint:html
+      - name: Build unofficial demo
+        run: npm run build:demo
+      - name: Validate demo HTML
+        run: npm run lint:html:demo
 
   reuse:
     name: REUSE compliance

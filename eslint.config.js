@@ -5,7 +5,7 @@ import js from "@eslint/js";
 import globals from "globals";
 
 export default [
-  { ignores: ["_site/", "node_modules/"] },
+  { ignores: ["_site/", "_preview/", "node_modules/"] },
   js.configs.recommended,
   {
     languageOptions: {

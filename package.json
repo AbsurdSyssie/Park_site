@@ -11,6 +11,8 @@
   "scripts": {
     "check": "node bin/check.js",
     "build": "eleventy",
+    "build:demo": "rm -rf _preview && eleventy --config=eleventy.preview.config.js",
+    "lint:html:demo": "html-validate \"_preview/**/*.html\"",
     "start": "eleventy --serve",
     "clean": "rm -rf _site",
     "test": "node --test",

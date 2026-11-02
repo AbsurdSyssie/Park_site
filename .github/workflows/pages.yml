@@ -1,9 +1,9 @@
 # SPDX-FileCopyrightText: 2026 Marcus Baw
 # SPDX-License-Identifier: MIT
 #
-# Publishes the site to GitHub Pages whenever main changes. In the upstream
-# repository this publishes the fictional demo practice; in a practice's own
-# copy it publishes the practice's website.
+# Manual-only production publishing. The strict actual-practice check is
+# deliberately retained. The personal unofficial demo uses direct upload of
+# the independently validated _preview directory, not this workflow.
 #
 # One-off setup in each repository: Settings > Pages > Source must be set to
 # "GitHub Actions". In a fork, Actions must also be switched on from the
@@ -15,8 +15,6 @@
 name: Publish to GitHub Pages
 
 on:
-  push:
-    branches: [main]
   workflow_dispatch:
 
 permissions:

@@ -1,8 +1,9 @@
 // SPDX-FileCopyrightText: 2026 Marcus Baw
 // SPDX-License-Identifier: MIT
 
-// Builds the site from the practice's own details in practice/, the frozen
-// demo practice and a Wales test practice, then checks the output. Tests that
+// Builds a configurable valid fixture, the frozen demo and a Wales fixture.
+// TEST_PRACTICE_DIR can exercise any valid practice independently of this
+// repository's intentionally unapproved real-practice demo. Tests that
 // use "site" must pass for any valid practice, because practices run them on
 // their own copy before publishing. These tests protect the clinical safety controls described
 // in docs/clinical-safety/hazard-log.md.
@@ -45,7 +46,7 @@ before(async () => {
   const warn = console.warn;
   console.warn = () => {};
   try {
-    site = await build("practice", "site");
+    site = await build(process.env.TEST_PRACTICE_DIR ?? "tests/fixtures/demo-practice", "site");
     demo = await build("tests/fixtures/demo-practice", "demo");
     wales = await build("tests/fixtures/wales-practice", "wales");
   } finally {

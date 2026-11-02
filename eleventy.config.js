@@ -5,21 +5,56 @@ import path from "node:path";
 import fs from "node:fs";
 import nunjucks from "nunjucks";
 import { HtmlBasePlugin } from "@11ty/eleventy";
-import { loadPractice, formatProblems } from "./lib/practice.js";
+import {
+  loadPractice,
+  formatProblems,
+  validatePractice,
+  normalisePractice,
+} from "./lib/practice.js";
 import * as filters from "./lib/filters.js";
 
 const NHSUK_DIST = "node_modules/nhsuk-frontend/dist";
 
 export default function (eleventyConfig) {
+  return configureSite(eleventyConfig);
+}
+
+export function configureSite(eleventyConfig, { draftPreview = false } = {}) {
   const practiceDir = path.resolve(process.env.PRACTICE_DIR ?? "practice");
   const result = loadPractice(practiceDir);
+  const suppressEarnings =
+    draftPreview &&
+    (result.data.gp_earnings?.financial_year == null ||
+      String(result.data.gp_earnings.financial_year).trim() === "");
+  if (suppressEarnings) {
+    // H7: an unknown declaration is omitted, never filled with guessed figures.
+    const previewData = { ...result.data };
+    delete previewData.gp_earnings;
+    Object.assign(result, validatePractice(previewData, { pages: result.pages }));
+    result.practice = normalisePractice(previewData);
+  }
+  const deferred = draftPreview
+    ? result.errors.filter((error) => {
+        const fields = {
+          ...(suppressEarnings ? { gp_earnings: undefined } : {}),
+          "site.content_last_reviewed": result.data.site?.content_last_reviewed,
+        };
+        return (
+          Object.hasOwn(fields, error.field) &&
+          (fields[error.field] == null || String(fields[error.field]).trim() === "")
+        );
+      })
+    : [];
+  const blockingErrors = result.errors.filter((error) => !deferred.includes(error));
 
   // Stop the build if anything patients rely on is missing or wrong.
   const report = formatProblems(result);
-  if (result.errors.length) {
+  if (blockingErrors.length) {
     throw new Error(`\n${report}\n\nRun "npm run check" for this list again.`);
   }
   if (report) console.warn(report);
+
+  eleventyConfig.addGlobalData("draftPreview", draftPreview);
 
   eleventyConfig.addGlobalData("practice", result.practice);
   eleventyConfig.addGlobalData(
@@ -40,14 +75,33 @@ export default function (eleventyConfig) {
 
   // Each Markdown file in practice/pages becomes a page at /<file-name>/
   for (const page of result.pages) {
+    // Preview content overrides journeys, never the urgent safety partial.
+    const replaceable = [
+      "index",
+      "appointments",
+      "prescriptions",
+      "test-results",
+      "contact",
+      "register",
+      "our-team",
+      "services",
+      "news",
+      "complaints",
+      "accessibility-statement",
+      "opening-times",
+      "cookies",
+      "about",
+    ];
+    if (draftPreview && replaceable.includes(page.slug))
+      eleventyConfig.ignores.add(`src/${page.slug}.njk`);
     eleventyConfig.addTemplate(`practice-pages/${page.slug}.md`, page.content, {
-      layout: "page.njk",
-      permalink: `/${page.slug}/`,
+      layout: page.slug === "index" && draftPreview ? "base.njk" : "page.njk",
+      permalink: page.slug === "index" && draftPreview ? "/" : `/${page.slug}/`,
     });
   }
 
   const customDomain = result.practice.site?.custom_domain;
-  if (customDomain) {
+  if (customDomain && !draftPreview) {
     eleventyConfig.addTemplate("cname.njk", customDomain, {
       permalink: "/CNAME",
       eleventyExcludeFromCollections: true,

@@ -21,6 +21,12 @@ Ratings use the DCB0129 risk matrix: severity (1 minor to 5 catastrophic) and li
 
 ## Open actions
 
+## Unofficial preview isolation, 2 November 2026
+
+H2/H3/H7: `build:demo` uses an isolated configuration and `_preview` output. Only missing review approval and an absent/unknown-year earnings block are deferred. Unknown-year figures are removed together before remaining validation; no year, cohort or approval date is fabricated. A known-year incomplete declaration, malformed phone, hours, dates or untrusted embed still blocks. The production validator in `lib/practice.js` is unchanged. Fictional regression fixtures exercise the preview, including suppression of unsupported prescription defaults by source-specific pages.
+
+H1/H5/H10: preview content may replace ordinary journeys but not the urgent-help layout or partial. The appointments page retains an emergency warning. Every preview page has one unofficial banner and noindex; no patient forms, embeds, analytics or tracking are added. Source evidence and unanswered questions stay outside rendered pages. This is a personal unapproved demonstration, not practice clinical-safety sign-off.
+
 - Re-review ratings when the template changes in a way that affects a hazard or control.
 - Add automated accessibility testing (for example axe) to CI.
 - Consider a Content Security Policy generated from the trusted embed domains.
