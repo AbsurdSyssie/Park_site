@@ -34,6 +34,19 @@ for (const fixture of ["minimal", "full"]) {
     try {
       const practice = path.join(tmp, "practice");
       fs.cpSync("tests/fixtures/demo-practice", practice, { recursive: true });
+      const journeys = {
+        index: ["HOME"],
+        register: ["REGISTER"],
+        "fit-notes": ["FIT_NOTE"],
+        prescriptions: ["PRESCRIPTION", "MEDICATION"],
+        "test-results": ["RESULTS", "RESULTS_ADMIN"],
+      };
+      for (const [slug, tokens] of Object.entries(journeys)) {
+        fs.writeFileSync(
+          path.join(practice, `pages/${slug}.md`),
+          `---\ntitle: Example service\n---\n<div class="example">\n${tokens.map((token) => `{{OFFICIAL_${token}_ACTION_LINK}}`).join("\n\n")}\n</div>\n`,
+        );
+      }
       fs.writeFileSync(
         path.join(practice, "pages/appointments.md"),
         fixture === "full"
@@ -51,25 +64,45 @@ for (const fixture of ["minimal", "full"]) {
         { env: { ...process.env, PRACTICE_DIR: practice }, encoding: "utf8" },
       );
       assert.equal(build.status, 0, build.stderr);
-      const doc = parse(fs.readFileSync(path.join(output, "appointments/index.html"), "utf8"));
-      const links = descendants(doc, "a").filter((a) =>
-        attr(a, "class")?.split(/\s+/).includes("nhsuk-action-link"),
-      );
-      assert.equal(links.length, 2);
-      for (const link of links) {
-        const icons = descendants(link, "svg");
-        assert.equal(icons.length, 1);
-        assert.equal(icons[0].namespaceURI, svgNamespace);
-        assert.equal(attr(icons[0], "viewBox"), "0 0 24 24");
-        const paths = descendants(icons[0], "path");
-        assert.equal(paths.length, 1, "official path must be a descendant of its SVG");
-        assert.equal(paths[0].namespaceURI, svgNamespace);
-        assert.equal(attr(paths[0], "d"), officialPath);
-        assert.notEqual(link.parentNode.tagName, "p", "action link remains a complete HTML block");
-      }
-      for (const p of descendants(doc, "path")) {
-        assert.equal(p.namespaceURI, svgNamespace, "no orphan HTML-namespace paths");
-        assert.equal(p.parentNode.tagName, "svg");
+      for (const [slug, count] of Object.entries({
+        appointments: 2,
+        ...Object.fromEntries(
+          Object.entries(journeys).map(([slug, tokens]) => [slug, tokens.length]),
+        ),
+      })) {
+        const html = fs.readFileSync(
+          path.join(output, slug === "index" ? "index.html" : `${slug}/index.html`),
+          "utf8",
+        );
+        assert.ok(!html.includes("{{OFFICIAL_"), "all action markers resolve");
+        const doc = parse(html);
+        const links = descendants(doc, "a").filter((a) =>
+          attr(a, "class")?.split(/\s+/).includes("nhsuk-action-link"),
+        );
+        assert.equal(links.length, count, slug);
+        if (slug === "register") {
+          assert.equal(attr(links[0], "href"), "https://gp-registration.nhs.uk/P84045");
+          assert.match(html, />\s*Register with The Park\s*<\/span>/);
+        }
+        for (const link of links) {
+          const icons = descendants(link, "svg");
+          assert.equal(icons.length, 1);
+          assert.equal(icons[0].namespaceURI, svgNamespace);
+          assert.equal(attr(icons[0], "viewBox"), "0 0 24 24");
+          const paths = descendants(icons[0], "path");
+          assert.equal(paths.length, 1, "official path must be a descendant of its SVG");
+          assert.equal(paths[0].namespaceURI, svgNamespace);
+          assert.equal(attr(paths[0], "d"), officialPath);
+          assert.notEqual(
+            link.parentNode.tagName,
+            "p",
+            "action link remains a complete HTML block",
+          );
+        }
+        for (const p of descendants(doc, "path")) {
+          assert.equal(p.namespaceURI, svgNamespace, "no orphan HTML-namespace paths");
+          assert.equal(p.parentNode.tagName, "svg");
+        }
       }
     } finally {
       fs.rmSync(tmp, { recursive: true, force: true });

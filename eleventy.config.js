@@ -75,7 +75,7 @@ export function configureSite(eleventyConfig, { draftPreview = false } = {}) {
 
   // Each Markdown file in practice/pages becomes a page at /<file-name>/
   for (const page of result.pages) {
-    if (["appointments", "register"].includes(page.slug)) {
+    {
       const renderActionLink = (text, href) => {
         const html = env.renderString(
           `{% from "nhsuk/components/action-link/macro.njk" import actionLink %}{{ actionLink({ text: ${JSON.stringify(text)}, href: ${JSON.stringify(href)} }) }}`,
@@ -85,6 +85,36 @@ export function configureSite(eleventyConfig, { draftPreview = false } = {}) {
         // Markdown cannot split the SVG or wrap its path in a paragraph.
         return `<div>\n${html.trim().replace(/\n\s*\n/g, "\n")}\n</div>`;
       };
+      const serviceActions = {
+        index: [["HOME", "Request an appointment or admin help", "/appointments/"]],
+        "fit-notes": [["FIT_NOTE", "Request a fit note", "https://florey.accurx.com/p/P84045"]],
+        prescriptions: [
+          [
+            "PRESCRIPTION",
+            "Order repeat prescriptions using the NHS App",
+            "https://www.nhs.uk/nhs-app/",
+          ],
+          [
+            "MEDICATION",
+            "Send a medication query",
+            "https://accurx.nhs.uk/patient-initiated/p84045",
+          ],
+        ],
+        "test-results": [
+          ["RESULTS", "View results in the NHS App", "https://www.nhs.uk/nhs-app/"],
+          [
+            "RESULTS_ADMIN",
+            "Send an online admin request",
+            "https://accurx.nhs.uk/patient-initiated/p84045",
+          ],
+        ],
+      };
+      for (const [token, text, href] of serviceActions[page.slug] ?? []) {
+        page.content = page.content.replaceAll(
+          `{{OFFICIAL_${token}_ACTION_LINK}}`,
+          renderActionLink(text, href),
+        );
+      }
       if (page.slug === "appointments") {
         page.content = page.content
           .replace(
@@ -101,7 +131,7 @@ export function configureSite(eleventyConfig, { draftPreview = false } = {}) {
               "https://accurx.nhs.uk/patient-initiated/p84045",
             ),
           );
-      } else {
+      } else if (page.slug === "register") {
         page.content = page.content.replace(
           "{{OFFICIAL_REGISTER_ACTION_LINK}}",
           renderActionLink("Register with The Park", "https://gp-registration.nhs.uk/P84045"),
