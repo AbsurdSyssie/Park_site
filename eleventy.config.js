@@ -76,10 +76,15 @@ export function configureSite(eleventyConfig, { draftPreview = false } = {}) {
   // Each Markdown file in practice/pages becomes a page at /<file-name>/
   for (const page of result.pages) {
     if (page.slug === "appointments") {
-      const renderActionLink = (text) =>
-        env.renderString(
+      const renderActionLink = (text) => {
+        const html = env.renderString(
           `{% from "nhsuk/components/action-link/macro.njk" import actionLink %}{{ actionLink({ text: ${JSON.stringify(text)}, href: "https://accurx.nhs.uk/patient-initiated/p84045" }) }}`,
         );
+        // Markdown ends raw HTML blocks at blank lines. The official macro has
+        // blank lines inside its SVG: keep it in one uninterrupted div block so
+        // Markdown cannot split the SVG or wrap its path in a paragraph.
+        return `<div>\n${html.trim().replace(/\n\s*\n/g, "\n")}\n</div>`;
+      };
       page.content = page.content
         .replace("{{OFFICIAL_APPOINTMENT_ACTION_LINK}}", renderActionLink("Request an appointment"))
         .replace("{{OFFICIAL_ADMIN_ACTION_LINK}}", renderActionLink("Send an admin request"));
