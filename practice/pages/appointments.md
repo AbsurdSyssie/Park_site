@@ -9,7 +9,16 @@ lede: Request an appointment online, or call reception if you need help.
 
 Use the **Medical Issue** option in Accurx for a new or ongoing health problem. Online medical requests are available from **7:30am to 6:30pm on working days**. A GP triages medical requests and the practice provides a response within one working day.
 
-<a class="nhsuk-button nhsuk-button--start" href="https://accurx.nhs.uk/patient-initiated/p84045">Request an appointment <svg class="nhsuk-button__start-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M0 0h24v24H0z" fill="none"/><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg></a>
+<div class="appointment-link-comparison">
+  <div>
+    <p class="nhsuk-body-s">Button</p>
+    <a class="nhsuk-button nhsuk-button--start" href="https://accurx.nhs.uk/patient-initiated/p84045">Request an appointment <svg class="nhsuk-button__start-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M0 0h24v24H0z" fill="none"/><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg></a>
+  </div>
+  <div>
+    <p class="nhsuk-body-s">Action link</p>
+    <a class="nhsuk-action-link" href="https://accurx.nhs.uk/patient-initiated/p84045"><svg class="nhsuk-icon nhsuk-icon__arrow-right-circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M0 0h24v24H0z" fill="none"/><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm-1.5 14.5L9.1 14.9l2.9-2.9H6v-2h6l-2.9-2.9 1.4-1.4L16.8 12l-6.3 4.5z"/></svg><span class="nhsuk-action-link__text">Request an appointment</span></a>
+  </div>
+</div>
 
 The response may be an appointment or a referral to a more appropriate service. Appointments may be by phone, face to face, video, text or email, depending on your request.
 
