@@ -69,6 +69,10 @@ Checked 2 November 2026. All HTTP(S) hrefs and external assets were extracted fr
 
 ## Non-HTTP contacts
 
+### Action styling follow-up (2 November 2026)
+
+The rendered href set was re-extracted after the action-link changes and still exactly matches all 27 audited destinations above. The table retains labels from the original identity audit. Current task labels are: /appointments/ **Request an appointment**; /register/ **Register with The Park**; /prescriptions/ **Order repeat prescriptions using the NHS App** and **Send a medication query**; /test-results/ **View results in the NHS App** and **Send an online admin request**. Fit-note label and URL are unchanged. See [ACTION-LINK-AUDIT.md](ACTION-LINK-AUDIT.md) for all-page candidate decisions. No new third-party availability or transaction claims are made by this styling follow-up.
+
 `tel:01619985538` matches practice, NHS and CQC reception. `tel:01619470770` matches the source and independently inspected Care Gateway. `tel:999` and `tel:111` remain unchanged safety routes. `mailto:gmicb-mh.theparkmedical@nhs.net` is copied from the source contact page; no message was sent and deliverability is not tested. No invalid PPG address was copied.
 
 ## Source candidate findings, not published as live journeys

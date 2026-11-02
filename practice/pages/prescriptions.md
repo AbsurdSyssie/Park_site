@@ -7,9 +7,11 @@ lede: How to order your repeat medication.
 
 You can order repeat prescriptions:
 
-- using the [NHS App](https://www.nhs.uk/nhs-app/)
+- using the NHS App
 - in writing, by ticking the items you need on your repeat prescription slip or writing a request
 - by dropping your written request at the surgery or sending it by post
+
+{{OFFICIAL_PRESCRIPTION_ACTION_LINK}}
 
 **Telephone prescription orders are not accepted.**
 
@@ -17,7 +19,9 @@ Allow **three full working days** before collecting your prescription. If orderi
 
 ## Medication questions
 
-For a medication query, use the [online request service](https://accurx.nhs.uk/patient-initiated/p84045). If you cannot use the service, contact reception on [0161&nbsp;998&nbsp;5538](tel:01619985538) for help.
+For a medication query, use the online request service. If you cannot use the service, contact reception on [0161&nbsp;998&nbsp;5538](tel:01619985538) for help.
+
+{{OFFICIAL_MEDICATION_ACTION_LINK}}
 
 ## Electronic prescriptions
 
