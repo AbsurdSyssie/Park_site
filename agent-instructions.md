@@ -16,6 +16,7 @@ If you are not sure, ask the person one plain-English question: "Are you setting
 ## Read First
 
 - [README.md](README.md) - what the project is, and the practice setup guide.
+- [Practice website requirements (England GMS)](docs/practice-website-requirements.md) - current publication, online-presence and complaints content checks, with source/version limits.
 - [SAFETY.md](SAFETY.md) and [docs/clinical-safety/hazard-log.md](docs/clinical-safety/hazard-log.md) - clinical safety controls and the hazards they address.
 - [ROADMAP.md](ROADMAP.md) - planned work. Status checkboxes and stable `R<number>` identifiers per [house-style's roadmap conventions](https://github.com/pacharanero/house-style/blob/main/specs.md#status-markers-in-roadmaps).
 - [CONTRIBUTING.md](CONTRIBUTING.md) - content rules.
