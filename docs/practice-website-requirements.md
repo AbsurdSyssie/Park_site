@@ -69,6 +69,8 @@ Other publication duties (for example accessibility statements, privacy informat
 
 ## Repeatable content assurance
 
+Use the [blank practice website review checklist](templates/practice-website-checklist.md) to record a review, and see the [completed Park Medical Centre audit](assurance/park-practice-website-audit.md) as a project-specific evidence example. The Park audit records observed implementation evidence and pending practice verification; it is not a reusable blank worksheet or a compliance sign-off.
+
 For an initial review and after material updates:
 
 1. Identify nation, contract route, applicable contract version, current regulations, and a responsible source owner for each practice fact.
