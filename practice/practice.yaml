@@ -95,7 +95,7 @@ complaints:
 # No full-time count is stated. Do not infer zero or populate a partial block.
 cqc:
   location_id: 1-571476646
-  embed_html: ''
+  embed_html: '<script type="text/javascript" src="https://www.cqc.org.uk/sites/all/modules/custom/cqc_widget/widget.js?data-id=1-571476646&data-host=https://www.cqc.org.uk&type=location"></script>'
 ppg:
   text: The Patient Participation Group helps the practice understand patients' views and improve services.
   contact: Ask at reception for more information about joining.

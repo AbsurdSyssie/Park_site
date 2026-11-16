@@ -1,6 +1,9 @@
 ---
 layout: page.njk
-title: News
+title: Past news and reports
+breadcrumbParent:
+  href: /about/
+  text: About the practice
 ---
 {% if practice.news and practice.news.length %}
   {% for item in practice.news | sort(true, false, "date") %}

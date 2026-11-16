@@ -23,7 +23,7 @@ If you are not sure, ask the person one plain-English question: "Are you setting
 
 ## Core Invariants
 
-- The urgent help section (`src/_includes/partials/urgent-help.njk`, 999 and 111) appears on every page and cannot be configured away. Never weaken it; any change needs a hazard log update and passing tests (hazard H1).
+- Template default: the urgent help section (`src/_includes/partials/urgent-help.njk`, 999 and 111) appears on every page. For the Park Medical Centre site-structure work, follow the explicit project decision in [AGENTS.md](AGENTS.md) and [the review plan](practice/site-structure-review/REVIEW.md): show the shared panel on Home and Appointments only, while retaining the standalone Urgent help page and footer link. This scoped design decision does not itself resolve hazard H1; assess and document safety implications through the normal clinical-safety process before implementation.
 - No forms, cookies, analytics or tracking. Patient contact goes through the practice's online consultation supplier, the NHS App or the phone (hazards H4, H10).
 - Embedded code is only accepted from the supplier allowlist in `lib/practice.js` or domains a practice adds explicitly to `trusted_embed_domains`.
 - Never invent practice facts or write health advice. Link to nhs.uk instead (hazards H2, H7).

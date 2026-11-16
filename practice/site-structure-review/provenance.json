@@ -1,0 +1,271 @@
+{
+  "captured": "2026-11-16T20:39:46.553Z",
+  "commands": [
+    "./node_modules/.bin/eleventy --config=eleventy.preview.config.js --output=/tmp/park-structure-preview",
+    "node practice/site-structure-review/audit.mjs /tmp/park-structure-preview",
+    "node practice/site-structure-review/make-plan.mjs",
+    "./node_modules/.bin/html-validate '/tmp/park-structure-preview/**/*.html'"
+  ],
+  "files": [
+    {
+      "file": "eleventy.config.js",
+      "modified": "2026-11-02T21:41:41.056Z",
+      "sha256": "1dfa6d5d15671b3e4beb6997e8bd2b6e15f97bb927ecef6e9c84021ffac84478"
+    },
+    {
+      "file": "eleventy.preview.config.js",
+      "modified": "2026-11-02T20:50:42.046Z",
+      "sha256": "9f43145bb6da9c3a0c355d8c77ea56c78ef6b5fa152f76a9ebe3ec3ddf12da1c"
+    },
+    {
+      "file": "src/_includes/base.njk",
+      "modified": "2026-11-16T20:28:44.440Z",
+      "sha256": "2452b2768f8288512f1e474e5582545ccbfa2bbcf3f7041a7f29587f85d74d89"
+    },
+    {
+      "file": "src/_includes/partials/current-breadcrumb.njk",
+      "modified": "2026-11-16T20:28:44.427Z",
+      "sha256": "e200fd89ef06d2ab21e856f0f9fae2c0e1a00655214b894167d8c17261122554"
+    },
+    {
+      "file": "practice/practice.yaml",
+      "modified": "2026-11-16T18:00:37.713Z",
+      "sha256": "db3a81d5d183dc1aa26ee076a3ac28c16634b87dca3447dec397b1d426ccb0c2"
+    },
+    {
+      "file": "practice/SOURCE-TO-LOCAL-MATRIX.md",
+      "modified": "2026-11-16T19:27:03.948Z",
+      "sha256": "56a8bdcf407f20d1d92e6f2f79d9adbfcd2af2cc7469642ef34439d734078815"
+    },
+    {
+      "file": "practice/pages/about.md",
+      "modified": "2026-11-16T17:15:05.920Z",
+      "sha256": "bcd5d50ef6842903f1aa7f0879cbf1af590494d6928f5b308448c4a310201593"
+    },
+    {
+      "file": "practice/pages/accessibility-statement.md",
+      "modified": "2026-11-02T20:51:15.111Z",
+      "sha256": "933968e5906114bb22ed317b181f1f199ec5dd3765775a9d7b1d5decc8854c1c"
+    },
+    {
+      "file": "practice/pages/advanced-care-planning.md",
+      "modified": "2026-11-16T19:19:26.326Z",
+      "sha256": "23a4a9d77425958c9cb338c09c88a04b98774fa0d74bea55c8d851d080e63e1c"
+    },
+    {
+      "file": "practice/pages/appointments.md",
+      "modified": "2026-11-16T18:25:44.391Z",
+      "sha256": "5fe14a74dd89b57fcf5ea9ee65672929e8ced6b5a75218cbd1f323725366ef0b"
+    },
+    {
+      "file": "practice/pages/artificial-intelligence.md",
+      "modified": "2026-11-16T19:23:56.731Z",
+      "sha256": "24814ee7033ec6975ecb50094d7e249f55423e21424ef24e848f4fa3a016eca0"
+    },
+    {
+      "file": "practice/pages/bereavement.md",
+      "modified": "2026-11-16T19:19:26.325Z",
+      "sha256": "a9e411c69bb9668a068b1f86c2d213d9d0af5fa6dd3ce40ac96c1690eeea8b68"
+    },
+    {
+      "file": "practice/pages/bowel-cancer-screening.md",
+      "modified": "2026-11-16T19:19:26.326Z",
+      "sha256": "a97061f5dd6f39880553a34ac9a158d2c4437bc090aab92a017e45a8dd468286"
+    },
+    {
+      "file": "practice/pages/carers.md",
+      "modified": "2026-11-02T20:51:15.111Z",
+      "sha256": "386cd71aad6a0177d028a4a4cf7604d4bac300046218d8e21b5c4426506b79d7"
+    },
+    {
+      "file": "practice/pages/cervical-screening.md",
+      "modified": "2026-11-16T19:19:26.325Z",
+      "sha256": "9b53cca98c96d05e89b861e6ac4ed30b5a36ec148b7cb3a72e6e190f1f011e37"
+    },
+    {
+      "file": "practice/pages/chaperone-policy.md",
+      "modified": "2026-11-16T19:16:42.543Z",
+      "sha256": "ed7de202aa0f6f28e75ab6305c225fcbdc9b998eca3afc7ac4d4aad63006cd87"
+    },
+    {
+      "file": "practice/pages/complaints.md",
+      "modified": "2026-11-02T20:51:15.111Z",
+      "sha256": "580e46323200244363e90b61fc6e08f087cac219c319d668e50136b253d4a7bd"
+    },
+    {
+      "file": "practice/pages/confidentiality.md",
+      "modified": "2026-11-16T19:21:50.801Z",
+      "sha256": "ba6c445127b0f47775658d11f6fb3e9b436a5e81c1cbdf43590b49f2f60fbe7c"
+    },
+    {
+      "file": "practice/pages/contact.md",
+      "modified": "2026-11-16T17:19:58.566Z",
+      "sha256": "43774cb513d20f0d5d53e4af338692c1bcacd81e7619c84a2512f58be04065bf"
+    },
+    {
+      "file": "practice/pages/contraception.md",
+      "modified": "2026-11-16T19:19:26.325Z",
+      "sha256": "e99d71b93909a361e38a37b90a162066013a1dfe2238a201f90903031f568ce5"
+    },
+    {
+      "file": "practice/pages/cookies.md",
+      "modified": "2026-11-02T20:50:01.113Z",
+      "sha256": "3c1ff1660b0e8b30b3d51344673bb1bc74f8aff6accfcedad6779482b3b8595c"
+    },
+    {
+      "file": "practice/pages/data-protection.md",
+      "modified": "2026-11-16T19:21:50.877Z",
+      "sha256": "9240be822f434d7f1ebc5b1911904481621196f076d31708d424d2bf89a7e3d2"
+    },
+    {
+      "file": "practice/pages/feedback.md",
+      "modified": "2026-11-16T17:30:17.334Z",
+      "sha256": "2a9fa63056f75827b0611ab81ae0fe70b53521b467a1064674dd01a5388a0f34"
+    },
+    {
+      "file": "practice/pages/find-your-nhs-number.md",
+      "modified": "2026-11-16T17:15:06.901Z",
+      "sha256": "5277a049985f2801ace5ade50aea4bec04e2ee82945c7e10f5758df14ff82093"
+    },
+    {
+      "file": "practice/pages/fit-notes.md",
+      "modified": "2026-11-02T21:41:09.407Z",
+      "sha256": "2e1a3b8d01da770a33cedf5d9eb0d84da67c0c8b1425323d77daeb70a90eed1d"
+    },
+    {
+      "file": "practice/pages/gp-earnings.md",
+      "modified": "2026-11-16T19:20:51.208Z",
+      "sha256": "bc78e1ebd4a4c24890c46363322ba5bf348a8d977ba7d4e8c888b042fe4751b7"
+    },
+    {
+      "file": "practice/pages/health-information.md",
+      "modified": "2026-11-16T17:20:02.610Z",
+      "sha256": "4c65dd36b002a1eadfbbdc6dcb999d90f27588e3798806be192e97673cdafc1b"
+    },
+    {
+      "file": "practice/pages/homeless-friendly-practice.md",
+      "modified": "2026-11-16T19:19:26.326Z",
+      "sha256": "64893b0645cc35647482febe5978b187ad6ed4857148a1c912bd896bfc01afd0"
+    },
+    {
+      "file": "practice/pages/index.md",
+      "modified": "2026-11-16T17:17:47.858Z",
+      "sha256": "1992af07a93033935314ff6293afbfe7bf7bc42202188e84f87dc06a3e7b332e"
+    },
+    {
+      "file": "practice/pages/it-policy.md",
+      "modified": "2026-11-16T19:16:43.007Z",
+      "sha256": "db04dd57ad1fdd6c111a8a996ed44d0895cb15e5d4fe972e4b82aa466b13988a"
+    },
+    {
+      "file": "practice/pages/minor-ailments-scheme.md",
+      "modified": "2026-11-16T19:19:26.326Z",
+      "sha256": "77319e9524eac82221749394eacece91df8fe8d986101a5b40824300d5267822"
+    },
+    {
+      "file": "practice/pages/news.md",
+      "modified": "2026-11-16T19:23:56.800Z",
+      "sha256": "4b3de82b48cfee66e78994d19726a0c34bbaa7a6aa5e96d215afb3c92b6638db"
+    },
+    {
+      "file": "practice/pages/nhs-app.md",
+      "modified": "2026-11-02T20:51:15.112Z",
+      "sha256": "81991958bba2c3a1d188311df41e735c769076beaf9594ded99a76a4ce15556e"
+    },
+    {
+      "file": "practice/pages/opening-times.md",
+      "modified": "2026-11-02T20:51:15.112Z",
+      "sha256": "307775d4706d889b1242e2f95aa38acfe7d693b65c6bcf28d26be7c78acea571"
+    },
+    {
+      "file": "practice/pages/patient-participation-group.md",
+      "modified": "2026-11-02T20:51:15.112Z",
+      "sha256": "b2c8174e08f33742e440e0628455e82e748ad16accacf3fa64d72bb0dec3e5d2"
+    },
+    {
+      "file": "practice/pages/personal-data.md",
+      "modified": "2026-11-16T19:21:50.951Z",
+      "sha256": "5217c7b7b22c0d245f8b10ea95a8844eaa4b9f9a2dfeae173b5aacfaec9a3264"
+    },
+    {
+      "file": "practice/pages/podiatry-referral-options.md",
+      "modified": "2026-11-16T19:19:26.325Z",
+      "sha256": "46cd88e2ba2720f6f061e043a9d739066c3dc108c32386ec33c2c746f3a6d71c"
+    },
+    {
+      "file": "practice/pages/practice-policies.md",
+      "modified": "2026-11-16T20:29:25.652Z",
+      "sha256": "c67105003076063ea5565da681b28c444b4d8df755bb3d8bc5c9fb8feec18450"
+    },
+    {
+      "file": "practice/pages/pregnancy.md",
+      "modified": "2026-11-16T19:19:26.325Z",
+      "sha256": "df011625b076e54a137a1785df7bcc066795679748d8cb93a55deb8f582bfc7e"
+    },
+    {
+      "file": "practice/pages/prescription-fees.md",
+      "modified": "2026-11-16T19:19:26.325Z",
+      "sha256": "d5dea58993a7684869cdaf15a6d3d92f571c98f30f7f3eb0e5ecb78e3c072a3c"
+    },
+    {
+      "file": "practice/pages/prescriptions.md",
+      "modified": "2026-11-16T17:17:47.935Z",
+      "sha256": "62ad3e183c038e3a25fe701d324c783f4aa56075847738e5558e2443ee892218"
+    },
+    {
+      "file": "practice/pages/privacy-notice.md",
+      "modified": "2026-11-16T19:30:59.603Z",
+      "sha256": "b0de5962edb1b84f5981024b1e5e486c58c4d9985b188b5b573a3b6b6c4a12f8"
+    },
+    {
+      "file": "practice/pages/private-services.md",
+      "modified": "2026-11-16T19:30:59.636Z",
+      "sha256": "1834ddf97fbc860c950771f783fa191c2eb58b947d4679a3937abae6d24ec116"
+    },
+    {
+      "file": "practice/pages/register.md",
+      "modified": "2026-11-16T17:16:32.600Z",
+      "sha256": "6353ee4afed7e1314f2cfc6e9f5aa0c8722f06847bcb00896e647b22ef45c4e8"
+    },
+    {
+      "file": "practice/pages/research.md",
+      "modified": "2026-11-16T19:19:26.326Z",
+      "sha256": "9fbc4b73882bb413f8e2401e926601918c46b5abc64cbbe2e24b5806f3720650"
+    },
+    {
+      "file": "practice/pages/self-referrals.md",
+      "modified": "2026-11-02T20:52:39.980Z",
+      "sha256": "4050c4b843e7094a68d836d03793d459f6032459a202df9e13fe47b9a40a459d"
+    },
+    {
+      "file": "practice/pages/services.md",
+      "modified": "2026-11-16T19:24:47.867Z",
+      "sha256": "7890711d80e7cf370a327095018c540944e2711098ef0b7024f18e50dd539d7b"
+    },
+    {
+      "file": "practice/pages/summary-care-record.md",
+      "modified": "2026-11-16T19:16:42.852Z",
+      "sha256": "02c2c06bfa17beab4efbbdebd872e6b8a3bf5ada1c428f4a2dfaed51193619a7"
+    },
+    {
+      "file": "practice/pages/test-results.md",
+      "modified": "2026-11-02T21:41:09.407Z",
+      "sha256": "36a6e1f7b8718dd8baa615a92e6339193fca38aa583c169db600bc4dc7552063"
+    },
+    {
+      "file": "practice/pages/training.md",
+      "modified": "2026-11-16T19:21:50.728Z",
+      "sha256": "19d763ba73e702cf654eab7378cc57e5d78ed751b52a84e327dee7fbf02079d1"
+    },
+    {
+      "file": "practice/pages/update-your-details.md",
+      "modified": "2026-11-16T19:19:26.325Z",
+      "sha256": "406a1b256e8fe676b9d3300cf591288a32a2b80c0b90fa41528005186ad00c6a"
+    },
+    {
+      "file": "practice/pages/violence-zero-tolerance-policy.md",
+      "modified": "2026-11-16T19:16:43.087Z",
+      "sha256": "917e8d8b84ab3c003973cd55c71deeea0c81553938211c1b07a92006788ed3cd"
+    }
+  ]
+}

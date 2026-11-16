@@ -1,12 +1,25 @@
 ---
 title: About the practice
+breadcrumbParent:
+  href: /
+  text: The Park Medical Centre
 ---
 
 The Park Medical Centre provides NHS GP services from 434 Altrincham Road, Baguley, Wythenshawe, Manchester, M23 9AB.
 
-- [Meet our team](/our-team/)
-- [Clinics and services](/services/)
+## About the practice
+
+- [Our team](/our-team/)
+- [Training at the practice](/training/)
+- [Research](/research/)
+- [Artificial intelligence information](/artificial-intelligence/)
+- [Past news and reports](/news/)
+- [GP earnings declaration](/gp-earnings/)
+- [Practice policies](/practice-policies/)
+- [Services and support](/services/)
+- [Patient feedback and involvement](/feedback/)
 - [Patient Participation Group](/patient-participation-group/)
+- [Contact and find us](/contact/)
 
 ## Care Quality Commission
 
@@ -22,9 +35,9 @@ The practice's published declaration for **2024/25** states average GP earnings 
 
 [Read the practice's GP earnings declaration](https://www.parkmedicalcentrewythenshawe.nhs.uk/gp-earnings)
 
-## Practice policies
+## Further information
 
 - [Privacy notice](/privacy-notice/)
 - [Feedback and complaints](/complaints/)
 - [Accessibility](/accessibility-statement/)
-- [Practice policies, including chaperones and confidentiality](https://www.parkmedicalcentrewythenshawe.nhs.uk/practice-policies)
+- [Practice policies, including chaperones and confidentiality](/practice-policies/)

@@ -12,6 +12,17 @@ Observation date: 2 November 2026. No practice representative has approved these
 8. The PPG page prints `gmicb-mh.theparkmedical.nhs.net` without `@`. It is not a valid email and has not been copied. Reception is the fallback. What is the intended PPG email?
 9. Please confirm the source's legacy online prescription route. The source advertises an ordering service without a distinct usable URL. NHS App and written/post/in-person requests are clearly supported; no guessed Patient Access supplier URL, pharmacy ordering or telephone exception is included. Accurx has an admin category including prescriptions, but the practice's prescription page calls it a medication-query route, so this is not advertised as an additional ordering method.
 10. Accurx correctly identifies this practice and address, but medical/admin routes were closed at observation, with reopening at 7:30am next working day. This is not evidence of permanent failure or guaranteed availability. No opening-hours request was submitted. Can the practice confirm medical, results, fit-note and cancellation journeys end to end without this agent submitting patient data?
-11. Confirm optional services omitted from this demo if required: research study participation, news campaigns, AI leaflet with an unfilled review-date placeholder, old fees, screening invitations and unverified/broken local links. See candidate dispositions in the content inventory. Check 42nd Street's temporary referral-route closures before directing a specific patient.
+11. Review time-sensitive source material before official use: research participation, dated news and survey reports, the AI statement, private fees, screening content and local documents. Confirm whether each time-sensitive service or item is current before official use. Check 42nd Street's temporary referral-route closures before directing a specific patient.
+
+## Additional questions from the 16 November source refresh
+
+12. Please confirm whether the Homeless Friendly Practice accreditation and pledge remain current, and review the five Wythenshawe resource documents linked from the draft. They were copied from the source website and may be out of date.
+13. Please confirm current availability for the minor ailments scheme, podiatry referrals, GP training and AI use. The pages now carry the captured source information; no practice representative has confirmed that the arrangements remain current.
+14. Please confirm the 2024/25 GP earnings declaration is complete and current. The patient page preserves the published amount and GP counts; the required structured declaration remains absent because the full-time count is unknown.
 
 These are production blockers/questions, not qualifications to scatter through patient-facing pages. Personal demonstration hosting is explicitly separate from official practice publication.
+
+15. Please have the Data Protection Officer review the full source privacy notice before official use. It has been restored from the archived public page, which contains historical legislative references and may not reflect current practice arrangements. Confirm whether the 2024 new-patient privacy PDF remains applicable.
+16. Please review the AI page claims about NHS-approved systems, opt-out arrangements, data security and clinical safety, and supply the leaflet review date. The placeholder date is omitted from the patient page.
+17. Please confirm that the 2024 prescription charges and out-of-hours prescription phone line are retired. The patient page links to current NHS Business Services Authority information instead of repeating the old tariff.
+18. Please confirm whether the translated contraception leaflets and local housing/food documents remain current and may stay online.

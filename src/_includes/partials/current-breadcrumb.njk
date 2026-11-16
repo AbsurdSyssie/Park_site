@@ -1,0 +1,33 @@
+{% from "nhsuk/components/link/macro.njk" import link as nhsukLink %}
+{% from "nhsuk/components/back-link/macro.njk" import backLink %}
+
+{# Walk the one-parent metadata graph so each page gets its full semantic path. #}
+{% macro appendBreadcrumbAncestors(record, allPages, items, visited, depth) %}
+  {% if record.breadcrumbParent and depth < 20 %}
+    {% set parentHref = record.breadcrumbParent.href %}
+    {% if parentHref != "/" and parentHref not in visited %}
+      {% for candidate in allPages %}
+        {% if candidate.url == parentHref %}
+          {% set visited = (visited.push(parentHref), visited) %}
+          {{ appendBreadcrumbAncestors(candidate.data, allPages, items, visited, depth + 1) }}
+          {% set items = (items.push({ href: parentHref, text: record.breadcrumbParent.text }), items) %}
+        {% endif %}
+      {% endfor %}
+    {% endif %}
+  {% endif %}
+{% endmacro %}
+
+{% macro currentBreadcrumb(items, currentText) %}
+  {%- set lastItem = items | last %}
+  <nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
+    <ol class="nhsuk-breadcrumb__list">
+      {% for item in items %}
+        <li class="nhsuk-breadcrumb__list-item">
+          {{ nhsukLink({ href: item.href, text: item.text, className: "nhsuk-breadcrumb__link" }) | trim }}
+        </li>
+      {% endfor %}
+      <li class="nhsuk-breadcrumb__list-item"><span aria-current="page">{{ currentText }}</span></li>
+    </ol>
+    {{ backLink({ href: lastItem.href, text: lastItem.text }) | trim }}
+  </nav>
+{% endmacro %}

@@ -2,27 +2,30 @@
   Base layout for every page. Practices should not need to edit this file:
   everything practice-specific comes from practice/practice.yaml.
 
-  The urgent help section near the bottom is a clinical safety control and is
-  deliberately not configurable. Do not remove it.
+  The shared urgent help panel is shown on Home and Appointments only under
+  the approved Park Medical Centre site-structure decision.
 -#}
 {% extends "nhsuk/template.njk" %}
 {% from "nhsuk/components/header/macro.njk" import header %}
 {% from "nhsuk/components/footer/macro.njk" import footer %}
 {% from "nhsuk/components/environment-banner/macro.njk" import environmentBanner %}
-{% from "nhsuk/components/breadcrumb/macro.njk" import breadcrumb %}
+{% from "partials/current-breadcrumb.njk" import appendBreadcrumbAncestors, currentBreadcrumb %}
 
 {% set assetPath = "/assets" %}
 {% set p = practice.practice %}
 
 {% set navItems = [
-  { text: "Appointments", href: "/appointments/" },
+  { text: "Home", href: "/" },
+  { text: "Request An Appointment / Admin Query", href: "/appointments/" },
+  { text: "Join The Surgery", href: "/register/" },
+  { text: "Patient Feedback", href: "/feedback/" },
+  { text: "Test Results", href: "/test-results/" },
   { text: "Prescriptions", href: "/prescriptions/" },
+  { text: "Fit notes", href: "/fit-notes/" },
   { text: "Opening times", href: "/opening-times/" },
   { text: "Contact us", href: "/contact/" },
-  { text: "Register", href: "/register/" },
-  { text: "Our team", href: "/our-team/" },
-  { text: "Services", href: "/services/" },
-  { text: "About us", href: "/about/" }
+  { text: "Services and support", href: "/services/" },
+  { text: "About the practice", href: "/about/" }
 ] %}
 {% set currentNav = [] %}
 {% for item in navItems %}
@@ -64,13 +67,19 @@
       split: p.name_split,
       descriptor: p.descriptor
     },
-    navigation: { items: currentNav }
+    navigation: {
+      items: currentNav,
+      toggleMenuText: "Browse More",
+      toggleMenuVisuallyHiddenText: ""
+    }
   }) }}
 {% endblock %}
 
 {% block beforeContent %}
   {% if page.url != "/" %}
-    {{ breadcrumb({ items: [{ href: "/", text: "Home" }] }) }}
+    {% set breadcrumbItems = [{ href: "/", text: "Home" }] %}
+    {{ appendBreadcrumbAncestors({ breadcrumbParent: breadcrumbParent }, collections.all, breadcrumbItems, [], 0) }}
+    {{ currentBreadcrumb(breadcrumbItems, title) }}
   {% endif %}
 {% endblock %}
 
@@ -79,7 +88,17 @@
 {% endblock %}
 
 {% block footer %}
-  {% include "partials/urgent-help.njk" %}
+  {% if page.url == "/" or page.url == "/appointments/" %}
+    {% include "partials/urgent-help.njk" %}
+  {% endif %}
+  {% set cqcFooterColumn %}
+    {% if practice.cqc and practice.cqc.embed_html %}
+      <div class="app-cqc-footer" role="group" aria-label="Care Quality Commission rating">
+        <!-- html-validate-disable-next script-type -->
+        {{ practice.cqc.embed_html | safe }}
+      </div>
+    {% endif %}
+  {% endset %}
   {{ footer({
     navigation: [
       {
@@ -98,17 +117,23 @@
           { href: "/contact/", text: "Contact and find us" },
           { href: "/register/", text: "Register with us" },
           { href: "/our-team/", text: "Our team" },
-          { href: "/news/", text: "Practice information" if draftPreview else "News" }
+          { href: "/about/", text: "About the practice" },
+          { href: "/feedback/", text: "Patient feedback" }
         ]
       },
       {
         heading: { text: "Policies" },
         items: [
+          { href: "/practice-policies/", text: "Practice policies and information" },
           { href: "/complaints/", text: "Complaints" },
           { href: "/privacy-notice/", text: "Privacy notice" },
           { href: "/accessibility-statement/", text: "Accessibility statement" },
           { href: "/cookies/", text: "Cookies" }
         ]
+      },
+      {
+        width: "one-quarter",
+        html: cqcFooterColumn | safe
       }
     ],
     meta: {

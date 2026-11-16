@@ -1,5 +1,8 @@
 ---
 title: Cookies
+breadcrumbParent:
+  href: /
+  text: The Park Medical Centre
 ---
 
 This website does not set cookies or use analytics, tracking or embedded third-party services.

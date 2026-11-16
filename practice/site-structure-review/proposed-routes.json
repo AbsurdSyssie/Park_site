@@ -1,0 +1,988 @@
+[
+  {
+    "route": "/404.html",
+    "currentTitle": "Page not found",
+    "currentParent": "/",
+    "proposedTitle": "Page not found",
+    "proposedParent": "/",
+    "navigation": [],
+    "requiredContextualInbound": [],
+    "action": "keep-system-page",
+    "url": "retain",
+    "redirect": "none",
+    "rationale": "Expected unlinked system page; not a navigation orphan.",
+    "sourceUrls": []
+  },
+  {
+    "route": "/about/",
+    "currentTitle": "About the practice",
+    "currentParent": "/",
+    "proposedTitle": "About the practice",
+    "proposedParent": "/",
+    "navigation": [
+      "Browse More",
+      "footer"
+    ],
+    "requiredContextualInbound": [
+      "/",
+      "/services/"
+    ],
+    "action": "keep-page; change grouping/links where specified",
+    "url": "retain",
+    "redirect": "none",
+    "rationale": "Top-level entry or site utility, no forced nesting.",
+    "sourceUrls": []
+  },
+  {
+    "route": "/accessibility-statement/",
+    "currentTitle": "Accessibility",
+    "currentParent": "/",
+    "proposedTitle": "Accessibility statement",
+    "proposedParent": "/",
+    "navigation": [
+      "footer"
+    ],
+    "requiredContextualInbound": [
+      "/contact/",
+      "/about/"
+    ],
+    "action": "keep-page; change grouping/links where specified",
+    "url": "retain",
+    "redirect": "none",
+    "rationale": "Top-level entry or site utility, no forced nesting.",
+    "sourceUrls": [
+      "https://www.parkmedicalcentrewythenshawe.nhs.uk/FooterLinks/Accessibility](https://www.parkmedicalcentrewythenshawe.nhs.uk/FooterLinks/Accessibility",
+      "https://www.parkmedicalcentrewythenshawe.nhs.uk/disabled-access](https://www.parkmedicalcentrewythenshawe.nhs.uk/disabled-access"
+    ]
+  },
+  {
+    "route": "/advanced-care-planning/",
+    "currentTitle": "Planning ahead for future care",
+    "currentParent": "/",
+    "proposedTitle": "Planning ahead for future care",
+    "proposedParent": "/health-information/",
+    "navigation": [],
+    "requiredContextualInbound": [
+      "/health-information/",
+      "/services/"
+    ],
+    "action": "keep-page; change grouping/links where specified",
+    "url": "retain",
+    "redirect": "none",
+    "rationale": "One canonical semantic parent, plus task-relevant cross-links; keep flat address.",
+    "sourceUrls": [
+      "https://www.parkmedicalcentrewythenshawe.nhs.uk/advanced-care-planning](https://www.parkmedicalcentrewythenshawe.nhs.uk/advanced-care-planning"
+    ]
+  },
+  {
+    "route": "/appointments/",
+    "currentTitle": "Appointments and admin requests",
+    "currentParent": "/",
+    "proposedTitle": "Appointments and admin requests",
+    "proposedParent": "/",
+    "navigation": [
+      "primary",
+      "footer"
+    ],
+    "requiredContextualInbound": [
+      "/"
+    ],
+    "action": "keep-page; change grouping/links where specified",
+    "url": "retain",
+    "redirect": "none",
+    "rationale": "Top-level entry or site utility, no forced nesting.",
+    "sourceUrls": [
+      "https://www.parkmedicalcentrewythenshawe.nhs.uk/appointments--admin-requests](https://www.parkmedicalcentrewythenshawe.nhs.uk/appointments--admin-requests"
+    ]
+  },
+  {
+    "route": "/artificial-intelligence/",
+    "currentTitle": "Artificial intelligence information",
+    "currentParent": "/",
+    "proposedTitle": "Artificial intelligence information",
+    "proposedParent": "/about/",
+    "navigation": [],
+    "requiredContextualInbound": [
+      "/about/",
+      "/appointments/",
+      "/privacy-notice/"
+    ],
+    "action": "keep-page; change grouping/links where specified",
+    "url": "retain",
+    "redirect": "none",
+    "rationale": "One canonical semantic parent, plus task-relevant cross-links; keep flat address.",
+    "sourceUrls": [
+      "https://www.parkmedicalcentrewythenshawe.nhs.uk/artificial-intelligence-at-the-park-medical-centre](https://www.parkmedicalcentrewythenshawe.nhs.uk/artificial-intelligence-at-the-park-medical-centre"
+    ]
+  },
+  {
+    "route": "/bereavement/",
+    "currentTitle": "Bereavement support",
+    "currentParent": "/",
+    "proposedTitle": "Bereavement support",
+    "proposedParent": "/health-information/",
+    "navigation": [],
+    "requiredContextualInbound": [
+      "/health-information/",
+      "/services/"
+    ],
+    "action": "keep-page; change grouping/links where specified",
+    "url": "retain",
+    "redirect": "none",
+    "rationale": "One canonical semantic parent, plus task-relevant cross-links; keep flat address.",
+    "sourceUrls": [
+      "https://www.parkmedicalcentrewythenshawe.nhs.uk/in-times-of-bereavement](https://www.parkmedicalcentrewythenshawe.nhs.uk/in-times-of-bereavement"
+    ]
+  },
+  {
+    "route": "/bowel-cancer-screening/",
+    "currentTitle": "Bowel cancer screening",
+    "currentParent": "/",
+    "proposedTitle": "Bowel cancer screening",
+    "proposedParent": "/services/",
+    "navigation": [],
+    "requiredContextualInbound": [
+      "/services/"
+    ],
+    "action": "keep-page; change grouping/links where specified",
+    "url": "retain",
+    "redirect": "none",
+    "rationale": "One canonical semantic parent, plus task-relevant cross-links; keep flat address.",
+    "sourceUrls": [
+      "https://www.parkmedicalcentrewythenshawe.nhs.uk/nhs-bowel-cancer-screening](https://www.parkmedicalcentrewythenshawe.nhs.uk/nhs-bowel-cancer-screening"
+    ]
+  },
+  {
+    "route": "/carers/",
+    "currentTitle": "Support for carers",
+    "currentParent": "/",
+    "proposedTitle": "Support for carers",
+    "proposedParent": "/services/",
+    "navigation": [],
+    "requiredContextualInbound": [
+      "/services/"
+    ],
+    "action": "keep-page; change grouping/links where specified",
+    "url": "retain",
+    "redirect": "none",
+    "rationale": "One canonical semantic parent, plus task-relevant cross-links; keep flat address.",
+    "sourceUrls": [
+      "https://www.parkmedicalcentrewythenshawe.nhs.uk/carers-support](https://www.parkmedicalcentrewythenshawe.nhs.uk/carers-support"
+    ]
+  },
+  {
+    "route": "/cervical-screening/",
+    "currentTitle": "Cervical screening",
+    "currentParent": "/",
+    "proposedTitle": "Cervical screening",
+    "proposedParent": "/services/",
+    "navigation": [],
+    "requiredContextualInbound": [
+      "/services/"
+    ],
+    "action": "keep-page; change grouping/links where specified",
+    "url": "retain",
+    "redirect": "none",
+    "rationale": "One canonical semantic parent, plus task-relevant cross-links; keep flat address.",
+    "sourceUrls": [
+      "https://www.parkmedicalcentrewythenshawe.nhs.uk/cervical-screening-smear-test](https://www.parkmedicalcentrewythenshawe.nhs.uk/cervical-screening-smear-test",
+      "https://www.parkmedicalcentrewythenshawe.nhs.uk/contraception-and-smear-recall](https://www.parkmedicalcentrewythenshawe.nhs.uk/contraception-and-smear-recall"
+    ]
+  },
+  {
+    "route": "/chaperone-policy/",
+    "currentTitle": "Chaperone policy",
+    "currentParent": "/practice-policies/",
+    "proposedTitle": "Chaperone policy",
+    "proposedParent": "/practice-policies/",
+    "navigation": [],
+    "requiredContextualInbound": [
+      "/practice-policies/"
+    ],
+    "action": "keep-page; change grouping/links where specified",
+    "url": "retain",
+    "redirect": "none",
+    "rationale": "Preserve full policy and original references; list on policy index.",
+    "sourceUrls": [
+      "https://www.parkmedicalcentrewythenshawe.nhs.uk/chaperone-policy](https://www.parkmedicalcentrewythenshawe.nhs.uk/chaperone-policy"
+    ]
+  },
+  {
+    "route": "/complaints/",
+    "currentTitle": "Feedback and complaints",
+    "currentParent": "/",
+    "proposedTitle": "Make a complaint",
+    "proposedParent": "/feedback/",
+    "navigation": [
+      "footer"
+    ],
+    "requiredContextualInbound": [
+      "/feedback/"
+    ],
+    "action": "keep-page; change grouping/links where specified",
+    "url": "retain",
+    "redirect": "none",
+    "rationale": "One canonical semantic parent, plus task-relevant cross-links; keep flat address.",
+    "sourceUrls": []
+  },
+  {
+    "route": "/confidentiality/",
+    "currentTitle": "Confidentiality",
+    "currentParent": "/practice-policies/",
+    "proposedTitle": "Confidentiality",
+    "proposedParent": "/practice-policies/",
+    "navigation": [],
+    "requiredContextualInbound": [
+      "/practice-policies/"
+    ],
+    "action": "keep-page; change grouping/links where specified",
+    "url": "retain",
+    "redirect": "none",
+    "rationale": "Preserve full policy and original references; list on policy index.",
+    "sourceUrls": [
+      "https://www.parkmedicalcentrewythenshawe.nhs.uk/confidentiality](https://www.parkmedicalcentrewythenshawe.nhs.uk/confidentiality"
+    ]
+  },
+  {
+    "route": "/contact/",
+    "currentTitle": "Contact and find us",
+    "currentParent": "/",
+    "proposedTitle": "Contact and find us",
+    "proposedParent": "/",
+    "navigation": [
+      "Browse More",
+      "footer"
+    ],
+    "requiredContextualInbound": [
+      "/",
+      "/about/",
+      "/appointments/"
+    ],
+    "action": "keep-page; change grouping/links where specified",
+    "url": "retain",
+    "redirect": "none",
+    "rationale": "Top-level entry or site utility, no forced nesting.",
+    "sourceUrls": [
+      "https://www.parkmedicalcentrewythenshawe.nhs.uk/opening-hourscontact-us](https://www.parkmedicalcentrewythenshawe.nhs.uk/opening-hourscontact-us",
+      "https://www.parkmedicalcentrewythenshawe.nhs.uk/disabled-access](https://www.parkmedicalcentrewythenshawe.nhs.uk/disabled-access"
+    ]
+  },
+  {
+    "route": "/contraception/",
+    "currentTitle": "Contraception",
+    "currentParent": "/",
+    "proposedTitle": "Contraception",
+    "proposedParent": "/services/",
+    "navigation": [],
+    "requiredContextualInbound": [
+      "/services/"
+    ],
+    "action": "keep-page; change grouping/links where specified",
+    "url": "retain",
+    "redirect": "none",
+    "rationale": "One canonical semantic parent, plus task-relevant cross-links; keep flat address.",
+    "sourceUrls": [
+      "https://www.parkmedicalcentrewythenshawe.nhs.uk/contraception-and-smear-recall](https://www.parkmedicalcentrewythenshawe.nhs.uk/contraception-and-smear-recall",
+      "https://www.parkmedicalcentrewythenshawe.nhs.uk/_common/getdocument?id=245329](https://www.parkmedicalcentrewythenshawe.nhs.uk/_common/getdocument?id=245329",
+      "https://www.parkmedicalcentrewythenshawe.nhs.uk/_common/getdocument?id=245330](https://www.parkmedicalcentrewythenshawe.nhs.uk/_common/getdocument?id=245330",
+      "https://www.parkmedicalcentrewythenshawe.nhs.uk/_common/getdocument?id=245331](https://www.parkmedicalcentrewythenshawe.nhs.uk/_common/getdocument?id=245331",
+      "https://www.parkmedicalcentrewythenshawe.nhs.uk/_common/getdocument?id=245333](https://www.parkmedicalcentrewythenshawe.nhs.uk/_common/getdocument?id=245333",
+      "https://www.parkmedicalcentrewythenshawe.nhs.uk/_common/getdocument?id=245334](https://www.parkmedicalcentrewythenshawe.nhs.uk/_common/getdocument?id=245334",
+      "https://www.parkmedicalcentrewythenshawe.nhs.uk/_common/getdocument?id=245335](https://www.parkmedicalcentrewythenshawe.nhs.uk/_common/getdocument?id=245335",
+      "https://www.parkmedicalcentrewythenshawe.nhs.uk/_common/getdocument?id=245336](https://www.parkmedicalcentrewythenshawe.nhs.uk/_common/getdocument?id=245336",
+      "https://www.parkmedicalcentrewythenshawe.nhs.uk/_common/getdocument?id=245337](https://www.parkmedicalcentrewythenshawe.nhs.uk/_common/getdocument?id=245337",
+      "https://www.parkmedicalcentrewythenshawe.nhs.uk/_common/getdocument?id=245338](https://www.parkmedicalcentrewythenshawe.nhs.uk/_common/getdocument?id=245338",
+      "https://www.parkmedicalcentrewythenshawe.nhs.uk/_common/getdocument?id=245339](https://www.parkmedicalcentrewythenshawe.nhs.uk/_common/getdocument?id=245339",
+      "https://www.parkmedicalcentrewythenshawe.nhs.uk/_common/getdocument?id=245340](https://www.parkmedicalcentrewythenshawe.nhs.uk/_common/getdocument?id=245340",
+      "https://www.parkmedicalcentrewythenshawe.nhs.uk/_common/getdocument?id=245341](https://www.parkmedicalcentrewythenshawe.nhs.uk/_common/getdocument?id=245341"
+    ]
+  },
+  {
+    "route": "/cookies/",
+    "currentTitle": "Cookies",
+    "currentParent": "/",
+    "proposedTitle": "Cookies",
+    "proposedParent": "/",
+    "navigation": [
+      "footer"
+    ],
+    "requiredContextualInbound": [
+      "/privacy-notice/",
+      "/accessibility-statement/"
+    ],
+    "action": "keep-page; change grouping/links where specified",
+    "url": "retain",
+    "redirect": "none",
+    "rationale": "Top-level entry or site utility, no forced nesting.",
+    "sourceUrls": [
+      "https://www.parkmedicalcentrewythenshawe.nhs.uk/FooterLinks/CookiePolicy](https://www.parkmedicalcentrewythenshawe.nhs.uk/FooterLinks/CookiePolicy"
+    ]
+  },
+  {
+    "route": "/data-protection/",
+    "currentTitle": "Data protection",
+    "currentParent": "/practice-policies/",
+    "proposedTitle": "Data protection",
+    "proposedParent": "/practice-policies/",
+    "navigation": [],
+    "requiredContextualInbound": [
+      "/practice-policies/"
+    ],
+    "action": "keep-page; change grouping/links where specified",
+    "url": "retain",
+    "redirect": "none",
+    "rationale": "Preserve full policy and original references; list on policy index.",
+    "sourceUrls": [
+      "https://www.parkmedicalcentrewythenshawe.nhs.uk/data-protection](https://www.parkmedicalcentrewythenshawe.nhs.uk/data-protection"
+    ]
+  },
+  {
+    "route": "/feedback/",
+    "currentTitle": "Patient feedback",
+    "currentParent": "/",
+    "proposedTitle": "Patient feedback",
+    "proposedParent": "/",
+    "navigation": [
+      "primary",
+      "footer"
+    ],
+    "requiredContextualInbound": [
+      "/about/",
+      "/contact/",
+      "/"
+    ],
+    "action": "keep-page; change grouping/links where specified",
+    "url": "retain",
+    "redirect": "none",
+    "rationale": "Top-level entry or site utility, no forced nesting.",
+    "sourceUrls": [
+      "https://www.parkmedicalcentrewythenshawe.nhs.uk/patient-feedback](https://www.parkmedicalcentrewythenshawe.nhs.uk/patient-feedback"
+    ]
+  },
+  {
+    "route": "/find-your-nhs-number/",
+    "currentTitle": "Find your NHS number",
+    "currentParent": "/",
+    "proposedTitle": "Find your NHS number",
+    "proposedParent": "/register/",
+    "navigation": [],
+    "requiredContextualInbound": [
+      "/register/",
+      "/nhs-app/"
+    ],
+    "action": "keep-page; change grouping/links where specified",
+    "url": "retain",
+    "redirect": "none",
+    "rationale": "One canonical semantic parent, plus task-relevant cross-links; keep flat address.",
+    "sourceUrls": [
+      "https://www.parkmedicalcentrewythenshawe.nhs.uk/find-your-nhs-number](https://www.parkmedicalcentrewythenshawe.nhs.uk/find-your-nhs-number"
+    ]
+  },
+  {
+    "route": "/fit-notes/",
+    "currentTitle": "Sick notes and fit notes",
+    "currentParent": "/",
+    "proposedTitle": "Sick notes and fit notes",
+    "proposedParent": "/appointments/",
+    "navigation": [
+      "Browse More"
+    ],
+    "requiredContextualInbound": [
+      "/appointments/",
+      "/",
+      "/services/"
+    ],
+    "action": "keep-page; change grouping/links where specified",
+    "url": "retain",
+    "redirect": "none",
+    "rationale": "One canonical semantic parent, plus task-relevant cross-links; keep flat address.",
+    "sourceUrls": [
+      "https://www.parkmedicalcentrewythenshawe.nhs.uk/sick--fit-notes](https://www.parkmedicalcentrewythenshawe.nhs.uk/sick--fit-notes"
+    ]
+  },
+  {
+    "route": "/gp-earnings/",
+    "currentTitle": "GP earnings",
+    "currentParent": "/",
+    "proposedTitle": "GP earnings",
+    "proposedParent": "/about/",
+    "navigation": [],
+    "requiredContextualInbound": [
+      "/about/",
+      "/practice-policies/"
+    ],
+    "action": "keep-page; change grouping/links where specified",
+    "url": "retain",
+    "redirect": "none",
+    "rationale": "One canonical semantic parent, plus task-relevant cross-links; keep flat address.",
+    "sourceUrls": [
+      "https://www.parkmedicalcentrewythenshawe.nhs.uk/gp-earnings](https://www.parkmedicalcentrewythenshawe.nhs.uk/gp-earnings"
+    ]
+  },
+  {
+    "route": "/health-information/",
+    "currentTitle": "Health information",
+    "currentParent": "/",
+    "proposedTitle": "Health information",
+    "proposedParent": "/services/",
+    "navigation": [],
+    "requiredContextualInbound": [
+      "/services/",
+      "/"
+    ],
+    "action": "keep-page; change grouping/links where specified",
+    "url": "retain",
+    "redirect": "none",
+    "rationale": "One canonical semantic parent, plus task-relevant cross-links; keep flat address.",
+    "sourceUrls": [
+      "https://www.parkmedicalcentrewythenshawe.nhs.uk/services-availablenhs-health-advice](https://www.parkmedicalcentrewythenshawe.nhs.uk/services-availablenhs-health-advice",
+      "https://www.parkmedicalcentrewythenshawe.nhs.uk/health-information](https://www.parkmedicalcentrewythenshawe.nhs.uk/health-information",
+      "https://www.parkmedicalcentrewythenshawe.nhs.uk/anxiety](https://www.parkmedicalcentrewythenshawe.nhs.uk/anxiety",
+      "https://www.parkmedicalcentrewythenshawe.nhs.uk/depression](https://www.parkmedicalcentrewythenshawe.nhs.uk/depression",
+      "https://www.parkmedicalcentrewythenshawe.nhs.uk/stress](https://www.parkmedicalcentrewythenshawe.nhs.uk/stress"
+    ]
+  },
+  {
+    "route": "/homeless-friendly-practice/",
+    "currentTitle": "Homeless support",
+    "currentParent": "/",
+    "proposedTitle": "Homeless support",
+    "proposedParent": "/services/",
+    "navigation": [],
+    "requiredContextualInbound": [
+      "/services/"
+    ],
+    "action": "keep-page; change grouping/links where specified",
+    "url": "retain",
+    "redirect": "none",
+    "rationale": "One canonical semantic parent, plus task-relevant cross-links; keep flat address.",
+    "sourceUrls": [
+      "https://www.parkmedicalcentrewythenshawe.nhs.uk/homeless-friendly-practice](https://www.parkmedicalcentrewythenshawe.nhs.uk/homeless-friendly-practice"
+    ]
+  },
+  {
+    "route": "/",
+    "currentTitle": "The Park Medical Centre",
+    "currentParent": null,
+    "proposedTitle": "The Park Medical Centre",
+    "proposedParent": null,
+    "navigation": [
+      "primary"
+    ],
+    "requiredContextualInbound": [],
+    "action": "keep-page; change grouping/links where specified",
+    "url": "retain",
+    "redirect": "none",
+    "rationale": "One canonical semantic parent, plus task-relevant cross-links; keep flat address.",
+    "sourceUrls": []
+  },
+  {
+    "route": "/it-policy/",
+    "currentTitle": "Information technology policy",
+    "currentParent": "/practice-policies/",
+    "proposedTitle": "Information technology policy",
+    "proposedParent": "/practice-policies/",
+    "navigation": [],
+    "requiredContextualInbound": [
+      "/practice-policies/"
+    ],
+    "action": "keep-page; change grouping/links where specified",
+    "url": "retain",
+    "redirect": "none",
+    "rationale": "Preserve full policy and original references; list on policy index.",
+    "sourceUrls": [
+      "https://www.parkmedicalcentrewythenshawe.nhs.uk/it-policy](https://www.parkmedicalcentrewythenshawe.nhs.uk/it-policy"
+    ]
+  },
+  {
+    "route": "/minor-ailments-scheme/",
+    "currentTitle": "Pharmacy services",
+    "currentParent": "/",
+    "proposedTitle": "Pharmacy services",
+    "proposedParent": "/services/",
+    "navigation": [],
+    "requiredContextualInbound": [
+      "/services/"
+    ],
+    "action": "keep-page; change grouping/links where specified",
+    "url": "retain",
+    "redirect": "none",
+    "rationale": "One canonical semantic parent, plus task-relevant cross-links; keep flat address.",
+    "sourceUrls": [
+      "https://www.parkmedicalcentrewythenshawe.nhs.uk/minor-ailments-scheme](https://www.parkmedicalcentrewythenshawe.nhs.uk/minor-ailments-scheme"
+    ]
+  },
+  {
+    "route": "/news/",
+    "currentTitle": "Practice information",
+    "currentParent": "/",
+    "proposedTitle": "Past news and reports",
+    "proposedParent": "/about/",
+    "navigation": [],
+    "requiredContextualInbound": [
+      "/about/",
+      "/feedback/",
+      "/patient-participation-group/"
+    ],
+    "action": "keep-page; change grouping/links where specified",
+    "url": "retain",
+    "redirect": "none",
+    "rationale": "Expose historical documents from About and feedback; remove misleading general-information role.",
+    "sourceUrls": [
+      "https://www.parkmedicalcentrewythenshawe.nhs.uk/practice-updates](https://www.parkmedicalcentrewythenshawe.nhs.uk/practice-updates",
+      "https://www.parkmedicalcentrewythenshawe.nhs.uk/friends-and-family-test-results](https://www.parkmedicalcentrewythenshawe.nhs.uk/friends-and-family-test-results",
+      "https://www.parkmedicalcentrewythenshawe.nhs.uk/practice-news](https://www.parkmedicalcentrewythenshawe.nhs.uk/practice-news",
+      "https://www.parkmedicalcentrewythenshawe.nhs.uk/_common/getdocument?id=311461](https://www.parkmedicalcentrewythenshawe.nhs.uk/_common/getdocument?id=311461",
+      "https://www.parkmedicalcentrewythenshawe.nhs.uk/_common/getdocument?id=318814](https://www.parkmedicalcentrewythenshawe.nhs.uk/_common/getdocument?id=318814",
+      "https://www.parkmedicalcentrewythenshawe.nhs.uk/_common/getdocument?id=318659](https://www.parkmedicalcentrewythenshawe.nhs.uk/_common/getdocument?id=318659",
+      "https://www.parkmedicalcentrewythenshawe.nhs.uk/_common/getdocument?id=315841](https://www.parkmedicalcentrewythenshawe.nhs.uk/_common/getdocument?id=315841",
+      "https://www.parkmedicalcentrewythenshawe.nhs.uk/_common/getdocument?id=311462](https://www.parkmedicalcentrewythenshawe.nhs.uk/_common/getdocument?id=311462",
+      "https://www.parkmedicalcentrewythenshawe.nhs.uk/_common/getdocument?id=309241](https://www.parkmedicalcentrewythenshawe.nhs.uk/_common/getdocument?id=309241"
+    ]
+  },
+  {
+    "route": "/nhs-app/",
+    "currentTitle": "NHS App",
+    "currentParent": "/",
+    "proposedTitle": "NHS App",
+    "proposedParent": "/services/",
+    "navigation": [],
+    "requiredContextualInbound": [
+      "/services/"
+    ],
+    "action": "keep-page; change grouping/links where specified",
+    "url": "retain",
+    "redirect": "none",
+    "rationale": "One canonical semantic parent, plus task-relevant cross-links; keep flat address.",
+    "sourceUrls": [
+      "https://www.parkmedicalcentrewythenshawe.nhs.uk/the-nhs-app](https://www.parkmedicalcentrewythenshawe.nhs.uk/the-nhs-app"
+    ]
+  },
+  {
+    "route": "/opening-times/",
+    "currentTitle": "Opening times",
+    "currentParent": "/",
+    "proposedTitle": "Opening times",
+    "proposedParent": "/contact/",
+    "navigation": [
+      "Browse More",
+      "footer"
+    ],
+    "requiredContextualInbound": [
+      "/contact/",
+      "/",
+      "/appointments/"
+    ],
+    "action": "keep-page; change grouping/links where specified",
+    "url": "retain",
+    "redirect": "none",
+    "rationale": "One canonical semantic parent, plus task-relevant cross-links; keep flat address.",
+    "sourceUrls": [
+      "https://www.parkmedicalcentrewythenshawe.nhs.uk/opening-hourscontact-us](https://www.parkmedicalcentrewythenshawe.nhs.uk/opening-hourscontact-us",
+      "https://www.parkmedicalcentrewythenshawe.nhs.uk/gp-extended-hours](https://www.parkmedicalcentrewythenshawe.nhs.uk/gp-extended-hours",
+      "https://www.parkmedicalcentrewythenshawe.nhs.uk/opening-hours-1](https://www.parkmedicalcentrewythenshawe.nhs.uk/opening-hours-1"
+    ]
+  },
+  {
+    "route": "/our-team/",
+    "currentTitle": "Our team",
+    "currentParent": "/",
+    "proposedTitle": "Our team",
+    "proposedParent": "/about/",
+    "navigation": [
+      "footer"
+    ],
+    "requiredContextualInbound": [
+      "/about/"
+    ],
+    "action": "keep-page; change grouping/links where specified",
+    "url": "retain",
+    "redirect": "none",
+    "rationale": "One canonical semantic parent, plus task-relevant cross-links; keep flat address.",
+    "sourceUrls": [
+      "https://www.parkmedicalcentrewythenshawe.nhs.uk/meet-the-team](https://www.parkmedicalcentrewythenshawe.nhs.uk/meet-the-team"
+    ]
+  },
+  {
+    "route": "/patient-participation-group/",
+    "currentTitle": "Patient Participation Group",
+    "currentParent": "/",
+    "proposedTitle": "Patient Participation Group",
+    "proposedParent": "/feedback/",
+    "navigation": [],
+    "requiredContextualInbound": [
+      "/feedback/",
+      "/about/"
+    ],
+    "action": "keep-page; change grouping/links where specified",
+    "url": "retain",
+    "redirect": "none",
+    "rationale": "One canonical semantic parent, plus task-relevant cross-links; keep flat address.",
+    "sourceUrls": [
+      "https://www.parkmedicalcentrewythenshawe.nhs.uk/patient-participation-group](https://www.parkmedicalcentrewythenshawe.nhs.uk/patient-participation-group"
+    ]
+  },
+  {
+    "route": "/personal-data/",
+    "currentTitle": "Personal data and online services",
+    "currentParent": "/practice-policies/",
+    "proposedTitle": "Personal data and online services",
+    "proposedParent": "/practice-policies/",
+    "navigation": [],
+    "requiredContextualInbound": [
+      "/practice-policies/"
+    ],
+    "action": "keep-page; change grouping/links where specified",
+    "url": "retain",
+    "redirect": "none",
+    "rationale": "Preserve full policy and original references; list on policy index.",
+    "sourceUrls": [
+      "https://www.parkmedicalcentrewythenshawe.nhs.uk/personal-data](https://www.parkmedicalcentrewythenshawe.nhs.uk/personal-data"
+    ]
+  },
+  {
+    "route": "/podiatry-referral-options/",
+    "currentTitle": "Podiatry referral options",
+    "currentParent": "/",
+    "proposedTitle": "Podiatry referral options",
+    "proposedParent": "/services/",
+    "navigation": [],
+    "requiredContextualInbound": [
+      "/services/"
+    ],
+    "action": "keep-page; change grouping/links where specified",
+    "url": "retain",
+    "redirect": "none",
+    "rationale": "One canonical semantic parent, plus task-relevant cross-links; keep flat address.",
+    "sourceUrls": [
+      "https://www.parkmedicalcentrewythenshawe.nhs.uk/podiatry-referral-options](https://www.parkmedicalcentrewythenshawe.nhs.uk/podiatry-referral-options"
+    ]
+  },
+  {
+    "route": "/practice-policies/",
+    "currentTitle": "Practice policies",
+    "currentParent": "/",
+    "proposedTitle": "Practice policies",
+    "proposedParent": "/about/",
+    "navigation": [
+      "footer"
+    ],
+    "requiredContextualInbound": [
+      "/about/"
+    ],
+    "action": "keep-page; change grouping/links where specified",
+    "url": "retain",
+    "redirect": "none",
+    "rationale": "One canonical semantic parent, plus task-relevant cross-links; keep flat address.",
+    "sourceUrls": [
+      "https://www.parkmedicalcentrewythenshawe.nhs.uk/you-and-your-general-practice](https://www.parkmedicalcentrewythenshawe.nhs.uk/you-and-your-general-practice",
+      "https://www.parkmedicalcentrewythenshawe.nhs.uk/practice-policies](https://www.parkmedicalcentrewythenshawe.nhs.uk/practice-policies",
+      "https://www.parkmedicalcentrewythenshawe.nhs.uk/chaperone-policy](https://www.parkmedicalcentrewythenshawe.nhs.uk/chaperone-policy",
+      "https://www.parkmedicalcentrewythenshawe.nhs.uk/confidentiality](https://www.parkmedicalcentrewythenshawe.nhs.uk/confidentiality",
+      "https://www.parkmedicalcentrewythenshawe.nhs.uk/it-policy](https://www.parkmedicalcentrewythenshawe.nhs.uk/it-policy",
+      "https://www.parkmedicalcentrewythenshawe.nhs.uk/summary-care-record](https://www.parkmedicalcentrewythenshawe.nhs.uk/summary-care-record",
+      "https://www.parkmedicalcentrewythenshawe.nhs.uk/training](https://www.parkmedicalcentrewythenshawe.nhs.uk/training",
+      "https://www.parkmedicalcentrewythenshawe.nhs.uk/violence--zero-tolerance-policy](https://www.parkmedicalcentrewythenshawe.nhs.uk/violence--zero-tolerance-policy"
+    ]
+  },
+  {
+    "route": "/pregnancy/",
+    "currentTitle": "Pregnancy information",
+    "currentParent": "/",
+    "proposedTitle": "Pregnancy information",
+    "proposedParent": "/health-information/",
+    "navigation": [],
+    "requiredContextualInbound": [
+      "/health-information/",
+      "/services/"
+    ],
+    "action": "keep-page; change grouping/links where specified",
+    "url": "retain",
+    "redirect": "none",
+    "rationale": "One canonical semantic parent, plus task-relevant cross-links; keep flat address.",
+    "sourceUrls": [
+      "https://www.parkmedicalcentrewythenshawe.nhs.uk/pregnancy-care-planner](https://www.parkmedicalcentrewythenshawe.nhs.uk/pregnancy-care-planner"
+    ]
+  },
+  {
+    "route": "/prescription-fees/",
+    "currentTitle": "Prescription charges",
+    "currentParent": "/",
+    "proposedTitle": "Prescription charges",
+    "proposedParent": "/prescriptions/",
+    "navigation": [],
+    "requiredContextualInbound": [
+      "/prescriptions/",
+      "/services/"
+    ],
+    "action": "keep-page; change grouping/links where specified",
+    "url": "retain",
+    "redirect": "none",
+    "rationale": "One canonical semantic parent, plus task-relevant cross-links; keep flat address.",
+    "sourceUrls": [
+      "https://www.parkmedicalcentrewythenshawe.nhs.uk/prescription-fees](https://www.parkmedicalcentrewythenshawe.nhs.uk/prescription-fees"
+    ]
+  },
+  {
+    "route": "/prescriptions/",
+    "currentTitle": "Prescriptions",
+    "currentParent": "/",
+    "proposedTitle": "Prescriptions",
+    "proposedParent": "/",
+    "navigation": [
+      "primary",
+      "footer"
+    ],
+    "requiredContextualInbound": [
+      "/"
+    ],
+    "action": "keep-page; change grouping/links where specified",
+    "url": "retain",
+    "redirect": "none",
+    "rationale": "Top-level entry or site utility, no forced nesting.",
+    "sourceUrls": [
+      "https://www.parkmedicalcentrewythenshawe.nhs.uk/prescriptions](https://www.parkmedicalcentrewythenshawe.nhs.uk/prescriptions",
+      "https://www.parkmedicalcentrewythenshawe.nhs.uk/electronic-prescribing-service](https://www.parkmedicalcentrewythenshawe.nhs.uk/electronic-prescribing-service"
+    ]
+  },
+  {
+    "route": "/privacy-notice/",
+    "currentTitle": "Privacy notice",
+    "currentParent": "/",
+    "proposedTitle": "Privacy notice",
+    "proposedParent": "/practice-policies/",
+    "navigation": [
+      "footer"
+    ],
+    "requiredContextualInbound": [
+      "/practice-policies/",
+      "/register/",
+      "/personal-data/"
+    ],
+    "action": "keep-page; change grouping/links where specified",
+    "url": "retain",
+    "redirect": "none",
+    "rationale": "Preserve full policy and original references; list on policy index.",
+    "sourceUrls": [
+      "https://www.parkmedicalcentrewythenshawe.nhs.uk/FooterLinks/YourData](https://www.parkmedicalcentrewythenshawe.nhs.uk/FooterLinks/YourData",
+      "https://www.parkmedicalcentrewythenshawe.nhs.uk/privacy-policy](https://www.parkmedicalcentrewythenshawe.nhs.uk/privacy-policy"
+    ]
+  },
+  {
+    "route": "/private-services/",
+    "currentTitle": "Private services and fees",
+    "currentParent": "/",
+    "proposedTitle": "Private services and fees",
+    "proposedParent": "/services/",
+    "navigation": [],
+    "requiredContextualInbound": [
+      "/services/",
+      "/appointments/"
+    ],
+    "action": "keep-page; change grouping/links where specified",
+    "url": "retain",
+    "redirect": "none",
+    "rationale": "One canonical semantic parent, plus task-relevant cross-links; keep flat address.",
+    "sourceUrls": [
+      "https://www.parkmedicalcentrewythenshawe.nhs.uk/non-nhs-services](https://www.parkmedicalcentrewythenshawe.nhs.uk/non-nhs-services"
+    ]
+  },
+  {
+    "route": "/register/",
+    "currentTitle": "Register with us",
+    "currentParent": "/",
+    "proposedTitle": "Register with us",
+    "proposedParent": "/services/",
+    "navigation": [
+      "primary",
+      "footer"
+    ],
+    "requiredContextualInbound": [
+      "/services/",
+      "/",
+      "/appointments/",
+      "/homeless-friendly-practice/"
+    ],
+    "action": "keep-page; change grouping/links where specified",
+    "url": "retain",
+    "redirect": "none",
+    "rationale": "One canonical semantic parent, plus task-relevant cross-links; keep flat address.",
+    "sourceUrls": [
+      "https://www.parkmedicalcentrewythenshawe.nhs.uk/patient-registration](https://www.parkmedicalcentrewythenshawe.nhs.uk/patient-registration"
+    ]
+  },
+  {
+    "route": "/research/",
+    "currentTitle": "Research",
+    "currentParent": "/",
+    "proposedTitle": "Research",
+    "proposedParent": "/about/",
+    "navigation": [],
+    "requiredContextualInbound": [
+      "/about/"
+    ],
+    "action": "keep-page; change grouping/links where specified",
+    "url": "retain",
+    "redirect": "none",
+    "rationale": "One canonical semantic parent, plus task-relevant cross-links; keep flat address.",
+    "sourceUrls": [
+      "https://www.parkmedicalcentrewythenshawe.nhs.uk/research-at-the-park](https://www.parkmedicalcentrewythenshawe.nhs.uk/research-at-the-park"
+    ]
+  },
+  {
+    "route": "/self-referrals/",
+    "currentTitle": "Self-referrals and referral tracking",
+    "currentParent": "/",
+    "proposedTitle": "Self-referrals and referral tracking",
+    "proposedParent": "/services/",
+    "navigation": [],
+    "requiredContextualInbound": [
+      "/services/"
+    ],
+    "action": "keep-page; change grouping/links where specified",
+    "url": "retain",
+    "redirect": "none",
+    "rationale": "One canonical semantic parent, plus task-relevant cross-links; keep flat address.",
+    "sourceUrls": [
+      "https://www.parkmedicalcentrewythenshawe.nhs.uk/self-referrals](https://www.parkmedicalcentrewythenshawe.nhs.uk/self-referrals"
+    ]
+  },
+  {
+    "route": "/services/",
+    "currentTitle": "Clinics and services",
+    "currentParent": "/",
+    "proposedTitle": "Services and support",
+    "proposedParent": "/",
+    "navigation": [
+      "Browse More"
+    ],
+    "requiredContextualInbound": [],
+    "action": "keep-page; change grouping/links where specified",
+    "url": "retain",
+    "redirect": "none",
+    "rationale": "Top-level entry or site utility, no forced nesting.",
+    "sourceUrls": [
+      "https://www.parkmedicalcentrewythenshawe.nhs.uk/services-availablenhs-health-advice](https://www.parkmedicalcentrewythenshawe.nhs.uk/services-availablenhs-health-advice",
+      "https://www.parkmedicalcentrewythenshawe.nhs.uk/clinics-we-offer](https://www.parkmedicalcentrewythenshawe.nhs.uk/clinics-we-offer",
+      "https://www.parkmedicalcentrewythenshawe.nhs.uk/dressing-clinic](https://www.parkmedicalcentrewythenshawe.nhs.uk/dressing-clinic"
+    ]
+  },
+  {
+    "route": "/summary-care-record/",
+    "currentTitle": "Summary Care Record",
+    "currentParent": "/practice-policies/",
+    "proposedTitle": "Summary Care Record",
+    "proposedParent": "/practice-policies/",
+    "navigation": [],
+    "requiredContextualInbound": [
+      "/practice-policies/"
+    ],
+    "action": "keep-page; change grouping/links where specified",
+    "url": "retain",
+    "redirect": "none",
+    "rationale": "Preserve full policy and original references; list on policy index.",
+    "sourceUrls": [
+      "https://www.parkmedicalcentrewythenshawe.nhs.uk/summary-care-record](https://www.parkmedicalcentrewythenshawe.nhs.uk/summary-care-record"
+    ]
+  },
+  {
+    "route": "/test-results/",
+    "currentTitle": "Test results",
+    "currentParent": "/",
+    "proposedTitle": "Test results",
+    "proposedParent": "/services/",
+    "navigation": [
+      "primary",
+      "footer"
+    ],
+    "requiredContextualInbound": [
+      "/services/",
+      "/",
+      "/appointments/",
+      "/nhs-app/"
+    ],
+    "action": "keep-page; change grouping/links where specified",
+    "url": "retain",
+    "redirect": "none",
+    "rationale": "One canonical semantic parent, plus task-relevant cross-links; keep flat address.",
+    "sourceUrls": [
+      "https://www.parkmedicalcentrewythenshawe.nhs.uk/test-results](https://www.parkmedicalcentrewythenshawe.nhs.uk/test-results"
+    ]
+  },
+  {
+    "route": "/training/",
+    "currentTitle": "Training at the practice",
+    "currentParent": "/practice-policies/",
+    "proposedTitle": "Training at the practice",
+    "proposedParent": "/about/",
+    "navigation": [],
+    "requiredContextualInbound": [
+      "/about/",
+      "/practice-policies/"
+    ],
+    "action": "keep-page; change grouping/links where specified",
+    "url": "retain",
+    "redirect": "none",
+    "rationale": "Training describes the organisation; retain policy-index cross-link for source parity.",
+    "sourceUrls": [
+      "https://www.parkmedicalcentrewythenshawe.nhs.uk/training](https://www.parkmedicalcentrewythenshawe.nhs.uk/training"
+    ]
+  },
+  {
+    "route": "/update-your-details/",
+    "currentTitle": "Update your details",
+    "currentParent": "/",
+    "proposedTitle": "Update your details",
+    "proposedParent": "/appointments/",
+    "navigation": [],
+    "requiredContextualInbound": [
+      "/appointments/",
+      "/contact/",
+      "/register/",
+      "/nhs-app/"
+    ],
+    "action": "keep-page; change grouping/links where specified",
+    "url": "retain",
+    "redirect": "none",
+    "rationale": "One canonical semantic parent, plus task-relevant cross-links; keep flat address.",
+    "sourceUrls": [
+      "https://www.parkmedicalcentrewythenshawe.nhs.uk/update-my-details](https://www.parkmedicalcentrewythenshawe.nhs.uk/update-my-details"
+    ]
+  },
+  {
+    "route": "/urgent-help/",
+    "currentTitle": "Urgent help",
+    "currentParent": "/",
+    "proposedTitle": "Urgent help",
+    "proposedParent": "/appointments/",
+    "navigation": [
+      "footer"
+    ],
+    "requiredContextualInbound": [
+      "/appointments/"
+    ],
+    "action": "keep-page; change grouping/links where specified",
+    "url": "retain",
+    "redirect": "none",
+    "rationale": "One canonical semantic parent, plus task-relevant cross-links; keep flat address.",
+    "sourceUrls": []
+  },
+  {
+    "route": "/violence-zero-tolerance-policy/",
+    "currentTitle": "Respectful behaviour policy",
+    "currentParent": "/practice-policies/",
+    "proposedTitle": "Respectful behaviour policy",
+    "proposedParent": "/practice-policies/",
+    "navigation": [],
+    "requiredContextualInbound": [
+      "/practice-policies/"
+    ],
+    "action": "keep-page; change grouping/links where specified",
+    "url": "retain",
+    "redirect": "none",
+    "rationale": "Preserve full policy and original references; list on policy index.",
+    "sourceUrls": [
+      "https://www.parkmedicalcentrewythenshawe.nhs.uk/violence--zero-tolerance-policy](https://www.parkmedicalcentrewythenshawe.nhs.uk/violence--zero-tolerance-policy"
+    ]
+  }
+]

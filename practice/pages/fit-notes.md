@@ -1,5 +1,8 @@
 ---
 title: Sick notes and fit notes
+breadcrumbParent:
+  href: /appointments/
+  text: Appointments and admin requests
 ---
 
 To request a fit note, choose the **Admin Query** option in the practice's online service.

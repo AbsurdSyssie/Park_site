@@ -138,7 +138,8 @@ export function configureSite(eleventyConfig, { draftPreview = false } = {}) {
         );
       }
     }
-    // Preview content overrides journeys, never the urgent safety partial.
+    // Practice pages replace the matching generic wrapper in every build.
+    // The urgent-help route itself is intentionally absent from this list.
     const replaceable = [
       "index",
       "appointments",
@@ -155,11 +156,10 @@ export function configureSite(eleventyConfig, { draftPreview = false } = {}) {
       "cookies",
       "about",
     ];
-    if (draftPreview && replaceable.includes(page.slug))
-      eleventyConfig.ignores.add(`src/${page.slug}.njk`);
+    if (replaceable.includes(page.slug)) eleventyConfig.ignores.add(`src/${page.slug}.njk`);
     eleventyConfig.addTemplate(`practice-pages/${page.slug}.md`, page.content, {
-      layout: page.slug === "index" && draftPreview ? "base.njk" : "page.njk",
-      permalink: page.slug === "index" && draftPreview ? "/" : `/${page.slug}/`,
+      layout: page.slug === "index" ? "base.njk" : "page.njk",
+      permalink: page.slug === "index" ? "/" : `/${page.slug}/`,
     });
   }
 

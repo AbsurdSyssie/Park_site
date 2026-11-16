@@ -1,5 +1,8 @@
 ---
 title: Opening times
+breadcrumbParent:
+  href: /contact/
+  text: Contact and find us
 ---
 
 ## Core opening hours

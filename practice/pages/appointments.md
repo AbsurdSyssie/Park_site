@@ -1,9 +1,14 @@
 ---
 title: Appointments and admin requests
+breadcrumbParent:
+  href: /
+  text: The Park Medical Centre
 lede: Request an appointment online, or call reception if you need help.
 ---
 
 <div class="nhsuk-card nhsuk-card--care nhsuk-card--care--emergency"><div class="nhsuk-card__content"><h2>Call 999 or go to A&amp;E now if:</h2><p>it's a life-threatening emergency. Do not use our online form or wait for a call back.</p></div></div>
+
+See [contact details](/contact/) and [opening times](/opening-times/) if you need to speak to reception or check when the practice is open.
 
 ## Request an appointment
 
@@ -33,4 +38,14 @@ If you are housebound and need a home visit, call the practice as early as possi
 
 ## Evening and weekend appointments
 
-Extended hours appointments are available on Tuesday and Friday evenings and some Saturdays, at The Park Medical Centre and other local surgeries. Ask reception which appointments are available. These are routine appointments, not an emergency service.
+Extended hours appointments are available on Tuesday and Friday evenings. Saturday appointments are available every fourth Saturday at The Park Medical Centre and other local surgeries. Ask reception which appointments are available. Saturday appointments are not for emergencies.
+
+## Other appointment tasks
+
+- [Request a fit note](/fit-notes/)
+- [Update your details](/update-your-details/)
+- [Test results](/test-results/)
+- [Register with the practice](/register/)
+- [Urgent help](/urgent-help/)
+- For work that is not covered by the NHS, see [private services and fees](/private-services/).
+- Read the practice's [artificial intelligence information](/artificial-intelligence/).

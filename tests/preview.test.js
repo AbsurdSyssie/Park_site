@@ -76,9 +76,15 @@ test("isolated preview defers only missing review and unknown earnings (H1,H2,H3
       assert.equal((html.match(/Unofficial demo/g) ?? []).length, 1);
       assert.match(html, /Not approved by the practice/);
       assert.match(html, /noindex, nofollow/);
-      assert.match(html, /data-safety="urgent-help"/);
-      assert.match(html, /href="tel:999"/);
-      assert.match(html, /href="tel:111"/);
+      const route = String(f).replaceAll(path.sep, "/");
+      const shouldShowSharedHelp = ["index.html", "appointments/index.html"].includes(route);
+      if (shouldShowSharedHelp) {
+        assert.match(html, /data-safety="urgent-help"/);
+        assert.match(html, /href="tel:999"/);
+        assert.match(html, /href="tel:111"/);
+      } else {
+        assert.doesNotMatch(html, /data-safety="urgent-help"/);
+      }
       assert.doesNotMatch(html, /Website content last reviewed|<form\b|GP earnings/);
     }
     assert.notEqual(run(false).status, 0);

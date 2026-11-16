@@ -24,6 +24,21 @@
   margin-bottom: 32px;
 }
 
+.app-cqc-footer {
+  width: 100%;
+  max-width: 215px;
+}
+
+/* The official widget leaves excess space below its report button in this narrow footer column. */
+.app-cqc-footer .cqc-widget .cqc-container {
+  padding-bottom: 12px !important;
+}
+
+.app-cqc-footer .cqc-widget .widget-button-wrapper {
+  margin-bottom: 8px;
+  padding-bottom: 4px;
+}
+
 .app-opening-hours td,
 .app-opening-hours th {
   vertical-align: top;

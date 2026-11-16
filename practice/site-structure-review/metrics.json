@@ -1,0 +1,117 @@
+{
+  "routes": 49,
+  "links": 1773,
+  "headerLocalLinkOccurrences": 17,
+  "headerDistinctRoutes": 16,
+  "headerLabelH1Differences": [
+    {
+      "href": "/",
+      "label": "NHS The Park Medical Centre Wythenshawe",
+      "h1": "The Park Medical Centre"
+    },
+    {
+      "href": "/",
+      "label": "Home",
+      "h1": "The Park Medical Centre"
+    },
+    {
+      "href": "/appointments/",
+      "label": "Request An Appointment / Admin Query",
+      "h1": "Appointments and admin requests"
+    },
+    {
+      "href": "/register/",
+      "label": "Join The Surgery",
+      "h1": "Register with us"
+    },
+    {
+      "href": "/feedback/",
+      "label": "Patient Feedback",
+      "h1": "Patient feedback"
+    },
+    {
+      "href": "/test-results/",
+      "label": "Test Results",
+      "h1": "Test results"
+    },
+    {
+      "href": "/fit-notes/",
+      "label": "Sick / Fit Notes",
+      "h1": "Sick notes and fit notes"
+    },
+    {
+      "href": "/opening-times/",
+      "label": "Opening Hours",
+      "h1": "Opening times"
+    },
+    {
+      "href": "/contact/",
+      "label": "Contact Us",
+      "h1": "Contact and find us"
+    },
+    {
+      "href": "/research/",
+      "label": "Practice Research",
+      "h1": "Research"
+    },
+    {
+      "href": "/our-team/",
+      "label": "Meet The Team",
+      "h1": "Our team"
+    },
+    {
+      "href": "/services/",
+      "label": "Services / NHS Advice",
+      "h1": "Clinics and services"
+    },
+    {
+      "href": "/bereavement/",
+      "label": "Bereavement",
+      "h1": "Bereavement support"
+    },
+    {
+      "href": "/carers/",
+      "label": "Carers Support",
+      "h1": "Support for carers"
+    },
+    {
+      "href": "/artificial-intelligence/",
+      "label": "Artificial Intelligence",
+      "h1": "Artificial intelligence information"
+    },
+    {
+      "href": "/about/",
+      "label": "About Us",
+      "h1": "About the practice"
+    }
+  ],
+  "explicitNonHomeBreadcrumbParents": [
+    "/chaperone-policy/",
+    "/confidentiality/",
+    "/data-protection/",
+    "/it-policy/",
+    "/personal-data/",
+    "/summary-care-record/",
+    "/training/",
+    "/violence-zero-tolerance-policy/"
+  ],
+  "homeOnlyContextual": [
+    "/advanced-care-planning/",
+    "/artificial-intelligence/",
+    "/bereavement/",
+    "/bowel-cancer-screening/",
+    "/find-your-nhs-number/",
+    "/homeless-friendly-practice/",
+    "/pregnancy/",
+    "/prescriptions/",
+    "/research/",
+    "/test-results/",
+    "/update-your-details/"
+  ],
+  "globalOnly": [
+    "/about/",
+    "/cookies/",
+    "/news/"
+  ],
+  "staticIssues": 0
+}

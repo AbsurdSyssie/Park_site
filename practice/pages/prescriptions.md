@@ -1,5 +1,8 @@
 ---
 title: Prescriptions
+breadcrumbParent:
+  href: /
+  text: The Park Medical Centre
 lede: How to order your repeat medication.
 ---
 
@@ -34,3 +37,5 @@ The practice can send prescriptions electronically to your chosen pharmacy. Ask 
 Patients on repeat medication are asked to attend a review with a doctor, nurse practitioner or practice nurse at least once a year. Your repeat prescription slip will tell you when a review is due. Please book in advance when a review is required.
 
 [Read about medicines on the NHS website](https://www.nhs.uk/medicines/)
+
+For current charges and exemptions, visit [prescription charges](/prescription-fees/).

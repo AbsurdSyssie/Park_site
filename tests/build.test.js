@@ -56,16 +56,31 @@ before(async () => {
 
 after(() => fs.rmSync(tmp, { recursive: true, force: true }));
 
-test("every page shows 999 and 111 urgent help (hazard H1)", () => {
+test("shared urgent help appears only on home and appointments (hazard H1)", () => {
   for (const dir of [site, demo, wales]) {
     const files = htmlFiles(dir);
     assert.ok(files.length > 10);
     for (const file of files) {
       const html = fs.readFileSync(file, "utf8");
-      assert.match(html, /data-safety="urgent-help"/, `${file} is missing urgent help`);
-      assert.match(html, /href="tel:999"/, `${file} is missing 999`);
-      assert.match(html, /href="tel:111"/, `${file} is missing 111`);
+      const route = path.relative(dir, file).replaceAll(path.sep, "/");
+      const shouldShowSharedHelp = ["index.html", "appointments/index.html"].includes(route);
+      if (shouldShowSharedHelp) {
+        assert.match(html, /data-safety="urgent-help"/, `${route} is missing shared urgent help`);
+        assert.match(html, /href="tel:999"/, `${route} is missing 999`);
+        assert.match(html, /href="tel:111"/, `${route} is missing 111`);
+      } else {
+        assert.doesNotMatch(
+          html,
+          /data-safety="urgent-help"/,
+          `${route} unexpectedly shows shared urgent help`,
+        );
+      }
     }
+    assert.match(
+      read(dir, "appointments/index.html"),
+      /Call 999 or go to A&amp;E now/,
+      "appointments must retain its emergency care card",
+    );
   }
 });
 
@@ -97,6 +112,33 @@ test("all standard pages are built", () => {
   ]) {
     assert.ok(fs.existsSync(path.join(site, page)), `${page} was not built`);
   }
+});
+
+test("practice Markdown routes replace matching wrappers and keep the home safety panel", async () => {
+  const practiceDir = path.join(tmp, "practice-with-route-overrides");
+  fs.cpSync("tests/fixtures/demo-practice", practiceDir, { recursive: true });
+  fs.writeFileSync(
+    path.join(practiceDir, "pages", "index.md"),
+    "---\ntitle: Fixture home\n---\nFixture home markdown replaces the generic home template.\n",
+  );
+  fs.writeFileSync(
+    path.join(practiceDir, "pages", "about.md"),
+    "---\ntitle: Fixture about\n---\nFixture about markdown replaces the generic about wrapper.\n",
+  );
+
+  const output = await build(practiceDir, "practice-route-overrides");
+  assert.match(
+    read(output, "index.html"),
+    /Fixture home markdown replaces the generic home template/,
+  );
+  assert.match(read(output, "index.html"), /data-safety="urgent-help"/);
+  assert.ok(!fs.existsSync(path.join(output, "index", "index.html")));
+  assert.match(
+    read(output, "about/index.html"),
+    /Fixture about markdown replaces the generic about wrapper/,
+  );
+  assert.doesNotMatch(read(output, "about/index.html"), /data-safety="urgent-help"/);
+  assert.match(read(output, "prescriptions/index.html"), /Order a repeat prescription/);
 });
 
 test("NHS.UK frontend assets are copied", () => {

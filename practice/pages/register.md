@@ -1,5 +1,8 @@
 ---
 title: Register with us
+breadcrumbParent:
+  href: /services/
+  text: Services and support
 ---
 
 ## Join The Park Medical Centre
@@ -20,6 +23,8 @@ Contact reception to check the practice area before registering. The practice al
 
 Ask reception about the out-of-area agreement.
 
+[Read the new patient out-of-area agreement (PDF)](/images/documents/new-patient-out-of-area-agreement.pdf)
+
 ## Temporary registration
 
 Contact reception if you need temporary registration while away from home.
@@ -28,6 +33,8 @@ Contact reception if you need temporary registration while away from home.
 
 The practice will contact you when your registration is approved. You will be allocated an accountable GP, but you can still see other clinicians at the practice.
 
-[Find your NHS number](https://www.nhs.uk/nhs-services/find-nhs-number/)
+Find your number with the [NHS service](/find-your-nhs-number/) or visit the NHS guide to [finding your NHS number](https://www.nhs.uk/nhs-services/find-nhs-number/).
 
 [Privacy information for registration](/privacy-notice/)
+
+After you have registered, see how to [update your details](/update-your-details/).

@@ -1,6 +1,6 @@
 ---
 layout: page.njk
-title: About us
+title: About the practice
 ---
 {% set p = practice.practice %}
 {% if p.description %}<p>{{ p.description }}</p>{% endif %}
@@ -9,9 +9,6 @@ title: About us
 {% if practice.urgent.nation == "england" and practice.cqc %}
 <h2>Our CQC rating</h2>
 <p>The Care Quality Commission (CQC) inspects GP practices in England.</p>
-{% if practice.cqc.embed_html %}
-  <div class="app-embed" data-embed="cqc">{{ practice.cqc.embed_html | safe }}</div>
-{% endif %}
 {% if practice.cqc.location_id %}
   <p><a href="https://www.cqc.org.uk/location/{{ practice.cqc.location_id }}">See our latest CQC inspection report</a></p>
 {% endif %}

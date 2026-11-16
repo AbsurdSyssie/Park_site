@@ -1,5 +1,8 @@
 ---
 title: Patient Participation Group
+breadcrumbParent:
+  href: /feedback/
+  text: Patient feedback
 ---
 
 The Patient Participation Group (PPG) gives patients a voice in how the practice works. Its role includes:
@@ -9,3 +12,5 @@ The Patient Participation Group (PPG) gives patients a voice in how the practice
 - helping with communication and health promotion events
 
 If you would like to get involved, ask at reception for more information or call [0161&nbsp;998&nbsp;5538](tel:01619985538).
+
+You can read the practice's [past news and reports](/news/), including historical Friends and Family Test results.
