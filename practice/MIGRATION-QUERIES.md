@@ -2,8 +2,8 @@
 
 Observation date: 2 November 2026. No practice representative has approved these facts or this demonstration. No practice was contacted, no patient information entered and no requests submitted.
 
-1. Who is authorised to review the whole site, confirm phone and hours and provide clinical-safety and publishing sign-off? `site.content_last_reviewed` must remain missing until that happens.
-2. The 2024/25 declaration reports £100,928, 3 part-time GPs and 1 locum, but no full-time count. What is the complete declaration, including the full-time count? No zero has been inferred. The structured required earnings block remains absent, so production validation fails. Do not silently insert a yearless partial declaration or use preview deferrals for a known-year incomplete block.
+1. The user confirmed the whole-site content review date as 21 August 2025. This records the review date only; it is not clinical-safety or publishing sign-off. Who is authorised to confirm current practice facts and provide the required sign-off?
+2. Resolved for the 2024/25 earnings data: the archived declaration reports £100,928, 3 part-time GPs and 1 locum; the user confirmed the full-time count is 0. The complete structured declaration is now recorded. Practice review of the figures remains pending before official use.
 3. Which staff training schedule is correct? `/opening-hourscontact-us` says the second Wednesday of every month from 1pm; `/opening-hours-1` says every two months. No recurring closure dates have been invented. Ordinary pages advise checking before travel.
 4. Are the published Tuesday/Friday extended hours and Saturday frequency still correct? Source appointment page says every fourth Saturday; other opening pages say some Saturdays. The demo uses the common, non-conflicting description, with reception for times and venues.
 5. Please confirm the complaints handler, procedure, response times and current ICB escalation route. No dedicated procedure was found in inspected source pages. The demo gives the observed reception and postal contact to request help, not a manufactured policy, acknowledgement promise or guessed complaint email.
@@ -18,7 +18,7 @@ Observation date: 2 November 2026. No practice representative has approved these
 
 12. Please confirm whether the Homeless Friendly Practice accreditation and pledge remain current, and review the five Wythenshawe resource documents linked from the draft. They were copied from the source website and may be out of date.
 13. Please confirm current availability for the minor ailments scheme, podiatry referrals, GP training and AI use. The pages now carry the captured source information; no practice representative has confirmed that the arrangements remain current.
-14. Please confirm the 2024/25 GP earnings declaration is complete and current. The patient page preserves the published amount and GP counts; the required structured declaration remains absent because the full-time count is unknown.
+14. Resolved: the 2024/25 GP earnings declaration is recorded as £100,928 for 0 full-time GPs, 3 part-time GPs and 1 locum GP, using the archived declaration and the user's full-time-count confirmation. Practice review of the figures remains pending before official use.
 
 These are production blockers/questions, not qualifications to scatter through patient-facing pages. Personal demonstration hosting is explicitly separate from official practice publication.
 

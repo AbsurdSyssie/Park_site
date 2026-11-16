@@ -1,6 +1,6 @@
 # Real practice, personal unofficial demonstration. See MIGRATION-VERIFICATION.md.
-# Source observation is not practice approval. Required approval and a complete
-# earnings declaration remain missing; the strict production gate must fail.
+# Source observation and user-confirmed earnings are not practice approval.
+# Whole-site content review date is recorded; required practice approval remains pending.
 demo: false
 practice:
   name: The Park Medical Centre
@@ -10,7 +10,7 @@ practice:
   description: NHS GP services at 434 Altrincham Road, Baguley, Wythenshawe, Manchester.
 site:
   url: https://park.oddtv.uk/
-  content_last_reviewed: null
+  content_last_reviewed: '2025-08-21'
 contact:
   phone: '0161 998 5538'
   phone_hours: 8am to 6:30pm, Monday to Friday
@@ -92,7 +92,13 @@ complaints:
   contact: the Practice Manager
   how: Contact reception on 0161 998 5538 or write to the Practice Manager at 434 Altrincham Road, Baguley, Wythenshawe, Manchester, M23 9AB.
 # The source reports 2024/25, £100,928, 3 part-time and 1 locum GP.
-# No full-time count is stated. Do not infer zero or populate a partial block.
+# The user confirmed the full-time count for that source year is 0.
+gp_earnings:
+  financial_year: 2024/25
+  mean_earnings: 100928
+  full_time_gps: 0
+  part_time_gps: 3
+  locum_gps: 1
 cqc:
   location_id: 1-571476646
   embed_html: '<script type="text/javascript" src="https://www.cqc.org.uk/sites/all/modules/custom/cqc_widget/widget.js?data-id=1-571476646&data-host=https://www.cqc.org.uk&type=location"></script>'
