@@ -26,3 +26,4 @@ These are production blockers/questions, not qualifications to scatter through p
 16. Please review the AI page claims about NHS-approved systems, opt-out arrangements, data security and clinical safety, and supply the leaflet review date. The placeholder date is omitted from the patient page.
 17. Please confirm that the 2024 prescription charges and out-of-hours prescription phone line are retired. The patient page links to current NHS Business Services Authority information instead of repeating the old tariff.
 18. Please confirm whether the translated contraception leaflets and local housing/food documents remain current and may stay online.
+19. Resolved for membership: on 2026-11-17 the practice confirmed that the three GP partners are Dr S Hannan, Dr S Sarin and Dr P Vaidya (excluding Dr M Nazar). Full registered names, qualifications and authoritative legal-record verification remain pending; do not expand initials or infer credentials.
