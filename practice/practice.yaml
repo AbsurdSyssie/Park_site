@@ -56,9 +56,9 @@ trusted_embed_domains: []
 team:
   - group: Doctors
     people:
-      - { name: Dr S Hannan, role: GP partner }
-      - { name: Dr S Sarin, role: GP partner }
-      - { name: Dr P Vaidya, role: GP partner }
+      - { name: Dr Shahla Hannan, role: GP partner, details: 'Primary medical qualification: MB BS, 1996, University of London.', gmc_number: '4310237' }
+      - { name: Dr Suman Sarin, role: GP partner, details: 'Primary medical qualification: MB BS, 1989, Ranchi University.', gmc_number: '4277903' }
+      - { name: Dr Priyanka Vaidya, role: GP partner, details: 'Primary medical qualification: MB ChB, 2011, University of Bristol.', gmc_number: '7138642' }
       - { name: Dr M Nazar, role: Doctor }
   - group: Practice management
     people:

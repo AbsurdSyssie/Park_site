@@ -7,7 +7,7 @@ breadcrumbParent:
 
 The Park Medical Centre provides NHS GP services from 434 Altrincham Road, Baguley, Wythenshawe, Manchester, M23 9AB.
 
-The practice is operated by an unlimited partnership. The partners are Dr S Hannan, Dr S Sarin and Dr P Vaidya. [See the practice team](/our-team/).
+The practice is operated by an unlimited partnership. The partners are Dr Shahla Hannan, Dr Suman Sarin and Dr Priyanka Vaidya. [See the practice team](/our-team/).
 
 ## About the practice
 

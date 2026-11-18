@@ -13,6 +13,7 @@ breadcrumbParent:
     <h3 class="nhsuk-heading-s nhsuk-u-margin-bottom-1">{{ person.name }}</h3>
     <p class="nhsuk-u-margin-bottom-1">{{ person.role }}</p>
     {% if person.details %}<p class="nhsuk-body-s nhsuk-u-margin-bottom-0">{{ person.details }}</p>{% endif %}
+    {% if person.gmc_number %}<p class="nhsuk-body-s nhsuk-u-margin-bottom-0">GMC number: {{ person.gmc_number }}. <a href="https://www.gmc-uk.org/registers">Search the GMC register</a>.</p>{% endif %}
   </li>
   {% endfor %}
 </ul>
