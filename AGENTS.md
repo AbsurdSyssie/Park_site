@@ -8,4 +8,4 @@ For the Park Medical Centre site-structure work, also use [practice/site-structu
 
 Work in bounded, disjoint file scopes. Delegate implementation to Luna subagents and have Terra review the aggregated changes. Run deterministic audits first; use editorial judgement only where the tools cannot decide. Do not invent practice facts or describe clinical hazards as resolved. GP earnings and source/fact review remain pending; do not record practice sign-off. Do not publish or push unless asked.
 
-The review's WCAG 2.0 criteria are the requested baseline, not a conformance claim. Keep current NHS guidance referring to WCAG 2.2 AA distinct, and record remaining manual/runtime accessibility work.
+Use WCAG 2.2 AA as the Park site accessibility baseline. Treat the selected WCAG 2.0 checks in earlier reviews as historical evidence. Record remaining manual and browser-based accessibility checks, and make conformance claims only when supported by a full assessment.

@@ -8,7 +8,7 @@ title: The Park Medical Centre
 <p class="nhsuk-lede-text">Care and support, close to home.</p>
 <p>434 Altrincham Road, Manchester, M23 9AB<br><a href="tel:01619985538">0161&nbsp;998&nbsp;5538</a></p>
 {{OFFICIAL_HOME_ACTION_LINK}}
-<p class="nhsuk-body-s">Medical and admin requests through Accurx. If you cannot use the online service, call reception.</p>
+<p class="nhsuk-body-s"><a href="https://accurx.nhs.uk/patient-initiated/p84045">Start an online medical or admin request in Accurx</a>. If you cannot use the online service, call reception.</p>
 </div>
 
 <h2>How can we help?</h2>
@@ -27,13 +27,15 @@ See [opening times](/opening-times/) for the practice's regular and extended hou
 
 Learn [about the practice](/about/), meet [our team](/our-team/), explore [services and support](/services/) or find [local self-referral services](/self-referrals/).
 
+Read [You and Your General Practice (NHS England)](https://www.england.nhs.uk/long-read/you-and-your-general-practice-english/) for guidance on what to expect from your practice and how you can help make the best use of its services.
+
 ### Get involved
 
 Your views help improve the practice. Find out about the [Patient Participation Group](/patient-participation-group/) and [how to give feedback](/feedback/).
 
 ### Health information
 
-Find trusted information in [NHS Conditions A to Z](https://www.nhs.uk/conditions/) and [Medicines A to Z](https://www.nhs.uk/medicines/), or browse [health information](/health-information/) and find out about the [NHS App](/nhs-app/).
+For help with symptoms, use [NHS 111 online](https://111.nhs.uk/). Find information about conditions and self-care in [NHS Conditions A to Z](https://www.nhs.uk/conditions/), and about medicines in [Medicines A to Z](https://www.nhs.uk/medicines/). You can also browse [health information](/health-information/) and find out about the [NHS App](/nhs-app/).
 
 ### More practice information
 

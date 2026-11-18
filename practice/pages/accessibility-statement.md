@@ -5,10 +5,10 @@ breadcrumbParent:
   text: The Park Medical Centre
 ---
 
-This website uses NHS.UK frontend components, with clear headings and links, keyboard navigation and text that can be enlarged using your browser settings.
+We want as many people as possible to be able to use this website. You can use your browser settings to make text larger.
 
-Linked documents and services are provided by other organisations and may have different accessibility features. A full accessibility assessment of this demonstration has not been completed.
+Some information and services are provided by other organisations, and may have different accessibility features. We have not yet completed a full accessibility assessment of this website.
 
-If you need practice information in another format, call [0161&nbsp;998&nbsp;5538](tel:01619985538) or ask at reception.
+If you need practice information in another format, call [0161&nbsp;998&nbsp;5538](tel:01619985538) or ask at reception. Please tell us if you have difficulty using this website.
 
 Read about [cookies on this website](/cookies/).

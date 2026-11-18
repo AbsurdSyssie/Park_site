@@ -7,13 +7,17 @@ breadcrumbParent:
 
 If you have a concern about your care or the service you received, contact reception on [0161&nbsp;998&nbsp;5538](tel:01619985538) and ask to speak to the Practice Manager. You can also write to the Practice Manager at The Park Medical Centre, 434 Altrincham Road, Baguley, Wythenshawe, Manchester, M23 9AB.
 
-You can make a complaint by phone or in writing. If you make it verbally, the NHS complaints process says the organisation should make a written record and give you a copy. Complaints should normally be made within 12 months of the event or of you becoming aware of it. If you are complaining for someone else, include their written consent if you can. If they cannot give consent, contact the practice to discuss this.
+You can make a complaint by phone or in writing. If you make your complaint verbally, we will make a written record and give you a copy. Complaints should normally be made within 12 months of the event or of you becoming aware of it. If you complain after this time, we may still be able to consider it if you had a good reason for the delay and it is still possible to investigate your complaint effectively and fairly. If you are complaining for someone else, include their written consent if you can. If they cannot give consent, contact the practice to discuss this.
 
 ## What happens after you complain
 
-You should receive an acknowledgement and an offer to discuss how your complaint will be handled within 3 working days. If you accept the discussion, you and the practice should agree when a response is likely. There is no set time for a final response; it depends on the complaint. If the response is delayed, you should be kept informed.
+You should receive an acknowledgement and an offer to discuss how your complaint will be handled within 3 working days. If you choose not to discuss how we’ll handle your complaint, we’ll write to tell you when you can expect our response. If you accept the discussion, you and the practice should agree when a response is likely. There is no set time for a final response; it depends on the complaint. If the response is delayed, you should be kept informed.
 
 After the complaint has been investigated, you should receive a written response explaining the findings, any appropriate apology or action, how the complaint was handled, and how to contact the relevant ombudsman if you remain unhappy. Ask reception for the practice's complaints procedure for any further details about its local process.
+
+## Independent support with a complaint
+
+Free independent help is available if you need support making an NHS complaint. NHS Greater Manchester lists [VoiceAbility's NHS complaints advocacy service for Manchester residents](https://www.voiceability.org/support-and-help/services-by-location/manchester). Contact VoiceAbility to check whether its service can support you. If you live elsewhere in Greater Manchester, [NHS Greater Manchester lists advocacy services by borough](https://gmintegratedcare.org.uk/patient-services-faqs/). If you live outside Greater Manchester, [NHS England explains how to find your local NHS complaints advocacy service](https://www.england.nhs.uk/contact-us/feedback-and-complaints/complaint/). [Healthwatch Manchester lists other local support options](https://www.healthwatchmanchester.co.uk/help-making-complaint), including a service for young people. Healthwatch Manchester does not provide advocacy itself.
 
 ## If you prefer to complain to the commissioner
 
