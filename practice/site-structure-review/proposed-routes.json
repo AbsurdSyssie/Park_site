@@ -659,6 +659,22 @@
     ]
   },
   {
+    "route": "/practice-leaflet/",
+    "currentTitle": "",
+    "currentParent": "",
+    "proposedTitle": "Practice leaflet",
+    "proposedParent": "/about/",
+    "navigation": [],
+    "requiredContextualInbound": [
+      "/about/"
+    ],
+    "action": "add-page; keep-flat-route",
+    "url": "new",
+    "redirect": "none",
+    "rationale": "Patient-facing summary compiled from confirmed practice information; unresolved statutory topics remain in the internal evidence audit.",
+    "sourceUrls": []
+  },
+  {
     "route": "/practice-policies/",
     "currentTitle": "Practice policies",
     "currentParent": "/",

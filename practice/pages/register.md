@@ -23,6 +23,8 @@ Contact reception to check the practice area before registering. The practice al
 
 Ask reception about the out-of-area agreement.
 
+[View the practice boundary and check your postcode](https://nhs-gp-catchment.scwcsu.nhs.uk/catchment-embed/?odscode=P84045)
+
 [Read the new patient out-of-area agreement (PDF)](/images/documents/new-patient-out-of-area-agreement.pdf)
 
 ## Temporary registration

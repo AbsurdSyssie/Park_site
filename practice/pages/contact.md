@@ -25,7 +25,7 @@ M23 9AB
 
 <h3 id="parking-and-access">Parking and access</h3>
 
-There is parking and disabled parking. The building has wheelchair access to all areas, accessible toilets, automatic front doors and an induction loop at the front desk.
+There is parking and disabled parking. The building has ramps at the front and rear, and a powered door at the front. It has wheelchair access to all areas, accessible toilets and an induction loop at the front desk.
 
 See the [accessibility statement](/accessibility-statement/) for website and information-format requests.
 

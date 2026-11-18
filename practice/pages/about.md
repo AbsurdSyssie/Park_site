@@ -22,6 +22,7 @@ The practice is operated by an unlimited partnership. The partners are Dr Shahla
 - [Patient feedback and involvement](/feedback/)
 - [Patient Participation Group](/patient-participation-group/)
 - [Contact and find us](/contact/)
+- [Read our practice leaflet](/practice-leaflet/)
 
 ## Care Quality Commission
 

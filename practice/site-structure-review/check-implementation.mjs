@@ -97,7 +97,7 @@ function flatten(node) {
 const rows = parseCsv(fs.readFileSync(routeMapPath, 'utf8'));
 const byRoute = new Map(rows.map((row) => [row.route, row]));
 const errors = [];
-if (rows.length !== 49) errors.push(`Expected 49 route-map rows, found ${rows.length}`);
+if (rows.length !== 50) errors.push(`Expected 50 route-map rows, found ${rows.length}`);
 if (!fs.existsSync(renderedRoot)) errors.push(`Rendered directory does not exist: ${renderedRoot}`);
 
 const rendered = new Map();
