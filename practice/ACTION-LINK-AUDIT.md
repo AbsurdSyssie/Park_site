@@ -1,12 +1,12 @@
 # Service action audit
 
-Checked all 23 rendered demo HTML pages on 2 November 2026, including shared navigation, footer and urgent help. Nine primary actions now use the installed NHS.UK `actionLink` macro. Its SVG is kept in an uninterrupted HTML block using the existing Markdown-safe integration, not handwritten icons. All 27 unique external hrefs still exactly match the external-link audit. No clinical instructions, phone numbers, request availability or supplier URLs changed.
+Checked all 23 rendered demo HTML pages on 2 November 2026, including shared navigation, footer and urgent help. On 18 November 2026, the homepage hero action was changed to link directly to the configured Accurx URL and verified in the production render. Eight primary actions use the installed NHS.UK `actionLink` macro; the homepage hero retains the same NHS action-link appearance. The 27-URL match was the finding from the 2 November audit; later homepage changes added external destinations, so it is not a current-site link-count check. No clinical instructions, phone numbers, availability details or other supplier URLs changed.
 
 ## Primary actions
 
 | Page | Action | Decision |
 | --- | --- | --- |
-| / | Request an appointment or admin help | Converted the hero button; unchanged /appointments/ destination. |
+| / | Request an appointment or admin help | Hero action now links directly to the configured Accurx URL, `https://accurx.nhs.uk/patient-initiated/p84045`. The separate Appointments card still links to `/appointments/`. |
 | /appointments/ | Request an appointment | Existing official macro retained, unchanged Accurx URL. |
 | /appointments/ | Send an admin request | Existing official macro retained, unchanged Accurx URL. |
 | /register/ | Register with The Park | Existing official macro retained with the exact short label and unchanged https://gp-registration.nhs.uk/P84045 URL. |

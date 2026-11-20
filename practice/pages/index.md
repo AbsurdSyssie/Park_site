@@ -7,8 +7,16 @@ title: The Park Medical Centre
 <h1>The Park Medical Centre</h1>
 <p class="nhsuk-lede-text">Care and support, close to home.</p>
 <p>434 Altrincham Road, Manchester, M23 9AB<br><a href="tel:01619985538">0161&nbsp;998&nbsp;5538</a></p>
-{{OFFICIAL_HOME_ACTION_LINK}}
-<p class="nhsuk-body-s"><a href="https://accurx.nhs.uk/patient-initiated/p84045">Start an online medical or admin request in Accurx</a>. If you cannot use the online service, call reception.</p>
+<div>
+<a class="nhsuk-action-link" href="https://accurx.nhs.uk/patient-initiated/p84045">
+  <svg class="nhsuk-icon nhsuk-icon--arrow-right-circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" focusable="false" aria-hidden="true">
+    <path d="M12 2a10 10 0 0 0-10 9h11.7l-4-4a1 1 0 0 1 1.5-1.4l5.6 5.7a1 1 0 0 1 0 1.4l-5.6 5.7a1 1 0 0 1-1.5 0 1 1 0 0 1 0-1.4l4-4H2A10 10 0 1 0 12 2z"/>
+  </svg>
+  <span class="nhsuk-action-link__text">
+    Request an appointment or admin help
+  </span>
+</a>
+</div>
 </div>
 
 <h2>How can we help?</h2>
