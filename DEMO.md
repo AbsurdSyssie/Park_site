@@ -14,6 +14,6 @@ Preview tooling is adapted from Range's real-practice preview infrastructure. It
 
 ## Production is blocked
 
-The actual `npm run check` and production build must fail until the required practice approval date and complete structured GP earnings declaration are supplied. The published source has a known financial year but omits the full-time count. Its exact disclosed facts remain on the about page; the incomplete structured declaration is deliberately absent, not completed with a fabricated zero. See `practice/MIGRATION-QUERIES.md`.
+The actual `npm run check` and production build must fail until the required practice approval date and complete structured GP earnings declaration are supplied. The published source has a known financial year but omits the full-time count. Its exact disclosed facts remain on the about page; the incomplete structured declaration is deliberately absent, not completed with a fabricated zero. Outstanding practice checks are recorded in the internal assurance audit.
 
-Source evidence is retained locally at `/tmp/opencode/park-source`; durable findings and the rendered external-link audit are in `practice/`. These administrative records are not web pages.
+Internal verification records are kept separate from the website output.
