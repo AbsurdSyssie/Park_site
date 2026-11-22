@@ -10,6 +10,8 @@ practice:
   description: NHS GP services at 434 Altrincham Road, Baguley, Wythenshawe, Manchester.
 site:
   url: https://park.oddtv.uk/
+  # Keep search indexing off until practice approval is complete.
+  search_indexing: false
   content_last_reviewed: '2025-08-21'
 contact:
   phone: '0161 998 5538'

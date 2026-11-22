@@ -97,7 +97,7 @@ function flatten(node) {
 const rows = parseCsv(fs.readFileSync(routeMapPath, 'utf8'));
 const byRoute = new Map(rows.map((row) => [row.route, row]));
 const errors = [];
-if (rows.length !== 50) errors.push(`Expected 50 route-map rows, found ${rows.length}`);
+if (rows.length !== 53) errors.push(`Expected 53 route-map rows, found ${rows.length}`);
 if (!fs.existsSync(renderedRoot)) errors.push(`Rendered directory does not exist: ${renderedRoot}`);
 
 const rendered = new Map();
@@ -175,7 +175,7 @@ const home = rendered.get('/');
 const menu = home && collect(home.document, (node) => node.tagName === 'nav' && attrs(node)['aria-label'] === 'Menu')[0];
 const menuLinks = menu ? collect(menu, (node) => node.tagName === 'a' && hasClass(node, 'nhsuk-header__navigation-link')).map(flatten) : [];
 const expectedPrimary = ['Home', 'Request An Appointment / Admin Query', 'Join The Surgery', 'Patient Feedback', 'Test Results', 'Prescriptions'];
-const expectedOverflow = ['Fit notes', 'Opening times', 'Contact us', 'Services and support', 'About the practice'];
+const expectedOverflow = ['Fit notes', 'Opening times', 'Contact us', 'Services and support', 'About the practice', 'Practice news'];
 if (JSON.stringify(menuLinks.slice(0, 6)) !== JSON.stringify(expectedPrimary)) errors.push(`Primary navigation mismatch: ${JSON.stringify(menuLinks.slice(0, 6))}`);
 if (JSON.stringify(menuLinks.slice(6)) !== JSON.stringify(expectedOverflow)) errors.push(`Overflow navigation mismatch: ${JSON.stringify(menuLinks.slice(6))}`);
 

@@ -4,6 +4,7 @@ breadcrumbParent:
   href: /
   text: The Park Medical Centre
 lede: Request an appointment online, or call reception if you need help.
+description: Request an appointment or admin help online, or call The Park Medical Centre reception if you need help.
 ---
 
 <div class="nhsuk-card nhsuk-card--care nhsuk-card--care--emergency"><div class="nhsuk-card__content"><h2>Call 999 or go to A&amp;E now if:</h2><p>it's a life-threatening emergency. Do not use our online form or wait for a call back.</p></div></div>

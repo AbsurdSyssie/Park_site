@@ -4,6 +4,7 @@ breadcrumbParent:
   href: /
   text: The Park Medical Centre
 lede: How to order your repeat medication.
+description: Find ways to order repeat prescriptions and ask The Park Medical Centre a medication question.
 ---
 
 ## Order a repeat prescription

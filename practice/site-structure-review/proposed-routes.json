@@ -516,9 +516,11 @@
     "route": "/news/",
     "currentTitle": "Practice information",
     "currentParent": "/",
-    "proposedTitle": "Past news and reports",
+    "proposedTitle": "Practice news",
     "proposedParent": "/about/",
-    "navigation": [],
+    "navigation": [
+      "Browse More"
+    ],
     "requiredContextualInbound": [
       "/about/",
       "/feedback/",
@@ -527,7 +529,7 @@
     "action": "keep-page; change grouping/links where specified",
     "url": "retain",
     "redirect": "none",
-    "rationale": "Expose historical documents from About and feedback; remove misleading general-information role.",
+    "rationale": "Practice news index with recent dated updates and the existing historical documents retained below.",
     "sourceUrls": [
       "https://www.parkmedicalcentrewythenshawe.nhs.uk/practice-updates](https://www.parkmedicalcentrewythenshawe.nhs.uk/practice-updates",
       "https://www.parkmedicalcentrewythenshawe.nhs.uk/friends-and-family-test-results](https://www.parkmedicalcentrewythenshawe.nhs.uk/friends-and-family-test-results",
@@ -999,6 +1001,60 @@
     "rationale": "Preserve full policy and original references; list on policy index.",
     "sourceUrls": [
       "https://www.parkmedicalcentrewythenshawe.nhs.uk/violence--zero-tolerance-policy](https://www.parkmedicalcentrewythenshawe.nhs.uk/violence--zero-tolerance-policy"
+    ]
+  },
+  {
+    "route": "/news/antimicrobial-awareness-2026/",
+    "currentTitle": "",
+    "currentParent": "",
+    "proposedTitle": "Antimicrobial Awareness",
+    "proposedParent": "/news/",
+    "navigation": [],
+    "requiredContextualInbound": [
+      "/news/"
+    ],
+    "action": "add-practice-news-article",
+    "url": "new",
+    "redirect": "none",
+    "rationale": "Dated practice-authored news article; linked from Practice news.",
+    "sourceUrls": [
+      "https://www.parkmedicalcentrewythenshawe.nhs.uk/practice-news"
+    ]
+  },
+  {
+    "route": "/news/august-2026-update/",
+    "currentTitle": "",
+    "currentParent": "",
+    "proposedTitle": "August 2026 Update",
+    "proposedParent": "/news/",
+    "navigation": [],
+    "requiredContextualInbound": [
+      "/news/"
+    ],
+    "action": "add-practice-news-article",
+    "url": "new",
+    "redirect": "none",
+    "rationale": "Dated practice-authored activity update with image data transcribed as text; linked from Practice news.",
+    "sourceUrls": [
+      "https://www.parkmedicalcentrewythenshawe.nhs.uk/practice-news"
+    ]
+  },
+  {
+    "route": "/news/friends-and-family-august-2026/",
+    "currentTitle": "",
+    "currentParent": "",
+    "proposedTitle": "Friends and Family results for August 2026",
+    "proposedParent": "/news/",
+    "navigation": [],
+    "requiredContextualInbound": [
+      "/news/"
+    ],
+    "action": "add-practice-news-article",
+    "url": "new",
+    "redirect": "none",
+    "rationale": "Dated practice-authored Friends and Family results; linked from Practice news.",
+    "sourceUrls": [
+      "https://www.parkmedicalcentrewythenshawe.nhs.uk/practice-news"
     ]
   }
 ]

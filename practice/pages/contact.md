@@ -3,6 +3,7 @@ title: Contact and find us
 breadcrumbParent:
   href: /
   text: The Park Medical Centre
+description: Find The Park Medical Centre's phone number, address, directions, parking and access information.
 ---
 
 ## Call reception

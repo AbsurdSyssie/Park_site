@@ -3,6 +3,7 @@ title: Register with us
 breadcrumbParent:
   href: /services/
   text: Services and support
+description: Find out how to register with The Park Medical Centre, including online and paper forms and how to check the practice area.
 ---
 
 ## Join The Park Medical Centre

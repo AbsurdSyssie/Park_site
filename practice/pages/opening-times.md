@@ -3,6 +3,7 @@ title: Opening times
 breadcrumbParent:
   href: /contact/
   text: Contact and find us
+description: Check The Park Medical Centre's weekday opening hours and find out about evening and some Saturday appointments.
 ---
 
 ## Core opening hours

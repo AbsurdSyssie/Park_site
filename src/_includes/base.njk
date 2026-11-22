@@ -25,18 +25,23 @@
   { text: "Opening times", href: "/opening-times/" },
   { text: "Contact us", href: "/contact/" },
   { text: "Services and support", href: "/services/" },
-  { text: "About the practice", href: "/about/" }
+  { text: "About the practice", href: "/about/" },
+  { text: "Practice news", href: "/news/" }
 ] %}
 {% set currentNav = [] %}
 {% for item in navItems %}
   {% set currentNav = (currentNav.push({ text: item.text, href: item.href, current: page.url == item.href }), currentNav) %}
 {% endfor %}
 
-{% block pageTitle %}{% if title and page.url != "/" %}{{ title }} - {% endif %}{{ p.name }}{% endblock %}
+{% block pageTitle %}{% if seo_title %}{{ seo_title | escape }}{% else %}{% if title and page.url != "/" %}{{ title | escape }} - {% endif %}{{ p.name | escape }}{% endif %}{% endblock %}
 
 {% block head %}
-  <meta name="description" content="{{ description or p.description or p.name }}">
-  {% if draftPreview %}<meta name="robots" content="noindex, nofollow">{% elif practice.demo %}<meta name="robots" content="noindex">{% endif %}
+  <meta name="description" content="{{ (description or p.description or p.name) | escape }}">
+  {% if draftPreview %}<meta name="robots" content="noindex, nofollow">{% elif not searchIndexingEnabled %}<meta name="robots" content="noindex">{% endif %}
+  {% if searchIndexingEnabled and page.url != "/404.html" and page.outputPath and page.outputPath.endsWith(".html") %}
+    {% set canonical = page.url | canonicalUrl %}
+    {% if canonical %}<link rel="canonical" href="{{ canonical | escape }}">{% endif %}
+  {% endif %}
   <link rel="stylesheet" href="/assets/nhsuk-frontend.min.css">
   <link rel="stylesheet" href="/assets/practice.css">
   <script type="module" src="/assets/init.js"></script>

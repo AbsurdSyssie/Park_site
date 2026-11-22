@@ -3,6 +3,7 @@ title: Test results
 breadcrumbParent:
   href: /services/
   text: Services and support
+description: Find out how to view test results in the NHS App or request help from The Park Medical Centre.
 ---
 
 When you have a test, you will be told how long to wait for your results. Please wait until that time has passed before contacting the surgery.

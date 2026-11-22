@@ -37,7 +37,7 @@ The source coverage matrix records 58 captured source HTML responses and 25 link
 
 ## Proposed hierarchy and links
 
-All URLs stay flat and unchanged. Hierarchy is expressed through index sections, breadcrumb parents and contextual links. A child can be linked from several tasks but has one canonical breadcrumb parent. Header current-page semantics should identify the current page; do not put `aria-current="page"` on a different ancestor destination. A visual section treatment may be distinct from that attribute.
+All existing public URLs stay unchanged. The original route map keeps its flat addresses; the later Practice news implementation adds new article routes under `/news/`. Hierarchy is expressed through index sections, breadcrumb parents and contextual links. A child can be linked from several tasks but has one canonical breadcrumb parent. Header current-page semantics should identify the current page; do not put `aria-current="page"` on a different ancestor destination. A visual section treatment may be distinct from that attribute.
 
 - Home: quick links for appointments/admin, prescriptions, fit notes, results, joining, phone/contact, opening times and location; short links to Services, About and feedback. Keep the agreed urgent-help presentation on Home and Appointments and the standalone Urgent help route/footer link.
 - Appointments: booking/admin action first, then links to fit notes, changing details, results, joining and urgent help where relevant. Do not nest an unrelated health-information catalogue here.
@@ -52,7 +52,7 @@ All URLs stay flat and unchanged. Hierarchy is expressed through index sections,
 
 Footer: keep Getting help with appointments, prescriptions, results, urgent help. Keep The practice with opening times, contact, joining, team; replace ambiguous Practice information link with About the practice, and include Patient feedback. Keep Policies with policy index, complaints, privacy, accessibility and cookies. Preserve compact official CQC widget. Historical reports are reached from About/Feedback, not a broad footer directory.
 
-The complete 49-route mapping follows below and is also available in `proposed-routes.csv` and `proposed-routes.json`. “Required incoming” means planned contextual links in addition to global navigation; do not interpret it as a requirement to delete other useful existing links.
+The original 49-route mapping follows below and is also available in `proposed-routes.csv` and `proposed-routes.json`. “Required incoming” means planned contextual links in addition to global navigation; do not interpret it as a requirement to delete other useful existing links. The later Practice news implementation supersedes the earlier Past news and reports title: `/news/` is Practice news and appears in Browse More, with dated article routes under `/news/<slug>/`; the article pages use the `/news/` breadcrumb parent. Their top-level source files use the `news-<slug>.md` naming convention and an explicit `news_article: true` front matter flag, because the practice page loader reads only top-level Markdown files. Other pages whose filenames start with `news-` keep their usual flat URLs unless marked as news articles.
 
 ## WCAG 2.2 AA baseline and remaining testing
 
@@ -135,7 +135,7 @@ Run the commands recorded in `provenance.json` from the project root. `audit.mjs
 | / | The Park Medical Centre / none | The Park Medical Centre / none | primary | system/home | keep-page; change grouping/links where specified; retain |
 | /it-policy/ | Information technology policy / /practice-policies/ | Information technology policy / /practice-policies/ | contextual only | /practice-policies/ | keep-page; change grouping/links where specified; retain |
 | /minor-ailments-scheme/ | Pharmacy services / / | Pharmacy services / /services/ | contextual only | /services/ | keep-page; change grouping/links where specified; retain |
-| /news/ | Practice information / / | Past news and reports / /about/ | contextual only | /about/, /feedback/, /patient-participation-group/ | keep-page; change grouping/links where specified; retain |
+| /news/ | Practice information / / | Practice news / /about/ | Browse More | /about/, /feedback/, /patient-participation-group/ | keep-page; change grouping/links where specified; retain |
 | /nhs-app/ | NHS App / / | NHS App / /services/ | contextual only | /services/ | keep-page; change grouping/links where specified; retain |
 | /opening-times/ | Opening times / / | Opening times / /contact/ | Browse More, footer | /contact/, /, /appointments/ | keep-page; change grouping/links where specified; retain |
 | /our-team/ | Our team / / | Our team / /about/ | footer | /about/ | keep-page; change grouping/links where specified; retain |

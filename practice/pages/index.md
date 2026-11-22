@@ -1,5 +1,7 @@
 ---
 title: The Park Medical Centre
+seo_title: The Park Medical Centre, Wythenshawe
+description: Find appointment and admin requests, repeat prescriptions, test results, registration, opening times and contact details for The Park Medical Centre in Wythenshawe.
 ---
 
 <div class="park-hero">

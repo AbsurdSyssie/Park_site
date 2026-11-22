@@ -15,7 +15,7 @@ The practice is operated by an unlimited partnership. The partners are Dr Shahla
 - [Training at the practice](/training/)
 - [Research](/research/)
 - [Artificial intelligence information](/artificial-intelligence/)
-- [Past news and reports](/news/)
+- [Practice news](/news/)
 - [GP earnings declaration](/gp-earnings/)
 - [Practice policies](/practice-policies/)
 - [Services and support](/services/)

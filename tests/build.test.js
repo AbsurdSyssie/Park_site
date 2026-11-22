@@ -141,6 +141,25 @@ test("practice Markdown routes replace matching wrappers and keep the home safet
   assert.match(read(output, "prescriptions/index.html"), /Order a repeat prescription/);
 });
 
+test("only explicitly marked practice news articles use nested news routes", async () => {
+  const practiceDir = path.join(tmp, "news-route-opt-in");
+  fs.cpSync("tests/fixtures/demo-practice", practiceDir, { recursive: true });
+  fs.writeFileSync(
+    path.join(practiceDir, "pages", "news-ordinary-page.md"),
+    "---\ntitle: Ordinary practice page\n---\n\nPage content.\n",
+  );
+  fs.writeFileSync(
+    path.join(practiceDir, "pages", "news-marked-article.md"),
+    "---\ntitle: Marked news article\nnews_article: true\n---\n\nArticle content.\n",
+  );
+
+  const output = await build(practiceDir, "news-route-opt-in-output");
+  assert.ok(fs.existsSync(path.join(output, "news-ordinary-page", "index.html")));
+  assert.equal(fs.existsSync(path.join(output, "news", "ordinary-page", "index.html")), false);
+  assert.ok(fs.existsSync(path.join(output, "news", "marked-article", "index.html")));
+  assert.equal(fs.existsSync(path.join(output, "news-marked-article", "index.html")), false);
+});
+
 test("NHS.UK frontend assets are copied", () => {
   for (const asset of [
     "assets/nhsuk-frontend.min.css",
