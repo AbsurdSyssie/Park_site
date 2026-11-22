@@ -18,6 +18,8 @@ node_modules/
 
 # Local-only private workspace
 /.private
+/research/
+/business-agreements/
 
 # Locally retained source-site scrape; do not publish.
 /practice/source-archive/
