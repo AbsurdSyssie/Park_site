@@ -5,15 +5,31 @@ breadcrumbParent:
   text: Patient feedback
 ---
 
-If you have a concern about your care or the service you received, contact reception on [0161&nbsp;998&nbsp;5538](tel:01619985538) and ask to speak to the Practice Manager. You can also write to the Practice Manager at The Park Medical Centre, 434 Altrincham Road, Baguley, Wythenshawe, Manchester, M23 9AB.
+You can talk with us informally first if you wish. You do not have to do this before making a formal complaint.
 
-You can make a complaint by phone or in writing. If you make your complaint verbally, we will make a written record and give you a copy. Complaints should normally be made within 12 months of the event or of you becoming aware of it. If you complain after this time, we may still be able to consider it if you had a good reason for the delay and it is still possible to investigate your complaint effectively and fairly. If you are complaining for someone else, include their written consent if you can. If they cannot give consent, contact the practice to discuss this.
+## How to make a formal complaint
+
+You can make a complaint by [email](mailto:gmicb-mh.theparkmedical@nhs.net), by post or by bringing a letter to the practice. Write to the Practice Manager at The Park Medical Centre, 434 Altrincham Road, Baguley, Wythenshawe, Manchester, M23 9AB. You can also phone reception on [0161&nbsp;998&nbsp;5538](tel:01619985538) or speak to any member of staff. They can take down your complaint for you. If you complain by phone or in person, we will write down what you tell us and give you a copy.
+
+You can complain yourself or ask someone to complain for you. We will usually ask you to give written permission for someone to act for you. A complaints form is available at reception. If illness or an accident means you cannot give permission, the person helping you can explain this in a letter with the complaint. We may still be able to consider it.
+
+Please complain within 12 months of the event, or within 12 months of when you first became aware of it. We may still consider a later complaint if there was a good reason for the delay and we can still investigate it fairly and properly.
 
 ## What happens after you complain
 
-You should receive an acknowledgement and an offer to discuss how your complaint will be handled within 3 working days. If you choose not to discuss how we’ll handle your complaint, we’ll write to tell you when you can expect our response. If you accept the discussion, you and the practice should agree when a response is likely. There is no set time for a final response; it depends on the complaint. If the response is delayed, you should be kept informed.
+Within 3 working days, the Practice Manager will acknowledge your complaint and offer to discuss how it will be handled. The Practice Manager will investigate it and, for a complaint about clinical care, seek help from the GP partners.
 
-After the complaint has been investigated, you should receive a written response explaining the findings, any appropriate apology or action, how the complaint was handled, and how to contact the relevant ombudsman if you remain unhappy. Ask reception for the practice's complaints procedure for any further details about its local process.
+If you do not want to discuss how your complaint will be handled, we will write to tell you when to expect a response. If you do discuss it with us, we will agree when you are likely to receive a response. We will keep you informed as far as we can about the investigation and when we expect to reply.
+
+When the investigation is complete, the Practice Manager will send you a written response. It will explain what we found, our conclusion, and any apology or action we will take. It will also explain how to contact the ombudsman if you are still unhappy.
+
+## How we handle complaints
+
+We handle complaints confidentially. Complaint records and letters are kept separate from your medical record. If we need to share information from your medical record with someone outside the practice to investigate your complaint, the Practice Manager will tell you or the person acting for you.
+
+Each year, we review complaints to learn what we can improve.
+
+You can contact the Practice Manager if you have any other concerns about your complaint.
 
 ## Independent support with a complaint
 
@@ -25,6 +41,6 @@ You can choose to complain to the practice or to [NHS Greater Manchester Patient
 
 ## If you are unhappy with the final response
 
-You will usually need to complete the organisation's complaints process and receive its final response before asking the [Public Service Ombudsman (formerly the Parliamentary and Health Service Ombudsman)](https://www.ombudsman.org.uk/making-complaint/making-complaint-about-nhs-england) to consider your complaint. If the organisation has not replied by the date it gave you, or you are running out of time, call the Ombudsman on 0345 015 4033 to ask what to do. Read more about [what to do before contacting the Ombudsman](https://www.ombudsman.org.uk/making-complaint/complaints-about-nhs-england/what-do-you-come-us).
+After you receive the practice's final response, you can ask the [Public Service Ombudsman](https://www.ombudsman.org.uk/making-complaint/making-complaint-about-nhs-england) to consider your complaint. If the practice has not replied by the date it gave you, or you are running out of time, call the Ombudsman on 0345 015 4033 to ask what to do. Read more about [contacting the Ombudsman about an NHS complaint](https://www.ombudsman.org.uk/making-complaint/complaints-about-nhs-england/what-do-you-come-us).
 
 For other ways to share your views, see [patient feedback](/feedback/). This includes the Friends and Family Test, which is for general feedback rather than making a formal complaint.

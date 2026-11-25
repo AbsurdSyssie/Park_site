@@ -22,7 +22,7 @@ The practice trains doctors who want to specialise in general practice, and medi
 
 ## Practice area
 
-Contact reception to check whether your address is in the practice area. The practice also accepts some out-of-area registrations within Greater Manchester, subject to conditions. Read the [registration information](/register/) and [out-of-area agreement](/images/documents/new-patient-out-of-area-agreement.pdf), or [view the practice boundary and check your postcode](https://nhs-gp-catchment.scwcsu.nhs.uk/catchment-embed/?odscode=P84045).
+Contact reception to check whether your address is in the practice area. The practice also accepts some out-of-area registrations within Greater Manchester. You must be able to travel to the surgery for in-person appointments and reviews. Home visits are only available within the local area. If you become housebound outside that area, you will need to register with a practice nearer to your home. Read the [registration information](/register/) and [out-of-area agreement](/images/documents/new-patient-out-of-area-agreement.pdf), or [view the practice boundary and check your postcode](https://nhs-gp-catchment.scwcsu.nhs.uk/catchment-embed/?odscode=P84045).
 
 ## Access to the premises
 

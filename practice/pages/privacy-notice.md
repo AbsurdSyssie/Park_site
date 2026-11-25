@@ -5,34 +5,15 @@ breadcrumbParent:
   text: Practice policies
 ---
 
-<p>This privacy notice lets you know what happens to any personal data that you give to us, or any that we may collect from or about you.</p>
+<p>This notice explains how Park Medical Centre uses and shares information about you. It covers information you give us, information we receive from others and work done for us. Park Medical Centre is the data controller. This means we are responsible for how we use your information. We follow the UK General Data Protection Regulation (UK GDPR) and the Data Protection Act 2018.</p>
 
-<p>This privacy notice applies to personal information processed by or on behalf of the practice.</p>
+<p>This notice applies to personal information processed by or for the practice. It explains what information we use, why we use it, when we share it, how long we keep it and what rights you have.</p>
 
-<p>This Notice explains</p>
+<h2>How we use your information</h2>
 
-<ul>
-<li>Who we are, how we use your information and our Data Protection Officer</li>
-<li>What kinds of personal information about you do we process?</li>
-<li>What are the legal grounds for our processing of your personal information (including when we share it with others)?</li>
-<li>What should you do if your personal information changes?</li>
-<li>For how long your personal information is retained by us?</li>
-<li>What are your rights under data protection laws?</li>
-</ul>
+<p>We collect basic information such as your name, address and contact details, including your email address and mobile number.</p>
 
-<p>The <strong>General Data Protection Regulation</strong> (GDPR) was incorporated into the UK's Data Protection Act on 25th May 2018. This is a single EU-wide regulation on the protection of confidential and sensitive information.</p>
-
-<p>For the purpose of applicable data protection legislation (including but not limited to the General Data Protection Regulation (Regulation (EU) 2016/679) (the "GDPR"), and the Data Protection Act 2018 (currently in Bill format before Parliament) the practice responsible for your personal data.</p>
-
-<p>This Notice describes how we collect, use and process your personal data, and how, in doing so, we comply with our legal obligations to you. Your privacy is important to us, and we are committed to protecting and safeguarding your data privacy rights</p>
-
-<h2>How we use your information and the law.</h2>
-
-<p>The practice will be what’s known as the ‘Controller’ of the personal data you provide to us.</p>
-
-<p>We collect basic personal data about you which does not include any special types of information or location-based information. This does however include name, address, contact details such as email and mobile number etc.</p>
-
-<p>We will also collect sensitive confidential data known as “special category personal data”, in the form of health information, religious belief (if required in a healthcare setting) ethnicity, and sex during the services we provide to you and or linked to your healthcare through other health providers or third parties.</p>
+<p>We also use health information and, where needed for your care, information about your ethnic background or religious beliefs. These are special categories of personal information and need extra protection. We may also record information about your sex where it is relevant to your care.</p>
 
 <h2>Why do we need your information?</h2>
 
@@ -51,19 +32,15 @@ breadcrumbParent:
 
 <p>To ensure you receive the best possible care, your records are used to facilitate the care you receive. Information held about you may be used to help protect the health of the public and to help us manage the NHS. Information may be used within the GP practice for clinical audit to monitor the quality of the service provided.</p>
 
-<h2>How do we lawfully use your data?</h2>
+<h2>Why we can use your information</h2>
 
-<p>We need to know your personal, sensitive and confidential data in order to provide you with Healthcare services as a General Practice, under the General Data Protection Regulation we will be lawfully using your information in accordance with: -</p>
+<p>For NHS GP care, the practice uses information because providing care is a task in the public interest. For health information, we rely on the health and social care condition in data protection law. This includes Article 6(1)(e) and Article 9(2)(h) of the UK GDPR, and paragraph 2 of Schedule 1 to the Data Protection Act 2018.</p>
 
-<p><em>Article 6, e) processing is necessary for the performance of a task carried out in the public interest or in the exercise of official authority vested in the controller;” </em></p>
+<p>This notice also covers personal information you give us about your carers or family members. If you give us information about someone else, please tell them about this notice where you can.</p>
 
-<p><em>Article 9, (h) processing is necessary for the purposes of preventive or occupational medicine, for the assessment of the working capacity of the employee, medical diagnosis, the provision of health or social care or treatment or the management of health or social care systems </em></p>
+<h2>Using information to plan care</h2>
 
-<p>This Privacy Notice applies to the personal data of our patients and the data you have given us about your carers/family members.</p>
-
-<h2>Risk Stratification</h2>
-
-<p>Risk stratification data tools are increasingly being used in the NHS to help determine a person’s risk of suffering a condition, preventing an unplanned or (re)admission and identifying a need for preventive intervention. Information about you is collected from a number of sources including NHS Trusts and from this GP Practice. A risk score is then arrived at through an analysis of your de-identified information is only provided back to your GP as data controller in an identifiable form. Risk stratification enables your GP to focus on preventing ill health and not just the treatment of sickness. If necessary, your GP may be able to offer you additional services. Please note that you have the right to opt out of your data being used in this way.</p>
+<p>The practice may use information from your GP record and other NHS services in tools that estimate whether you may need extra support. Your GP can use this information to plan your care. Contact the practice if you want to know more or wish to raise a concern about this use of your information.</p>
 
 <h2>Medicines Management</h2>
 
@@ -75,41 +52,42 @@ breadcrumbParent:
 
 <ul>
 <li>Data Protection Act 2018</li>
-<li>The General Data Protection Regulations 2016</li>
+<li>The UK General Data Protection Regulation</li>
 <li>Human Rights Act 1998</li>
 <li>Common Law Duty of Confidentiality</li>
 <li>Health and Social Care Act 2012</li>
-<li>NHS Codes of Confidentiality, Information Security and Records Management</li>
-<li>Information: To Share or Not to Share Review</li>
+<li>NHS guidance on confidentiality, information security and records management</li>
 </ul>
 
 <p>Every member of staff who works for an NHS organisation has a legal obligation to keep information about you confidential.</p>
 
-<p>We will only ever use or pass on information about you if others involved in your care have a genuine need for it. We will not disclose your information to any third party without your permission unless there are exceptional circumstances (i.e. life or death situations), where the law requires information to be passed on and / or in accordance with the information sharing principle following Dame Fiona Caldicott’s information sharing review (Information to share or not to share) where “The duty to share information can be as important as the duty to protect patient confidentiality.” This means that health and social care professionals should have the confidence to share information in the best interests of their patients within the framework set out by the Caldicott principles.</p>
+<p>We protect the confidentiality of your health information. For your direct care, we may share relevant information with people involved in your care when you would reasonably expect this and you have not objected. This is about the duty of confidentiality and is separate from the legal basis we use under data protection law.</p>
 
-<p>Our practice policy is to respect the privacy of our patients, their families and our staff and to maintain compliance with the General Data Protection Regulations (GDPR) and all UK specific Data Protection Requirements. Our policy is to ensure all personal data related to our patients will be protected.</p>
+<p>We may share confidential information for another reason if you give permission or if there is another valid legal reason, for example where the law requires it. We follow the common law duty of confidentiality and NHS information-sharing principles.</p>
+
+<p>We take steps to protect personal information about our patients, their families and our staff.</p>
 
 <p>All employees and sub-contractors engaged by our practice are asked to sign a confidentiality agreement. The practice will, if required, sign a separate confidentiality agreement if the client deems it necessary. If a sub-contractor acts as a data processor for the practice an appropriate contract (art 24-28) will be established for the processing of your information.</p>
 
-<p>In certain circumstances you may have the right to withdraw your consent to the processing of data. Please contact the Data Protection Officer in writing if you wish to withdraw your consent. If some circumstances we may need to store your data after your consent has been withdrawn to comply with a legislative requirement.</p>
+<p>We only rely on your consent where we have asked you for it. If you gave consent for an optional use of your information, you can withdraw it at any time by contacting the practice. This will not affect what we did with your information before you withdrew consent. We may still need to keep information where the law requires us to do so.</p>
 
-<p>Some of this information will be held centrally and used for statistical purposes. Where we do this, we take strict measures to ensure that individual patients cannot be identified. Sometimes your information may be requested to be used for research purposes – the surgery will always gain your consent before releasing the information for this purpose in an identifiable format.  In some circumstances you can Opt-out of the surgery sharing any of your information for research purposes.</p>
+<p>Some information may be used for statistics or research. The legal rules and safeguards depend on the purpose and the information used. If we invite you to take part in a research project or use your contact details to tell you about an optional service, this is voluntary. We will explain when your permission is needed. You can say no or withdraw permission later.</p>
 
 <h2>With your consent we would also like to use your information to</h2>
 
-<p>We would however like to use your name, contact details and email address to inform you of services that may benefit you, with your consent only. There may be occasions were authorised research facilities would like you to take part on innovations, research, improving services or identifying trends.</p>
+<p>With your permission, we may use your name and contact details to tell you about services that may benefit you. We may also pass on an invitation from an authorised research organisation asking if you would like to take part in research or service improvement.</p>
 
-<p>At any stage where we would like to use your data for anything other than the specified purposes and where there is no lawful requirement for us to share or process your data, we will ensure that you have the ability to consent and opt out prior to any data processing taking place. This information is not shared with third parties or used for any marketing and you can unsubscribe at any time via phone, email or by informing the practice DPO as below.</p>
+<p>You can withdraw permission for these optional messages at any time by phone, email or by telling the practice. This does not affect earlier use of your information.</p>
 
-<h2>Where do we store your information Electronically?</h2>
+<h2>Where we store your information</h2>
 
-<p>All the personal data we process is processed by our staff in the UK however for the purposes of IT hosting and maintenance this information may be located on servers within the European Union.</p>
+<p>The separate privacy policy for new patient registrations gives more information about where registration details may be processed. See that policy for details.</p>
 
-<p>No 3rd parties have access to your personal data unless the law allows them to do so and appropriate safeguards have been put in place. We have a Data Protection regime in place to oversee the effective and secure processing of your personal and or special category (sensitive, confidential) data.</p>
+<p>Organisations that provide services for the practice may handle information on our behalf under agreed safeguards. We use access controls and other security measures to protect personal and special category information.</p>
 
 <h2>Who are our partner organisations?</h2>
 
-<p>We may also have to share your information, subject to strict agreements on how it will be used, with the following organisations;</p>
+<p>Depending on your care and the reason for sharing, organisations may include:</p>
 
 <ul>
 <li>NHS Trusts / Foundation Trusts</li>
@@ -119,62 +97,57 @@ breadcrumbParent:
 <li>Private Sector Providers</li>
 <li>Voluntary Sector Providers</li>
 <li>Ambulance Trusts</li>
-<li>Clinical Commissioning Groups</li>
+<li>NHS commissioners and other NHS organisations</li>
 <li>Social Care Services</li>
-<li>NHS England (NHSE) and NHS Digital (NHSD)</li>
+<li>NHS England and NHS Digital</li>
 <li>Local Authorities</li>
 <li>Education Services</li>
 <li>Fire and Rescue Services</li>
 <li>Police &amp; Judicial Services</li>
-<li>Voluntary Sector Providers</li>
-<li>Private Sector Providers</li>
 <li>Other ‘data processors’ which you will be informed of</li>
 </ul>
 
-<p>You will be informed who your data will be shared with and in some cases asked for consent for this to happen when this is required.</p>
+<p>We share information only when it is needed for your care or another stated purpose and there is a lawful reason to do so. Where permission is needed, we will ask you.</p>
 
-<p>We may also use external companies to process personal information, such as for archiving purposes. These companies are bound by contractual agreements to ensure information is kept confidential and secure. All employees and sub-contractors engaged by our practice are asked to sign a confidentiality agreement. If a sub-contractor acts as a data processor for the practice an appropriate contract (art 24-28) will be established for the processing of your information.</p>
+<p>We may use external companies to handle information for us, for example for archiving. They must keep it confidential and secure under their agreement with the practice.</p>
 
 <h2>How long will we store your information?</h2>
 
-<p>We are required under UK law to keep your information and data for the full retention periods as specified by the NHS Records management code of practice for health and social care and national archives requirements. More information on records retention can be found online at (https://digital.nhs.uk/article/1202/Records-Management-Code-of-Practice-for-Health-and-Social-Care-2016)</p>
+<p>We keep your information for the periods set out in the NHS <a href="https://digital.nhs.uk/data-and-information/information-governance/guidance/records-management-code-of-practice">Records Management Code of Practice</a>. How long we keep it depends on the type of record.</p>
 
-<h2>How can you access, amend move the personal data that you have given to us?</h2>
+<h2>Your rights</h2>
 
-<p>Even if we already hold your personal data, you still have various rights in relation to it. To get in touch about these, please contact us. We will seek to deal with your request without undue delay, and in any event in accordance with the requirements of any applicable laws. Please note that we may keep a record of your communications to help us resolve any issues which you raise.</p>
+<p>You can ask us to see your information, correct it, restrict how we use it or, in some cases, delete it. You can object when we use information for a public task or, where it applies, our legitimate interests. You can also withdraw consent where we rely on your consent. These rights depend on why and how we use the information, so they do not apply in every case. Contact the practice to make a request.</p>
 
-<p>Right to object: If we are using your data because we deem it necessary for our legitimate interests to do so, and you do not agree, you have the right to object. We will respond to your request within 30 days (although we may be allowed to extend this period in certain cases). Generally, we will only disagree with you if certain limited conditions apply.</p>
-
-<p>Right to withdraw consent: Where we have obtained your consent to process your personal data for certain activities (for example for a research project), or consent to market to you, you may withdraw your consent at any time.</p>
-
-<p>Right to erasure: In certain situations (for example, where we have processed your data unlawfully), you have the right to request us to "erase" your personal data. We will respond to your request within 30 days (although we may be allowed to extend this period in certain cases) and will only disagree with you if certain limited conditions apply. If we do agree to your request, we will Delete your data but will generally assume that you would prefer us to keep a note of your name on our register of individuals who would prefer not to be contacted. That way, we will minimise the chances of you being contacted in the future where your data are collected in unconnected circumstances. If you would prefer us not to do this, you are free to say so.</p>
-
-<p>Right of data portability: If you wish, you have the right to transfer your data from us to another data controller. We will help with this with a GP to GP data transfer and transfer of your hard copy notes</p>
+<p>The right to have information deleted is limited and will not apply when we need to keep it for care or another legal reason. The right to move information to another organisation applies only to information you provided, processed by automated means and on the basis of consent or a contract. A transfer of your GP record to another practice is a separate process.</p>
 
 <h2>Access to your personal information</h2>
 
-<p>Data Subject Access Requests (DSAR): You have a right under the Data Protection legislation to request access to view or to obtain copies of what information the surgery holds about you and to have it amended should it be inaccurate. To request this, you need to do the following:</p>
+<p>You can ask to see or get a copy of information the practice holds about you, and ask us to correct information that is wrong. Requests are usually free. We normally respond within one month. We may extend this for a complex request and will tell you if we do. We may ask for proof of identity if we need it to protect your information.</p>
 
 <ul>
-<li>Your request should be made to the Practice – for information from the hospital you should write direct to them</li>
-<li>There is no charge to have a copy of the information held about you</li>
-<li>We are required to respond to you within one month</li>
-<li>You will need to give adequate information (for example full name, address, date of birth, NHS number and details of your request) so that your identity can be verified, and your records located information we hold about you at any time.</li>
+<li>Contact the practice for information we hold. For information held by a hospital, contact that hospital.</li>
 </ul>
 
 <h2>What should you do if your personal information changes?</h2>
 
-<p>You should tell us so that we can update our records please contact the Practice Manager as soon as any of your details change, this is especially important for changes of address or contact details (such as your mobile phone number), the practice will from time to time ask you to confirm that the information we currently hold is accurate and up-to-date.</p>
+<p>Please tell the practice if your details change, especially your address or phone number. We may also ask you to check that the information we hold is correct.</p>
 
-<p>NHS England has been directed by the government to establish and operate the OpenSAFELY COVID-19 Service and the OpenSAFELY Data Analytics Service. These services provide a secure environment that supports research, clinical audit, service evaluation and health surveillance for COVID-19 and other purposes.</p>
+<h2>OpenSAFELY</h2>
+
+<p>NHS England operates the OpenSAFELY COVID-19 Service and Data Analytics Service. These services support research, clinical audit, service evaluation and health surveillance.</p>
 
 <p>Each GP practice remains the controller of its own GP patient data but is required to let approved users run queries on pseudonymised patient data. This means identifiers are removed and replaced with a pseudonym.</p>
 
-<p>Only approved users are allowed to run these queries, and they will not be able to access information that directly or indirectly identifies individuals.</p>
+<p>Only approved users can run queries on pseudonymised information. This means identifying details are replaced with a code. Approved users do not see information that directly identifies you. NHS England says only anonymous, grouped results can be taken out of the secure system.</p>
 
-<p>Patients who do not wish for their data to be used as part of this process can register <a href="http://www.nhs.uk/using-the-nhs/about-the-nhs/opt-out-of-sharing-your-health-records/">type 1 opt out</a> with their GP.</p>
+<p>A type 1 opt-out asks your GP practice not to share your confidential patient information outside the practice for research and planning. Contact the practice if you want to ask about a type 1 opt-out. This is different from the <a href="https://www.nhs.uk/your-nhs-data-matters/">national data opt-out</a>, which you can manage online.</p>
 
-<p><a href="http://www.opensafely.org/">Find additional information about OpenSAFELY</a>.</p>
+<p><a href="https://www.opensafely.org/">Find additional information about OpenSAFELY</a>.</p>
+
+<h2>Questions or complaints about your information</h2>
+
+<p>If you are worried about how we use your information, <a href="/contact/">contact the practice</a>. We aim to let you know we have your data protection complaint as soon as possible and must do so within 30 days. We will look into it and tell you the outcome without undue delay. You can also <a href="https://ico.org.uk/make-a-complaint/data-protection-complaints/">complain to the Information Commissioner's Office</a>.</p>
 
 ## New patient registrations
 

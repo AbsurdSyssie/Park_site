@@ -61,7 +61,7 @@ team:
       - { name: Dr Shahla Hannan, role: GP partner, details: 'Primary medical qualification: MB BS, 1996, University of London.', gmc_number: '4310237' }
       - { name: Dr Suman Sarin, role: GP partner, details: 'Primary medical qualification: MB BS, 1989, Ranchi University.', gmc_number: '4277903' }
       - { name: Dr Priyanka Vaidya, role: GP partner, details: 'Primary medical qualification: MB ChB, 2011, University of Bristol.', gmc_number: '7138642' }
-      - { name: Dr M Nazar, role: Doctor }
+      - { name: Dr Muhammad Arshad Nazar, role: Doctor, gmc_number: '6055156' }
   - group: Practice management
     people:
       - { name: Dan Hey, role: Practice Manager }
@@ -69,7 +69,7 @@ team:
   - group: Clinical team
     people:
       - { name: Alice So, role: Advanced Nurse Practitioner }
-      - { name: Rochelle Holness, role: Physician Associate }
+      - { name: Rochelle Holness, role: Physician Associate, gmc_number: 'A8130117' }
       - { name: Shabeel Ahmad, role: Pharmacist }
       - { name: Sharon Chan-Braddock, role: Physiotherapist }
       - { name: Tonya Radlin, role: Healthcare Assistant }

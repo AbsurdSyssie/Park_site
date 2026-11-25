@@ -16,11 +16,9 @@ If you have any questions, call [0161&nbsp;998&nbsp;5538](tel:01619985538).
 
 ## Practice area
 
-Contact reception to check the practice area before registering. The practice also welcomes out-of-area registrations within Greater Manchester, subject to conditions:
+Contact reception to check the practice area before registering. The practice also accepts some out-of-area registrations within Greater Manchester. You must be able to travel to the surgery for in-person appointments and reviews, including immunisations and screening. You must respond to invitations and attend appointments, including appointments for children.
 
-- You must be able to travel to the surgery for face-to-face appointments, reviews, immunisations and screening.
-- You must respond to invitations and attend appointments, including appointments for children.
-- Home visits are only available within the local area. If you become housebound outside the area, you will need to register closer to home.
+Home visits are only available within the local area. If you become housebound outside the area, you will need to register with a practice nearer to your home.
 
 Ask reception about the out-of-area agreement.
 
